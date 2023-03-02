@@ -43,11 +43,24 @@ body {
 }
 
 #footer-content {
-    margin-top: auto;
+    margin-top: 40px;
     display: block;
 }
 
-#footer-content i {
+#footer-content a {
     font-size: 20px;
-    color: #000000
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ------------------------------------- Media Queries */
+
+@media screen and (max-width:364px) {
+    #media-footer {
+        max-width: 290px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
 }
