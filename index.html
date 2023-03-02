@@ -16,29 +16,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dc_favicon.png">
     <title>DC Games</title>
 </head>
-<body>
+<body id="body_background">
     <header>
-        <div class="container-fluid dc_logo">
-            <img src="assets/images/dc_logo.png" alt="DC logo with GAMES written underneath">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center col-12">
+                    <img src="assets/images/dc_logo.png" id="dc_logo" alt="DC logo with GAMES written underneath">
+                </div>
+            </div>
         </div>
     </header>
     <div class="container-fluid">
-        <div class="container">
-            <div class="batman">
-                <img src="assets/images/batman1.png" alt="Cartoon image of The Batman">
+        <div class="row">
+            <div id="batman" class="col-md-6 col-sm-12 text-center">
+                <img src="assets/images/batman1.png" class="dc_character" alt="Cartoon image of The Batman">
+                <button class="button">Batman Hangman</button>
             </div>
-            <button class="button">Batman Hangman</button>
-        </div>
-        <div class="container">
-            <div class="riddler">
-                <img src="assets/images/riddler1.png" alt="Cartoon image of The Riddler">
+            <div id="riddler" class="col-md-6 col-sm-12 text-center">
+                <img src="assets/images/riddler1.png" class="dc_character" alt="Cartoon image of The Riddler">
+                <button class="button">Riddler's Quiz</button>
             </div>
-            <button class="button">Riddler's Quiz</button>
         </div>
     </div>
     <footer>
         <div class="container">
-            <p><i class="fa-regular fa-copyright"></i> Created and designed by Jamie2210 <a href ="https://github.com/jamie2210" aria-label="Go to Github site"><i class="fa-brands fa-github"></i></a></p>
+            <p><i class="fa-regular fa-copyright"></i> Created and designed by Jamie2210 <a href ="https://github.com/jamie2210" target="_blank" aria-label="Go to Github site"><i class="fa-brands fa-github"></i></a></p>
         </div>
     </footer>
     <!-- Font Awesome Kit -->
