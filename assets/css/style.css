@@ -9,6 +9,7 @@ body {
     background-color: #f9f0c6;
 
 }
+/* ---------------------------------------------- Header / Logo */
 
 #dc_logo {
     width: 300px;
@@ -20,6 +21,8 @@ body {
     margin-right: auto;
     display: block;
 }
+
+/* ---------------------------------------------- Main Content */
 
 #character-container{
     min-height: 70vh;
@@ -38,9 +41,7 @@ body {
     display: block;
 }
 
-.button {
-    margin-bottom: 40px;
-}
+/* ---------------------------------------------- Footer */
 
 #footer-content {
     margin-top: 40px;
@@ -53,6 +54,34 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/* ---------------------------------------------- Buttons / Links */
+
+.button {
+    margin-bottom: 40px;
+    padding: 4px 6px;
+}
+
+.button:hover {
+    transform:scale(1.15);
+}
+
+.button:active {
+    background-color: #3866ae;
+    color: #ffffff;
+    border: 1px, solid;
+    border-color: #f9f0c6;
+    transform:scale(1);
+}
+
+.icons:hover {
+    transform:scale(1.2);
+}
+
+.icons:active {
+    transform:scale(1);
+}
+
 
 /* ------------------------------------- Media Queries */
 
