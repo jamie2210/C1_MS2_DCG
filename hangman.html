@@ -31,11 +31,14 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="guesses white-text">Wrong Guesses:<span> 0</span></div>
-        <div class="right-answers white-text">Right Answers:<span> 0</span></div>
-        <div class="wrong-answers white-text">Wrong Answers:<span> 0</span></div>
-            <p class="batman-title text-center">Guess the DC Batman related word</p>
+    <div class="container game-container">
+        <p class="batman-title text-center">Guess the DC Batman related word</p>
+        <div class="text-center">
+            <img src="assets/images/joker1.png" alt="Image of empty galllows" id="gallows">
+        </div>
+        <div class="guesses white-text">Wrong Guesses:<span id="mistakes"> 0</span> of <span id="maxguesses"></span></div>
+        <div class="wins white-text">Wins:<span> 0</span></div>
+        <div class="wins white-text">Losses:<span> 0</span></div>
         <div class="text-center">
             <p class="text-center" id="guessword">Word to guess</p>
         </div>

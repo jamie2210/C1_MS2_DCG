@@ -16,7 +16,7 @@ body {
 }
 
 #hangman_background {
-    background: url("../images/batman-background.png") no-repeat center;
+    background: url("../images/batman_background.png") no-repeat center;
     background-size: cover;
     justify-content: center;
     position: relative;
@@ -170,6 +170,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;
+}
+
+#guessword {
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+#gallows {
+    height: 350px;
+    width: auto;
 }
 
 /* ------------------------------------- Media Queries */
