@@ -11,7 +11,7 @@ body {
 }
 /* ---------------------------------------------- Header / Logo */
 
-#dc_logo {
+.logo {
     width: 300px;
     height: auto;
     display: block;
@@ -19,7 +19,6 @@ body {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
 /* ---------------------------------------------- Main Content */
@@ -60,6 +59,7 @@ body {
 .button {
     margin-bottom: 40px;
     padding: 4px 6px;
+    width: 130px;
 }
 
 .button:hover {
@@ -81,6 +81,9 @@ body {
 .icons:active {
     transform:scale(1);
 }
+
+/* ------------------------------------- Hangman */
+
 
 
 /* ------------------------------------- Media Queries */
