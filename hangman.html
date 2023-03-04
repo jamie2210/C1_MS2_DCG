@@ -16,35 +16,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dc_favicon.png">
     <title>DC Games</title>
 </head>
-<body id="batman-background">
+<body id="hangman_background">
     <header>
         <div class="container-fluid">
-            <div class="row header-content">
+            <div class="row">
                 <div class="text-center col-12">
-                    <img src="assets/images/batman_logo.png" class="logo" alt="Batman logo">
-                    <h1>Batman Hangman</h1>
+                    <img src="assets/images/batman_logo.png" class="batman_logo" alt="Batman logo">
+                    <h1 class="batman-title">Batman Hangman</h1>
                 </div>
-                <div class="col-6 text-center">
-                    <a href="index.html" aria-label="Go to home page"><button class="button">Home</button></a>
-                    <a href="quiz.html" aria-label="Go to quiz page"><button class="button">Riddler's Quiz</button></a>
+                <div class="col-12 text-center">
+                    <a href="index.html" aria-label="Go to home page"><button class="game-button">Home</button></a>
+                    <a href="quiz.html" aria-label="Go to quiz page"><button class="game-button">Riddler's Quiz</button></a>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container" id="character-container">
-        <div class="row">
-            <div id="batman" class="col-md-6 col-sm-12 text-center">
-                <img src="assets/images/batman2.png" class="dc_character" alt="Cartoon image of The Batman">
-                
-            </div>
-            <div id="riddler" class="col-md-6 col-sm-12 text-center">
-                <img src="assets/images/riddler1.png" class="dc_character" alt="Cartoon image of The Riddler">
-                
-            </div>
+    <div class="container">
+        <div class="guesses white-text">Wrong Guesses:<span> 0</span></div>
+        <div class="right-answers white-text">Right Answers:<span> 0</span></div>
+        <div class="wrong-answers white-text">Wrong Answers:<span> 0</span></div>
+            <p class="batman-title text-center">Guess the DC Batman word</p>
+        <div class="text-center">
+            <p class="text-center" id="guessword">Word to guess</p>
         </div>
+        <div class="text-center" id="keys">Keyboard</div>
+        <button class="button" onClick="reset()">Reset</button>
     </div>
+    <!-- Footer -->
     <footer>
-        <div class="row text-center" id="footer-content">
+        <div class="row text-center" id="batman-footer">
             <div class="col-12" id="media-footer">
                 <div>
                     <p>

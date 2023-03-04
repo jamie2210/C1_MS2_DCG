@@ -1,18 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-/* ---------------------------------------------- Index */
+/* ---------------------------------------------- Body */
 
 body {
     font-family: "Anton", sans-serif;
 }
 #body_background {
     background-color: #f9f0c6;
-
 }
+
+.batman-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #f9f0c6;
+}
+
+#hangman_background {
+    background: url("../images/batman-background.png") no-repeat center;
+    background-size: cover;
+    justify-content: center;
+    position: relative;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
 /* ---------------------------------------------- Header / Logo */
 
-.logo {
+.dc_logo {
     width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.batman_logo {
+    width: 200px;
     height: auto;
     display: block;
     margin-top: 40px;
@@ -54,12 +81,33 @@ body {
     padding-right: 5px;
 }
 
-/* ---------------------------------------------- Buttons / Links */
+#batman-footer {
+    margin-top: 40px;
+    display: block;
+    color: #ffffff;
+}
+
+#batman-footer a {
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ---------------------------------------------- Buttons / Icons */
 
 .button {
     margin-bottom: 40px;
     padding: 4px 6px;
     width: 130px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container a {
+    text-decoration: none;
 }
 
 .button:hover {
@@ -72,6 +120,7 @@ body {
     border: 1px, solid;
     border-color: #f9f0c6;
     transform:scale(1);
+    text-decoration: none;
 }
 
 .icons:hover {
@@ -82,9 +131,27 @@ body {
     transform:scale(1);
 }
 
+.game-button {
+    margin: 0 20px 20px 20px;
+    padding: 4px 6px;
+    width: 130px;
+}
+
+.game-button:hover {
+    transform:scale(1.15);
+}
+
+.game-button:active {
+    background-color: yellow;
+    border: 1px, solid;
+    transform:scale(1);
+}
+
 /* ------------------------------------- Hangman */
 
-
+.guesses {
+    float: right;
+}
 
 /* ------------------------------------- Media Queries */
 
@@ -94,5 +161,10 @@ body {
         margin-right: auto;
         margin-left: auto;
         display: block;
+    }
+    .game-button {
+        margin: 0 5px 20px 5px;
+        padding: 4px 6px;
+        width: 130px;
     }
 }
