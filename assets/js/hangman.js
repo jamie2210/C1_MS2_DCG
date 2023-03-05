@@ -24,16 +24,16 @@ selectWord();
 /**
  * Populate keyboard buttons in the game screen
  */
-function keyboard() {
+function createKeyboard() {
     let keyboard = "";
     for(let i = 0; i < alphabet.length; i++) {
         let letter = alphabet[i];
-        keyboard += `<button class="button-keys">${letter}</button>`;
+        keyboard += `<button class="button-keys" id="btn-${letter}">${letter}</button>`;
     }
     document.getElementById('keys').innerHTML = keyboard;
 }
 
-keyboard();
+createKeyboard();
 
 /**
  * Set up underscores for letters in the word and blank space between words
@@ -71,10 +71,30 @@ function keyboardEventListeners() {
         let button = event.target;
         let letter = button.innerHTML;
         if(!button.className.includes('clicked')) {
-            button.classList.remove('button-keys')
-            button.classList.add('clicked', 'button-keys');
+            button.classList.add('clicked');
             button.disabled = true;
             checkLetter(letter);
+        }
+    });
+
+    document.addEventListener('keydown', function logKey(event) {
+        let letterPressed = event.key.toUpperCase();
+        let button = document.getElementById(`btn-${letterPressed}`);
+        if (alphabet.includes(letterPressed) && !button.className.includes('pressed')) {
+            button.classList.add('active');
+            button.disabled = false;
+            checkLetter(letterPressed);
+        }
+    });
+
+    document.addEventListener('keyup', function logKey(event) {
+        let letterReleased = event.key.toUpperCase();
+        let button = document.getElementById(`btn-${letterReleased}`);
+        if (alphabet.includes(letterReleased) && !button.className.includes('pressed')) {
+            button.classList.add('pressed');
+            button.classList.remove('active');
+            button.disabled = true;
+            checkLetter(letterReleased);
         }
     });
 }
