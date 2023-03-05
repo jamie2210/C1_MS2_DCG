@@ -53,12 +53,33 @@ function hiddenWord(answer) {
     return word;
 }
 
+/**
+ * Display underscores for hidden word
+ * @param {string} phrase 
+ */
 function setHiddenWord(answer) {
     let guessingWord = hiddenWord(answer);
     document.getElementById('guessword').innerHTML = guessingWord;
+    alert(answer);
 }
 
 setHiddenWord(answer);
+
+function keyboardEventListeners() {
+    document.getElementById('keys').addEventListener('click', function (event) {
+        if (!event.target.className.includes('button-keys')) return;
+        let button = event.target;
+        let letter = button.innerHTML;
+        if(!button.className.includes('clicked')) {
+            button.classList.remove('button-keys')
+            button.classList.add('clicked', 'button-keys');
+            button.disabled = true;
+            checkLetter(letter);
+        }
+    });
+}
+
+keyboardEventListeners();
 
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 

@@ -131,17 +131,17 @@ body {
     transform:scale(1);
 }
 
-.game-button {
+.batman-button {
     margin: 0 20px 20px 20px;
     padding: 4px 6px;
     width: 130px;
 }
 
-.game-button:hover {
+.batman-button:hover {
     transform:scale(1.15);
 }
 
-.game-button:active {
+.batman-button:active {
     background-color: yellow;
     border: 1px, solid;
     transform:scale(1);
