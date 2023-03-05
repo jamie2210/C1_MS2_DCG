@@ -173,7 +173,8 @@ body {
 }
 
 #guessword {
-    font-size: xx-large;
+    font-size: 75px;
+    font-weight: 25;
     color: #ffffff;
 }
 

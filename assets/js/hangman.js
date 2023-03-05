@@ -1,13 +1,19 @@
 let batmanWord = [
-    'joker', 'catwoman', 'robin', 'the riddler', 'bruce wayne', 'gotham city', 'justice league', 'batmobile', 'talia al ghul', 'alfred pennyworth', 'james gordon', 'dick grayson',
-    'nightwing', 'damian wayne', 'wonder woman', 'wayne manor', 'harvey two face', 'arkum asylum', 'the penguin', 'wayne tower', 'the dark knight', 'poison ivy', 'dr freeze', 'scarecrow']
+    'Joker', 'Catwoman', 'Robin', 'The Riddler', 'Bruce Wayne', 'Gotham City', 'Justice League', 'Batmobile', 'Talia Al Ghul', 'Alfred Pennyworth', 'James Gordon', 'Dick Grayson', 'Harley Quinn',
+    'Nightwing', 'Damian Wayne', 'Wonder Woman', 'Wayne Manor', 'Harvey Two Face', 'Arkum Asylum', 'The Penguin', 'Wayne Tower', 'The Dark Knight', 'Poison Ivy', 'Dr Freeze', 'Scarecrow']
 
 let answer = '';
 let maxGuesses = 7;
 let mistakes = 0;
+let wins = 0;
+let losses = 0;
 let guessed = [];
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-let word = null;
+let word = '';
+
+/**
+ * Select randon word for game
+ */
 
 function selectWord () {
     answer = batmanWord[Math.floor(Math.random() * batmanWord.length)];
@@ -15,6 +21,9 @@ function selectWord () {
 
 selectWord();
 
+/**
+ * Populate keyboard buttons in the game screen
+ */
 function keyboard() {
     let keyboard = "";
     for(let i = 0; i < alphabet.length; i++) {
@@ -26,32 +35,30 @@ function keyboard() {
 
 keyboard();
 
-// function keyboard() {
-//     buttons = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(letter =>
-//         `<button class="button-keys" id='` + letter + `' onclick="checkGuess('` + letter + `')">` + letter + `</button> `
-//         ).join('');
-//     document.getElementById('keys').innerHTML = buttons;
-// }
+/**
+ * Set up underscores for letters in the word and blank space between words
+ * @param {string} answer
+ * @returns {string} word
+ */
+function hiddenWord(answer) {
+    let word ='';
+    for(let i = 0; i < answer.length; i++) {
+        let letter = answer[i];
+        if (letter !== ' ') {
+            word += '_';
+        } else {
+            word += ' ';
+        }
+    }
+    return word;
+}
 
-// keyboard();
+function setHiddenWord(answer) {
+    let guessingWord = hiddenWord(answer);
+    document.getElementById('guessword').innerHTML = guessingWord;
+}
 
-
-// function checkGuess(chosenLetter) {
-//     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
-//     document.getElementById(chosenLetter).setAttribute('disabled', true);
-
-//     if (answer.indexOf(chosenLetter) >= 0) {
-//         hiddenWord();
-//     }
-// }
-
-// function hiddenWord() {
-//     word = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
-
-//     document.getElementById('guessword').innerHTML = word;
-// }
-
-// hiddenWord();
+setHiddenWord(answer);
 
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 
