@@ -29,7 +29,7 @@ function createKeyboard() {
     let keyboard = "";
     for(let i = 0; i < alphabet.length; i++) {
         let letter = alphabet[i];
-        keyboard += `<button class="button-keys" onClick="handleGuess('` + letter + `')" id="btn-${letter}">${letter}</button>`;
+        keyboard += `<button class="button-keys" id="btn-${letter}">${letter}</button>`;
     }
     document.getElementById('keys').innerHTML = keyboard;
     keyboardEventListeners();
@@ -137,3 +137,10 @@ function youLost() {
         document.getElementById('keys').innerHTML = `<h1>You Lost!</h1>`;
     }
 }
+
+function addLetter(guessedLetter) {
+    let phraseToGuess = document.getElementById('guessphrase').innerHTML;
+    let newPhrase = phraseToGuess.split('').map((val, index) => guessedLetter.toLowerCase() === answer[index].toLowerCase() ? answer[index] : val ).join('');
+    document.getElementById('guessphrase').innerHTML = newPhrase;
+}
+
