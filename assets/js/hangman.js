@@ -8,6 +8,7 @@ let wrongGuess = 0;
 let wins = 0;
 let losses = 0;
 let guessed = [];
+let wordStatus = '';
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 document.getElementById('maxguesses').innerHTML = maxGuesses;
@@ -89,7 +90,6 @@ function keyboardEventListeners() {
         if (alphabet.includes(letterPressed) && !button.className.includes('pressed')) {
             button.classList.add('active');
             button.disabled = false;
-            checkLetter(letterPressed);
         }
     });
 
@@ -112,8 +112,9 @@ function checkLetter(letter) {
     } else {
         document.getElementById('wrongguess').innerHTML = wrongGuess += 1;
     }
-    wrongGuessImage();
     youLost();
+    wrongGuessImage();
+    youWon();
 }
 
 function wrongGuessImage() {
@@ -134,13 +135,23 @@ function wrongGuessImage() {
 
 function youLost() {
     if (wrongGuess === 6) {
-        document.getElementById('keys').innerHTML = `<h1>You Lost!</h1>`;
+        document.getElementById('keys').innerHTML = `<h2>You Lost!</h2>`;
+        document.getElementById('guessphrase').innerHTML = '';
+        document.getElementById('losses').innerHTML = losses += 1;
+    }
+}
+
+function youWon() {
+    if (wordStatus === answer) {
+    document.getElementById('keys').innerHTML = `<h2>You Won!</h2>`;
+    document.getElementById('guessphrase').innerHTML = '';
+    document.getElementById('wins').innherHTML = wins += 1;
     }
 }
 
 function addLetter(guessedLetter) {
     let phraseToGuess = document.getElementById('guessphrase').innerHTML;
-    let newPhrase = phraseToGuess.split('').map((val, index) => guessedLetter.toLowerCase() === answer[index].toLowerCase() ? answer[index] : val ).join('');
-    document.getElementById('guessphrase').innerHTML = newPhrase;
+    wordStatus = phraseToGuess.split('').map((val, index) => guessedLetter.toLowerCase() === answer[index].toLowerCase() ? answer[index] : val ).join('');
+    document.getElementById('guessphrase').innerHTML = wordStatus;
 }
 
