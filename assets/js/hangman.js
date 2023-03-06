@@ -7,7 +7,6 @@ let maxGuesses = 6;
 let wrongGuess = 0;
 let wins = 0;
 let losses = 0;
-let guessed = [];
 let wordStatus = '';
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -118,7 +117,9 @@ function checkLetter(letter) {
 }
 
 function wrongGuessImage() {
-    if (wrongGuess === 1) {
+    if (wrongGuess === 0) {
+        document.getElementById('gallows').src = 'assets/images/joker1.png';
+      } else if (wrongGuess === 1) {
         document.getElementById('gallows').src = 'assets/images/joker2.png';
       } else if (wrongGuess === 2) {
         document.getElementById('gallows').src = 'assets/images/joker3.png';   
@@ -155,3 +156,11 @@ function addLetter(guessedLetter) {
     document.getElementById('guessphrase').innerHTML = wordStatus;
 }
 
+function reset() {
+    document.getElementById('wrongguess').innerHTML = wrongGuess = 0;
+    wrongGuessImage();
+    createKeyboard();
+    selectPhrase();
+    setHiddenPhrase(answer);
+    keyboardEventListeners();
+}
