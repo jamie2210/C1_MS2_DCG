@@ -13,7 +13,7 @@ let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 
 /**
- * Select randon word for game
+ * Select random word for game.
  */
 
 function selectPhrase () {
@@ -23,7 +23,7 @@ function selectPhrase () {
 selectPhrase();
 
 /**
- * Populate keyboard buttons in the game screen
+ * Populate keyboard buttons in the game screen.
  */
 function createKeyboard() {
     let keyboard = "";
@@ -38,7 +38,7 @@ function createKeyboard() {
 createKeyboard();
 
 /**
- * Set up dashes for letters in the word and blank space between words
+ * Set up dashes for letters in the word and blank space between words.
  * @param {string} answer
  * @returns {string} dashes
  */
@@ -56,20 +56,19 @@ function hiddenPhrase(answer) {
 }
 
 /**
- * Display dashes for hidden word
+ * Display dashes for hidden word.
  * @param {string} answer 
  */
 function setHiddenPhrase(answer) {
     let guessingPhrase = hiddenPhrase(answer);
     document.getElementById('guessphrase').innerHTML = guessingPhrase;
-    alert(answer);
 }
 
 setHiddenPhrase(answer);
 
 /**
- * Add event listeners to keyboard buttons to enable letter guessing with use of mouse and keyboard and add styling to match other game buttons
- * Call checkLetter function to verify if the hidden phrase contains guessed letter
+ * Add event listeners to keyboard buttons to enable letter guessing with use of mouse and keyboard and add styling to match other game buttons.
+ * Call checkLetter function to verify if the hidden phrase contains guessed letter.
  */
 function keyboardEventListeners() {
     document.getElementById('keys').addEventListener('click', function (event) {
@@ -104,7 +103,16 @@ function keyboardEventListeners() {
     });
 }
 
-
+/**
+ * Verify if the hidden phrase contains guessed letter.
+ * The addLetter funtion is called if the letter is found wihin the phrase. The number of wrong guesses is not changed.
+ * If the letter is not found, the number of wrong guesses is increased by 1 and wrongGuessImage functino is called.
+ * If all guesses are used youLost function is called.
+ * if phrase is guessed correctly youWon function is called.
+ * 
+ * 
+ * @param {string} letter 
+ */
 function checkLetter(letter) {
     if (answer.includes(letter.toLowerCase()) || answer.includes(letter)) {
         addLetter(letter);
@@ -116,6 +124,19 @@ function checkLetter(letter) {
     youWon();
 }
 
+/**
+ * Replace the underscores with the guessed letter.
+ * @param {string} guessedLetter
+ */
+function addLetter(guessedLetter) {
+    let phraseToGuess = document.getElementById('guessphrase').innerHTML;
+    wordStatus = phraseToGuess.split('').map((val, index) => guessedLetter.toLowerCase() === answer[index].toLowerCase() ? answer[index] : val ).join('');
+    document.getElementById('guessphrase').innerHTML = wordStatus;
+}
+
+/**
+ * Updates hangman image each time a letter is guessed incorrectly.
+ */
 function wrongGuessImage() {
     if (wrongGuess === 0) {
         document.getElementById('gallows').src = 'assets/images/joker1.png';
@@ -133,7 +154,11 @@ function wrongGuessImage() {
         document.getElementById('gallows').src = 'assets/images/joker7.png';
       }
 }
-
+/**
+ * Removes the keyboard and displays 'You Lost!' when user has run out of guesses.
+ * Removes the hidden phrase.
+ * Increases the Losses score by 1.
+ */
 function youLost() {
     if (wrongGuess === 6) {
         document.getElementById('keys').innerHTML = `<h2>You Lost!</h2>`;
@@ -142,20 +167,22 @@ function youLost() {
     }
 }
 
+/**
+ * Removes the keyboard and displays 'You Won!' when user has correctly guessed all letters of the phrase.
+ * Removes the guessed phrase.
+ * Increase the Wins score by 1.
+ */
 function youWon() {
     if (wordStatus === answer) {
     document.getElementById('keys').innerHTML = `<h2>You Won!</h2>`;
     document.getElementById('guessphrase').innerHTML = '';
-    document.getElementById('wins').innherHTML = wins += 1;
+    document.getElementById('wins').innerHTML = wins += 1;
     }
 }
 
-function addLetter(guessedLetter) {
-    let phraseToGuess = document.getElementById('guessphrase').innerHTML;
-    wordStatus = phraseToGuess.split('').map((val, index) => guessedLetter.toLowerCase() === answer[index].toLowerCase() ? answer[index] : val ).join('');
-    document.getElementById('guessphrase').innerHTML = wordStatus;
-}
-
+/**
+ * Resets everything on the page apart from the Wins and Losses score.
+ */
 function reset() {
     document.getElementById('wrongguess').innerHTML = wrongGuess = 0;
     wrongGuessImage();
