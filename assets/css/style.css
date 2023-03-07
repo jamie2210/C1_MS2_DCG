@@ -9,17 +9,15 @@ body {
     background-color: #f9f0c6;
 }
 
-.batman-title {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    color: #f9f0c6;
-}
-
 #hangman_background {
     background: url("../images/batman_background.png") no-repeat center;
     background-size: cover;
     justify-content: center;
     position: relative;
+}
+
+#quiz-background {
+    background-color: #ffffff;
 }
 
 .white-text {
@@ -46,6 +44,28 @@ body {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.batman-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #f9f0c6;
+}
+
+.riddler_logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.riddler-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #93c04e;
 }
 
 /* ---------------------------------------------- Main Content */
@@ -93,6 +113,20 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#riddler-footer {
+    margin-top: 40px;
+    display: block;
+    color: #93c04e;
+}
+
+#riddler-footer a {
+    font-size: 20px;
+    color: #a27cb3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 /* ---------------------------------------------- Buttons / Icons */
 
@@ -164,6 +198,26 @@ body {
     transform:scale(1);
 }
 
+.riddler-button {
+    background-color: #a27cb3;
+    color: #ffffff;
+    margin: 0 20px 20px 20px;
+    padding: 4px 6px;
+    width: 130px;
+    border-color: #872cb1;
+}
+
+.riddler-button:hover {
+    transform:scale(1.15);
+}
+
+.riddler-button:active {
+    background-color: #93c04e;
+    border: 1px, solid;
+    transform:scale(1);
+    border-color: #76c203;
+}
+
 /* ------------------------------------- Hangman */
 
 .guesses {
@@ -188,6 +242,8 @@ body {
     height: 300px;
     width: auto;
 }
+
+
 
 /* ------------------------------------- Media Queries */
 
