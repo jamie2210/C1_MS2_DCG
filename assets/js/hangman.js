@@ -181,7 +181,7 @@ function youWon() {
 }
 
 /**
- * Resets everything on the page apart from the Wins and Losses score.
+ * Resets everything on the page apart from the Wins and Losses scores.
  */
 function reset() {
     document.getElementById('wrongguess').innerHTML = wrongGuess = 0;
@@ -191,3 +191,29 @@ function reset() {
     setHiddenPhrase(answer);
     keyboardEventListeners();
 }
+
+
+function enterKeyReset() {
+    let keyDownButton = document.querySelectorAll('.batman-button:active');
+    keyDownButton.forEach(function(button) {
+        button.addEventListener('keydown', function(event) {
+            if(event.key === 'Enter') {
+                event.preventDefault();
+                button.classList.add('active');
+            }
+        });
+    });
+
+    let resetButton = document.getElementById('reset');
+    document.addEventListener('keyup', function(event) {   
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        resetButton.click();
+    }
+});
+    resetButton.addEventListener('click', function() {
+
+    });
+}
+
+enterKeyReset();

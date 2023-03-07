@@ -180,12 +180,12 @@ body {
 }
 
 #guessphrase {
-    font-size: 75px;
+    font-size: 50px;
     color: #ffffff;
 }
 
 #gallows {
-    height: 350px;
+    height: 300px;
     width: auto;
 }
 
