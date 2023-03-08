@@ -139,19 +139,19 @@ function addLetter(guessedLetter) {
  */
 function wrongGuessImage() {
     if (wrongGuess === 0) {
-        document.getElementById('gallows').src = 'assets/images/joker1.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker1.png';
       } else if (wrongGuess === 1) {
-        document.getElementById('gallows').src = 'assets/images/joker2.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker2.png';
       } else if (wrongGuess === 2) {
-        document.getElementById('gallows').src = 'assets/images/joker3.png';   
+        document.getElementById('gallows').src = 'assets/images/hangman/joker3.png';   
       } else if (wrongGuess === 3) {
-        document.getElementById('gallows').src = 'assets/images/joker4.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker4.png';
       } else if (wrongGuess === 4) {
-        document.getElementById('gallows').src = 'assets/images/joker5.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker5.png';
       } else if (wrongGuess === 5) {
-        document.getElementById('gallows').src = 'assets/images/joker6.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker6.png';
       } else if (wrongGuess === 6) {
-        document.getElementById('gallows').src = 'assets/images/joker7.png';
+        document.getElementById('gallows').src = 'assets/images/hangman/joker7.png';
       }
 }
 /**

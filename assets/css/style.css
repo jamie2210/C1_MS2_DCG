@@ -10,7 +10,7 @@ body {
 }
 
 #hangman_background {
-    background: url("../images/batman_background.png") no-repeat center;
+    background: url("../images/hangman/batman_background.png") no-repeat center;
     background-size: cover;
     justify-content: center;
     position: relative;
