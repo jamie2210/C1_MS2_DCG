@@ -32,8 +32,41 @@
             </div>
         </div>
     </header>
-    <div class="container game-container">
-        <p class="riddler-title text-center">Can you answer The Riddler's questions?</p>
+    <div class="container game-container text-center">
+        <div class="row">
+            <div class="col-12">
+                <p class="riddler-title text-center">Can you answer The Riddler's questions?</p>
+                <!-- start Quiz Button -->
+                <div class="start-btn"><button class="riddler-button">Start Quiz</button></div>
+                <!-- Quiz Container-->
+                <div class="quiz-container">
+                    <header>
+                        <div class="title">Riddler's Quiz</div>
+                        <div class="timer">
+                            <p class="time-left">Time left<span class="timer-seconds"> 30</span></p>
+                        </div>
+                        <div class="time-line"></div>
+                    </header>
+                    <section>
+                        <div class="question"></div>
+                        <div class="answers"></div>
+                    </section>
+                    <footer>
+                        <div class="total"></div>
+                        <button class="riddler-button next-btn">Next Question</button>
+                    </footer>
+                </div>
+                <!-- Results Container-->
+                <div class="result-container">
+                    <div class="quiz-finish">You've finised the quiz!</div>
+                    <div class="quiz-score"></div>
+                    <div class="result-buttons">
+                        <button class="riddler-button restart">Replay Quiz</button>
+                        <button class="riddler-button quit">Quit Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <footer>
