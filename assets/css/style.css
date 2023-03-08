@@ -17,7 +17,13 @@ body {
 }
 
 #quiz-background {
-    background-color: #ffffff;
+    background-color: #0d0d0d;
+    
+}
+
+.quiz-container {
+    background: url(../images/quiz/question1.png) repeat center;
+    background-size: 3em;
 }
 
 #error-background {
