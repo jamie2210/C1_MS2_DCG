@@ -20,6 +20,12 @@ body {
     background-color: #ffffff;
 }
 
+#error-background {
+    height: 100vh;
+    width: auto;
+    background-color: #f9f0c6;
+}
+
 .white-text {
     color: #ffffff;
 }
