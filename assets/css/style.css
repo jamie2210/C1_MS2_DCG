@@ -9,6 +9,8 @@ body {
     background-color: #f9f0c6;
 }
 
+/* -------------- Hangman */
+
 #hangman_background {
     background: url("../images/hangman/batman_background.png") no-repeat center;
     background-size: cover;
@@ -16,24 +18,24 @@ body {
     position: relative;
 }
 
+/* -------------- Quiz */
+
 #quiz-background {
     background-color: #0d0d0d;
     
 }
 
-.quiz-container {
+.quiz-body {
     background: url(../images/quiz/question1.png) repeat center;
     background-size: 3em;
 }
+
+/* -------------- 404 */
 
 #error-background {
     height: 100vh;
     width: auto;
     background-color: #f9f0c6;
-}
-
-.white-text {
-    color: #ffffff;
 }
 
 /* ---------------------------------------------- Header / Logo */
@@ -141,6 +143,8 @@ body {
 
 /* ---------------------------------------------- Buttons / Icons */
 
+/* -------------- Index */
+
 .button {
     margin-bottom: 40px;
     padding: 4px 6px;
@@ -176,6 +180,8 @@ body {
     transform:scale(1);
 }
 
+/* -------------- Hangman */
+
 .batman-button {
     margin: 0 20px 20px 20px;
     padding: 4px 6px;
@@ -209,6 +215,8 @@ body {
     transform:scale(1);
 }
 
+/* -------------- Quiz */
+
 .riddler-button {
     background-color: #a27cb3;
     color: #ffffff;
@@ -233,7 +241,35 @@ body {
     background-color: yellow;
 }
 
+.start-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #a27cb3;
+    color: #ffffff;
+    padding: 4px 6px;
+    width: 130px;
+    border-color: #872cb1;
+}
+
+.start-button:hover {
+    transform:scale(1.15);
+}
+
+.start-button:active {
+    background-color: #93c04e;
+    border: 1px, solid;
+    transform:scale(1);
+    border-color: #76c203;
+}
+
 /* ------------------------------------- Hangman */
+
+.white-text {
+    color: #ffffff;
+}
 
 .guesses {
     float: right;
@@ -260,7 +296,54 @@ body {
 
 /* ------------------------------------- Quiz */
 
+.game-container {
+    height: auto;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.start-btn-container,
+.quiz-container,
+.result-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn-container {
+    margin: 30px, auto;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: #93c04e;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    border: 2px solid #76c203;
+}
+
+.quiz-container.activeQuiz,
+.result-container.activeResult {
+    opacity: 1;
+    z-index: 4;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz-container {
+    width: 75vh;
+    background-color: #000000;
+    border-radius: 5%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
 
 /* ------------------------------------- 404 */
 
