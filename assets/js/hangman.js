@@ -194,21 +194,20 @@ function reset() {
 
 
 function enterKeyReset() {
-    // let keyDownButton = document.querySelectorAll('.batman-button');
-    // keyDownButton.forEach(function(button) {
-    //     button.addEventListener('keydown', function(event) {
-    //         if(event.key === 'Enter') {
-    //             event.preventDefault();
-    //             button.classList.add('active');
-    //         }
-    //     });
-    // });
+    let keyDownButton = document.getElementById('reset');
+    document.addEventListener('keydown', function(event) {
+            if(event.key === 'Enter') {
+                event.preventDefault();
+                keyDownButton.classList.add('active');
+            }
+        });
 
     let resetButton = document.getElementById('reset');
     document.addEventListener('keyup', function(event) {   
     if (event.key === 'Enter') {
         event.preventDefault();
         resetButton.click();
+        resetButton.classList.remove('active');
     }
 });
     resetButton.addEventListener('click', function() {
