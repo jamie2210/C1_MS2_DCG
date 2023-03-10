@@ -18,70 +18,73 @@
 </head>
 <body id="quiz-background" class="quiz-body">
     <div class="container" id="quiz-width">
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="text-center col-12">
-                    <img src="assets/images/quiz/riddler_logo.png" class="riddler_logo" alt="Riddler logo">
-                    <h1 class="riddler-title">Riddler's Quiz</h1>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-12">
+                        <img src="assets/images/quiz/riddler_logo.png" class="riddler_logo" alt="Riddler logo">
+                        <h1 class="riddler-title">Riddler's Quiz</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="index.html" aria-label="Go to home page"><button class="riddler-button">Home</button></a>
+                        <a href="hangman.html" aria-label="Go to hangman page"><button class="riddler-button">Batman Hangman</button></a>
+                    </div>
                 </div>
-                <div class="col-12 text-center">
-                    <a href="index.html" aria-label="Go to home page"><button class="riddler-button">Home</button></a>
-                    <a href="hangman.html" aria-label="Go to hangman page"><button class="riddler-button">Batman Hangman</button></a>
-                </div>
+                <p class="riddler-title text-center">Can you answer The Riddler's questions?</p>
             </div>
-            <p class="riddler-title text-center">Can you answer The Riddler's questions?</p>
-        </div>
-    </header>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12 game-container">
-                <!-- start Quiz Button -->
-                <div class="start-btn-container"><button class="start-button">Start Quiz</button></div>
-                <!-- Quiz Container-->
-                <div class="quiz-container">
-                    <header class="text-center">
-                        <div class="title">Riddler's Quiz</div>
-                        <div class="timer">
-                            <p class="time-left">Time left:<span class="timer-seconds"> 30</span>s</p>
+        </header>
+        <div class="container text-center">
+            <div class="row game-container">
+                <div class="col-12">
+                    <!-- start Quiz Button -->
+                    <div class="start-btn-container">
+                        <button class="start-button">Start Quiz</button>
+                    </div>
+                    <!-- Quiz Container-->
+                    <div class="quiz-container">
+                        <header class="text-center">
+                            <div class="title">Riddler's Quiz</div>
+                            <div class="timer">
+                                <p class="time-left">Time left:<span class="timer-seconds"> 30</span>s</p>
+                            </div>
+                            <div class="time-line"></div>
+                        </header>
+                        <section>
+                            <div class="question"></div>
+                            <div class="answers"></div>
+                        </section>
+                        <footer>
+                            <div class="total"></div>
+                            <button class="riddler-button next-button">Next Question</button>
+                        </footer>
+                    </div>
+                    <!-- Results Container-->
+                    <div class="result-container">
+                        <img src ="assets/images/quiz/riddler-head.png" alt="Image of The riddler's head">
+                        <div class="quiz-finish">You've finised the quiz!</div>
+                        <div class="quiz-score"></div>
+                        <div class="result-buttons">
+                            <button class="riddler-button restart">Replay Quiz</button>
+                            <button class="riddler-button quit">Quit Quiz</button>
                         </div>
-                        <div class="time-line"></div>
-                    </header>
-                    <section>
-                        <div class="question"></div>
-                        <div class="answers"></div>
-                    </section>
-                    <footer>
-                        <div class="total"></div>
-                        <button class="riddler-button next-button">Next Question</button>
-                    </footer>
-                </div>
-                <!-- Results Container-->
-                <div class="result-container">
-                    <div class="quiz-finish">You've finised the quiz!</div>
-                    <div class="quiz-score"></div>
-                    <div class="result-buttons">
-                        <button class="riddler-button restart">Replay Quiz</button>
-                        <button class="riddler-button quit">Quit Quiz</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer>
-        <div class="row text-center" id="riddler-footer">
-            <div class="col-12" id="media-footer">
-                <div>
-                    <p>
-                        <i class="fa-regular fa-copyright">
-                        </i> Created and designed by Jamie2210 <a href ="https://github.com/jamie2210" target="_blank" aria-label="Go to Github site"><i class="fa-brands fa-github icons"></i></a>
-                        <a href ="contact.html" aria-label="Go to contact form page"><i class="fa-solid fa-envelope icons"></i></a>
-                    </p>
+        <!-- Footer -->
+        <footer>
+            <div class="row text-center" id="riddler-footer">
+                <div class="col-12" id="media-footer">
+                    <div>
+                        <p>
+                            <i class="fa-regular fa-copyright">
+                            </i> Created and designed by Jamie2210 <a href ="https://github.com/jamie2210" target="_blank" aria-label="Go to Github site"><i class="fa-brands fa-github icons"></i></a>
+                            <a href ="contact.html" aria-label="Go to contact form page"><i class="fa-solid fa-envelope icons"></i></a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/177beb570f.js" crossorigin="anonymous"></script> 

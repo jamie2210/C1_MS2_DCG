@@ -265,6 +265,21 @@ body {
     border-color: #76c203;
 }
 
+.next-button:hover {
+    transform:scale(1.15);
+}
+
+.next-button:active {
+    background-color: #93c04e;
+    border: 1px, solid;
+    transform:scale(1);
+    border-color: #76c203;
+}
+
+.next-button {
+    margin: 0;
+}
+
 /* ------------------------------------- Hangman */
 
 .white-text {
@@ -299,11 +314,13 @@ body {
 #quiz-width {
     max-width: 750px;
 }
+
 .game-container {
-    height: auto;
+    height: 75vh;
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: grid;
 }
 
 .start-btn-container,
@@ -318,15 +335,16 @@ body {
 .start-btn-container {
     margin: 30px, auto;
     padding: 20px;
-    width: 200px;
-    height: 100px;
-    background-color: #93c04e;
+    width: 250px;
+    height: 125px;
+    background-color: #b0c492;
     align-items: center;
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #76c203;
+    border: 3px solid #76c203;
+    z-index: 1;
 }
 
 .quiz-container.activeQuiz,
@@ -337,18 +355,22 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* -------------- Quiz Container */
+
 .quiz-container {
     width: 100%;
     background-color: #000000;
     border-radius: 5%;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 1;
-    pointer-events: none;
+    opacity: 0;
     transition: all 0.3s ease;
+    pointer-events: none;
 }
 
+/* -------------- Quiz Container Header */
+
 .quiz-container header {
-    height: 80px;
+    height: 60px;
     padding: 0 40px;
     background-color: #93c04e;
     z-index: 2;
@@ -356,6 +378,7 @@ body {
     align-items: center;
     justify-content: space-between;
     user-select: none;
+    border-bottom: 2px solid #76c203;
 }
 
 .timer {
@@ -376,9 +399,12 @@ body {
     background-color: #a27cb3;
 }
 
+/* -------------- Quiz Container Body */
+
 .quiz-container section {
     padding: 20px;
     background-color: #b0c492;
+    z-index: 2;
 }
 
 .question {
@@ -398,7 +424,7 @@ body {
 }
 
 .answers:hover {
-    transform: scale(1.2);
+    transform: scale(1.01);
 }
 
 .answers:active {
@@ -415,6 +441,48 @@ body {
     background-color: #000000;
     border: 2px solid #872cb1;
     color: #872cb1;
+}
+
+.answers.disabled {
+    pointer-events: none;
+}
+
+/* -------------- Quiz Container Footer */
+
+.quiz-container footer {
+    height: 60px;
+    padding: 0 40px;
+    background-color: #93c04e;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #76c203;
+}
+
+.total {
+    display: flex;
+}
+
+/* -------------- Result Container */
+
+.result-container {
+    width: 90%;
+    background-color: #b0c492;
+    height: auto;
+    border: 2px solid #76c203;
+    padding: 20px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.result-container img {
+    height: 200px;
+    width: auto;
 }
 
 /* ------------------------------------- 404 */
