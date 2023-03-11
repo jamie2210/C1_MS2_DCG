@@ -90,3 +90,30 @@ function next() {
         showResult();
     }
 }
+
+function showResult() {
+    quizContainer.classList.remove('activequiz');
+    resultContainer.classList.add('activeresult');
+    let scoreText = document.querySelector('.quiz-score');
+    if(userScore > 7) {
+        let scoreTag = '<span> Well done!<br>You got '+ userScore +' out of '+ questions.length +'!<br>You are smarter than you look!</span>';
+        scoreText.innerHTML = scoreTag;
+    } else if(userScore > 4) {
+        let scoreTag = '<span> Hmm, not bad.<br>You got '+ userScore +' out of '+ questions.length +'.<br>You will have to do better to out smart me!</span>';
+        scoreText.innerHTML = scoreTag;
+    } else {
+        let scoreTag = '<span> Oh dear, that is not very good.<br>You got '+ userScore +' out of '+ questions.length +'!<br>Not the brightest spark are you!</span>';
+        scoreText.innerHTML = scoreTag;
+    }
+}
+
+function restart() {
+    let questionCount = 0;
+    showQuestionAnswers(questionCount);
+    start();
+    resultContainer.classList.remove('activeresult');
+}
+
+function quit() {
+    window.location.reload();
+}

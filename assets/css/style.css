@@ -502,6 +502,10 @@ body {
     width: auto;
 }
 
+.quiz-score {
+    margin: 20px 0;
+}
+
 /* ------------------------------------- 404 */
 
 #robin {
