@@ -323,6 +323,14 @@ body {
     display: grid;
 }
 
+.container-grow {
+    height: 75vh;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+}
+
 .start-btn-container,
 .quiz-container,
 .result-container {
@@ -409,9 +417,11 @@ body {
 
 .question {
     display: block;
+    padding-bottom: 8px;
+    font-size: large;
 }
 
-.answers {
+.answer-text {
     background-color: #ac98b5;
     border: 2px solid #872cb1;
     padding: 10px 15px;
@@ -423,21 +433,21 @@ body {
     justify-content: space-between;
 }
 
-.answers:hover {
+.answer-text:hover {
     transform: scale(1.01);
 }
 
-.answers:active {
+.answer-text:active {
     transform: scale(1);
 }
 
-.answers.correct {
+.answer-text.correct {
     background-color: #93c04e;
     border: 2px solid #76c203;
     color: #ffffff;
 }
 
-.answers.incorrect {
+.answer-text.incorrect {
     background-color: #000000;
     border: 2px solid #872cb1;
     color: #872cb1;
