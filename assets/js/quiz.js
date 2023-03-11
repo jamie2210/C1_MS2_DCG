@@ -11,6 +11,12 @@ let resultContainer = document.querySelector('.result-container');
 let restartQuiz = document.querySelector('.restart')
 let quitQuiz = document.querySelector('.quit')
 
+let questionCount = 0;
+let questionnumber = 1;
+let userScore = 0;
+
+let tickIcon = '<div class="tick"><i class="fa-solid fa-check"></i></div>'
+let crossIcon = '<div class="tick"><i class="fa-solid fa-xmark"></i></div>'
 
 function start() {
     quizContainer.classList.add('activequiz');
@@ -36,11 +42,28 @@ function showQuestionAnswers(index) {
     let answer = answers.querySelectorAll('.answer-text');
 
     for(let i=0; i < answer.length; i++) {
-        answer[i].setAttribute("onclick", "answerSelected(this)");
+        answer[i].addEventListener('click', function() {
+            answerSelected(this);
+        });
     }
 }
 
 function gameContainerSize() {
     gameContainer.classList.add('container-grow');
     gameContainer.classList.remove('game-container');
+}
+
+function answerSelected(answer){
+    let userAnswer = answer.textContent;
+    let correctAnswer = questions[questionCount].answer;
+    let allAnswers = answers.length;
+
+    if(userAnswer === correctAnswer) {
+        userScore +=1;
+        answer.classList.add('correct');
+        answer.insertAdjacentHTML("beforeend", tickIcon);
+    } else {
+        answer.classList.add('incorrect');
+        answer.insertAdjacentHTML("beforeend", crossIcon);
+    }
 }
