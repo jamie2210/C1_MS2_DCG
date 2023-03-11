@@ -15,6 +15,7 @@ let nextButton = document.querySelector('.next-button');
 let questionCount = 0;
 let questionNumber = 1;
 let userScore = 0;
+let interval;
 
 let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
@@ -27,6 +28,7 @@ function start() {
 startButton.addEventListener('click', function() {
     start();
     showQuestionAnswers(0);
+    startTimer();
   });
 
 function showQuestionAnswers(index) {
@@ -86,6 +88,7 @@ function next() {
         questionNumber++;
         showQuestionAnswers(questionCount);
         nextButton.classList.remove('show');
+        restartTimer()
     } else {
         showResult();
     }
@@ -108,12 +111,47 @@ function showResult() {
 }
 
 function restart() {
-    let questionCount = 0;
+    questionCount = 0;
     showQuestionAnswers(questionCount);
     start();
     resultContainer.classList.remove('activeresult');
+    nextButton.classList.remove('show');
+    restartTimer();
 }
 
 function quit() {
     window.location.reload();
+}
+
+
+
+function startTimer() {   
+    interval = setInterval(function() {
+        let timer = document.getElementById('timer-seconds');
+        let count = timer.textContent * 1-1;
+        timer.textContent = count;
+        if(count === 0){
+            clearInterval(interval);
+            let allAnswers = answers.querySelectorAll('.answer-text');
+            let correctAnswer = questions[questionCount].answer;
+            for (i = 0; i < allAnswers.length; i++) {
+                if(allAnswers[i].textContent == correctAnswer) {
+                    allAnswers[i].classList.add('correct');
+                    allAnswers[i].insertAdjacentHTML("beforeend", tickIcon);
+                    }
+                }
+                for (i = 0; i < allAnswers.length; i++) {
+                    allAnswers[i].classList.add('disabled');
+            }
+            nextButton.classList.add('show');
+       }
+    }, 1000);
+   
+}
+
+function restartTimer() {
+    clearInterval(interval);
+    let timer = document.getElementById('timer-seconds');
+    timer.textContent = 30;
+    startTimer();
 }
