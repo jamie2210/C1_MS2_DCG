@@ -13,7 +13,7 @@ let quitQuiz = document.querySelector('.quit');
 let nextButton = document.querySelector('.next-button');
 
 let questionCount = 0;
-let questionnumber = 1;
+let questionNumber = 1;
 let userScore = 0;
 
 let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
@@ -78,4 +78,15 @@ function answerSelected(answer){
         allAnswers[i].classList.add('disabled');
     }
     nextButton.classList.add('show');
+}
+
+function next() {
+    if(questionCount < questions.length - 1) {
+        questionCount++;
+        questionNumber++;
+        showQuestionAnswers(questionCount);
+        nextButton.classList.remove('show');
+    } else {
+        showResult();
+    }
 }
