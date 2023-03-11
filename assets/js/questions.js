@@ -7,7 +7,7 @@ let questions = [
             "Talia Al Ghul",
             "Harley Quinn",
             "Poison Ivy",
-            "Hardley Davidson",
+            "Harley Davidson",
         ]
     },
     {
