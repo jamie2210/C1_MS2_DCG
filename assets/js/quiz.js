@@ -8,15 +8,16 @@ let secondsLeft = document.querySelector('.timer-seconds')
 let timeLine = document.querySelector('.time-line');
 let answers = document.querySelector('.answers');
 let resultContainer = document.querySelector('.result-container');
-let restartQuiz = document.querySelector('.restart')
-let quitQuiz = document.querySelector('.quit')
+let restartQuiz = document.querySelector('.restart');
+let quitQuiz = document.querySelector('.quit');
+let nextButton = document.querySelector('.next-button');
 
 let questionCount = 0;
 let questionnumber = 1;
 let userScore = 0;
 
-let tickIcon = '<div class="tick"><i class="fa-solid fa-check"></i></div>'
-let crossIcon = '<div class="tick"><i class="fa-solid fa-xmark"></i></div>'
+let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
+let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 
 function start() {
     quizContainer.classList.add('activequiz');
@@ -56,7 +57,7 @@ function gameContainerSize() {
 function answerSelected(answer){
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
-    let allAnswers = answers.length;
+    let allAnswers = answers.querySelectorAll('.answer-text');
 
     if(userAnswer === correctAnswer) {
         userScore +=1;
@@ -65,5 +66,16 @@ function answerSelected(answer){
     } else {
         answer.classList.add('incorrect');
         answer.insertAdjacentHTML("beforeend", crossIcon);
+
+        for (i = 0; i < allAnswers.length; i++) {
+            if(allAnswers[i].textContent == correctAnswer) {
+                allAnswers[i].classList.add('correct');
+                allAnswers[i].insertAdjacentHTML("beforeend", tickIcon);
+            }
+        }
     }
+    for (i = 0; i < allAnswers.length; i++) {
+        allAnswers[i].classList.add('disabled');
+    }
+    nextButton.classList.add('show');
 }

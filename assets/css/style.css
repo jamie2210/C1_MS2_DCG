@@ -278,6 +278,13 @@ body {
 
 .next-button {
     margin: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* ------------------------------------- Hangman */
@@ -453,7 +460,7 @@ body {
     color: #872cb1;
 }
 
-.answers.disabled {
+.disabled {
     pointer-events: none;
 }
 
