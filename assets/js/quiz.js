@@ -45,7 +45,8 @@ function showQuestionAnswers(index) {
     questionText.innerHTML = questionContent;
     answers.innerHTML = answersContent;
     document.getElementById('question-on').innerHTML = questionNumber;
-    
+    document.getElementById('question-total').innerHTML = questions.length;
+
     let answer = answers.querySelectorAll('.answer-text');
 
     for(let i=0; i < answer.length; i++) {
