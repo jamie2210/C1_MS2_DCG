@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dc_favicon.png">
     <title>DC Games</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+      emailjs.init("EB84Lrh7DSNQt_eKb");
+        })();
+    </script>
 </head>
 <body id="body_background">
     <header>
@@ -32,13 +40,11 @@
         <div class="container-fluid">
           <div class="row text">
             <div class="col-12 form-container">
-              <form class="form" action="https://formdump.codeinstitute.net" method="POST">
-                <label for="fullname">Name</label><br>
-                <input type="text" name="name" id="fullname" placeholder="Full Name" required><br>
+              <form class="form" onsubmit="return sendMail(this);">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Name" required><br>
                 <label for="emailaddress">Email</label><br>
                 <input type="email" name="email" id="emailaddress" placeholder="Email" required><br>
-                <label for="subject">Subject</label><br>
-                <input type="text" name="Subject" id="subject" placeholder="Subject" required><br>
                 <label for="message">Message</label><br>
                 <textarea rows="5" name="message" id="message" placeholder="Please ask us a question..." required></textarea><br>
                   <div id="form-btn">
@@ -75,6 +81,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- indexjs-->
-    <script src="assets/js/hangman.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
