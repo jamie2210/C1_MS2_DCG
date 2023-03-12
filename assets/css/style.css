@@ -476,8 +476,10 @@ header .time-line {
     border-top: 2px solid #76c203;
 }
 
-.total {
-    display: flex;
+.total p{
+    align-items: center;
+    user-select: none;
+    margin: 0;
 }
 
 /* -------------- Result Container */

@@ -10,7 +10,6 @@ let resultContainer = document.querySelector('.result-container');
 let restartQuiz = document.querySelector('.restart');
 let quitQuiz = document.querySelector('.quit');
 let nextButton = document.querySelector('.next-button');
-let allAnswers = answers.querySelectorAll('.answer-text');
 
 let questionCount = 0;
 let questionNumber = 1;
@@ -23,6 +22,7 @@ let bar = 0;
 let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 
+
 function start() {
     quizContainer.classList.add('activequiz');
     gameContainerSize();
@@ -32,7 +32,6 @@ startButton.addEventListener('click', function() {
     start();
     showQuestionAnswers(0);
     startTimer();
-    startTimeLine();
   });
 
 function showQuestionAnswers(index) {
@@ -45,6 +44,7 @@ function showQuestionAnswers(index) {
     + '<div class="answer-text"><span>' + questions[index].options[3] +'</span></div>';
     questionText.innerHTML = questionContent;
     answers.innerHTML = answersContent;
+    document.getElementById('question-on').innerHTML = questionNumber;
     
     let answer = answers.querySelectorAll('.answer-text');
 
@@ -66,7 +66,7 @@ function answerSelected(answer){
     let allAnswers = answers.querySelectorAll('.answer-text');
 
     clearInterval(interval);
-    
+
     if(userAnswer === correctAnswer) {
         userScore +=1;
         answer.classList.add('correct');
@@ -84,9 +84,6 @@ function answerSelected(answer){
     }
     for (i = 0; i < allAnswers.length; i++) {
         allAnswers[i].classList.add('disabled');
-        allAnswers[i].addEventListener('click', function() {
-                clearInterval(interval);
-            });
     }
     nextButton.classList.add('show');
 }
@@ -132,13 +129,20 @@ function quit() {
     window.location.reload();
 }
 
+
+
 function startTimer() {   
     interval = setInterval(function() {
         let timer = document.getElementById('timer-seconds');
         let count = timer.textContent * 1-1;
         timer.textContent = count;
+
+        // bar++;
+        // timeLine.style.width = bar + "%"
+
         if(count === 0){
             clearInterval(interval);
+            let allAnswers = answers.querySelectorAll('.answer-text');
             let correctAnswer = questions[questionCount].answer;
             for (i = 0; i < allAnswers.length; i++) {
                 if(allAnswers[i].textContent == correctAnswer) {
@@ -160,13 +164,3 @@ function restartTimer() {
     timer.textContent = 30;
     startTimer();
 }
-
-function startTimeLine() {
-    barSeconds = setInterval(function(){
-            bar++;
-            timeLine.style.width = bar + "%"
-            if (bar >= 100) {
-                clearInterval(barSeconds);
-            }
-    }, seconds * 1000 / 100);
-    }
