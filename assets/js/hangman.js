@@ -1,3 +1,14 @@
+/**
+ * Add an event listener to ensure Javascript will not run until HTML is fully loaded.
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+});
+
+/**
+* Create an array of phrases for the game.
+*/
+
 let batmanPhrase = [
     'Joker', 'Catwoman', 'Robin', 'The Riddler', 'Bruce Wayne', 'Gotham City', 'Justice League', 'Batmobile', 'Talia Al Ghul', 'Alfred Pennyworth', 'James Gordon', 'Dick Grayson', 'Harley Quinn',
     'Nightwing', 'Damian Wayne', 'Wonder Woman', 'Wayne Manor', 'Harvey Two Face', 'Arkum Asylum', 'The Penguin', 'Wayne Tower', 'The Dark Knight', 'Poison Ivy', 'Dr Freeze', 'Scarecrow']

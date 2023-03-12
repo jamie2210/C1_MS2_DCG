@@ -1,6 +1,13 @@
+/**
+ * Add an event listener to ensure Javascript will not run until HTML is fully loaded.
+ */
 document.addEventListener('DOMContentLoaded', function() {
 });
 
+
+/**
+ * Select reuqired elements
+ */
 let startButton = document.querySelector('.start-button');
 let gameContainer = document.querySelector('.game-container');
 let quizContainer = document.querySelector('.quiz-container');
@@ -22,6 +29,9 @@ let bar = 0;
 let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 
+/**
+ * Starts quiz if Start Quix button is clicked
+ */
 
 function start() {
     quizContainer.classList.add('activequiz');
@@ -34,6 +44,13 @@ startButton.addEventListener('click', function() {
     startTimer();
   });
 
+/**
+ * Display question number and text.
+ * Create HTML content for the question and answers based on the data in the `questions` array.
+ * Update text diplaying current question and total number of questions.
+ * Add event listner to each of the answser elements to respond to clicks from user.
+ * @param {number} index 
+ */
 function showQuestionAnswers(index) {
     let questionText = document.querySelector('.question');
 
@@ -44,6 +61,7 @@ function showQuestionAnswers(index) {
     + '<div class="answer-text"><span>' + questions[index].options[3] +'</span></div>';
     questionText.innerHTML = questionContent;
     answers.innerHTML = answersContent;
+
     document.getElementById('question-on').innerHTML = questionNumber;
     document.getElementById('question-total').innerHTML = questions.length;
 
@@ -56,11 +74,23 @@ function showQuestionAnswers(index) {
     }
 }
 
+/**
+ * As the game is absolue this function is needed to manipulate the size of the container that contains the quiz
+ */
 function gameContainerSize() {
     gameContainer.classList.add('container-grow');
     gameContainer.classList.remove('game-container');
 }
 
+/**
+ * Stops the timer once answer selected
+ * If answer is correct score is increased, 'correct' class is called, highlihgting selection in green with a tick icon.
+ * If answer is incorrect, 'incorrect' class is called, highlighting selection in black with a cross icon.
+ * Loop is then activated to find the correct answer and displays it to the user.
+ * Once an answer is selected, all options are disabled, allowing the user only one turn.
+ * Next button displayed once user has selected an answer.
+ * @param {HTMLElement} answer 
+ */
 function answerSelected(answer){
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
@@ -89,6 +119,9 @@ function answerSelected(answer){
     nextButton.classList.add('show');
 }
 
+/**
+ * Runs the next question unless at the end of questions, then will run show result function.
+ */
 function next() {
     if(questionCount < questions.length - 1) {
         questionCount++;
@@ -101,6 +134,9 @@ function next() {
     }
 }
 
+/**
+ * Collects user score and displays 1 of 3 scoreTags with specifc text relating to the score.
+ */
 function showResult() {
     quizContainer.classList.remove('activequiz');
     resultContainer.classList.add('activeresult');
@@ -117,6 +153,11 @@ function showResult() {
     }
 }
 
+/**
+ * Start the quiz form the start.
+ * Reset score and timer.
+ * Hide the resultContainer.
+ */
 function restart() {
     questionCount = 0;
     showQuestionAnswers(questionCount);
@@ -126,12 +167,18 @@ function restart() {
     restartTimer();
 }
 
+/**
+ * Relaods window which resets whole page and game.
+ */
 function quit() {
     window.location.reload();
 }
 
-
-
+/**
+ * Runs a timer counting down in seconds from 30
+ * Once time is up and user has not selected an answer for loop is initiated to determine correct answer.
+ * Next button displayed.
+ */
 function startTimer() {   
     interval = setInterval(function() {
         let timer = document.getElementById('timer-seconds');
@@ -159,6 +206,9 @@ function startTimer() {
     }, 1000);
 }
 
+/**
+ * Restarts timer.
+ */
 function restartTimer() {
     clearInterval(interval);
     let timer = document.getElementById('timer-seconds');

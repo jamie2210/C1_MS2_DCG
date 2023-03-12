@@ -1,3 +1,7 @@
+/**
+* Create an array passing the number, questions, answers and different answer options for the multiple choice selection.
+*/
+
 let questions = [
     {
         numb: 1,
