@@ -391,7 +391,6 @@ body {
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     user-select: none;
     border-bottom: 2px solid #76c203;
 }
@@ -406,11 +405,11 @@ body {
     user-select: none;
 }
 
-.time-line {
+header .time-line {
     position: absolute;
-    bottom: 0px;
+    margin-top: 60px;
     left: 0px;
-    height: 3px;
+    height: 5px;
     background-color: #a27cb3;
 }
 

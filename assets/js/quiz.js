@@ -4,18 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
 let startButton = document.querySelector('.start-button');
 let gameContainer = document.querySelector('.game-container');
 let quizContainer = document.querySelector('.quiz-container');
-let secondsLeft = document.querySelector('.timer-seconds')
 let timeLine = document.querySelector('.time-line');
 let answers = document.querySelector('.answers');
 let resultContainer = document.querySelector('.result-container');
 let restartQuiz = document.querySelector('.restart');
 let quitQuiz = document.querySelector('.quit');
 let nextButton = document.querySelector('.next-button');
+let allAnswers = answers.querySelectorAll('.answer-text');
 
 let questionCount = 0;
 let questionNumber = 1;
 let userScore = 0;
 let interval;
+let barSeconds = 1;
+let seconds = 30;
+let bar = 0;
 
 let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
@@ -29,6 +32,7 @@ startButton.addEventListener('click', function() {
     start();
     showQuestionAnswers(0);
     startTimer();
+    startTimeLine();
   });
 
 function showQuestionAnswers(index) {
@@ -61,6 +65,8 @@ function answerSelected(answer){
     let correctAnswer = questions[questionCount].answer;
     let allAnswers = answers.querySelectorAll('.answer-text');
 
+    clearInterval(interval);
+    
     if(userAnswer === correctAnswer) {
         userScore +=1;
         answer.classList.add('correct');
@@ -78,6 +84,9 @@ function answerSelected(answer){
     }
     for (i = 0; i < allAnswers.length; i++) {
         allAnswers[i].classList.add('disabled');
+        allAnswers[i].addEventListener('click', function() {
+                clearInterval(interval);
+            });
     }
     nextButton.classList.add('show');
 }
@@ -88,7 +97,7 @@ function next() {
         questionNumber++;
         showQuestionAnswers(questionCount);
         nextButton.classList.remove('show');
-        restartTimer()
+        restartTimer();
     } else {
         showResult();
     }
@@ -123,8 +132,6 @@ function quit() {
     window.location.reload();
 }
 
-
-
 function startTimer() {   
     interval = setInterval(function() {
         let timer = document.getElementById('timer-seconds');
@@ -132,7 +139,6 @@ function startTimer() {
         timer.textContent = count;
         if(count === 0){
             clearInterval(interval);
-            let allAnswers = answers.querySelectorAll('.answer-text');
             let correctAnswer = questions[questionCount].answer;
             for (i = 0; i < allAnswers.length; i++) {
                 if(allAnswers[i].textContent == correctAnswer) {
@@ -146,7 +152,6 @@ function startTimer() {
             nextButton.classList.add('show');
        }
     }, 1000);
-   
 }
 
 function restartTimer() {
@@ -155,3 +160,13 @@ function restartTimer() {
     timer.textContent = 30;
     startTimer();
 }
+
+function startTimeLine() {
+    barSeconds = setInterval(function(){
+            bar++;
+            timeLine.style.width = bar + "%"
+            if (bar >= 100) {
+                clearInterval(barSeconds);
+            }
+    }, seconds * 1000 / 100);
+    }
