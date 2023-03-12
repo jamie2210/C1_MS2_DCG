@@ -183,7 +183,7 @@ body {
 /* -------------- Hangman */
 
 .batman-button {
-    margin: 0 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
     padding: 4px 6px;
     width: 130px;
 }
@@ -266,7 +266,7 @@ body {
 }
 
 .next-button:hover {
-    transform:scale(1.15);
+    transform:scale(1.05);
 }
 
 .next-button:active {
@@ -280,6 +280,8 @@ body {
     margin: 0;
     opacity: 0;
     pointer-events: none;
+    width: 75px;
+    transition: all 0.3s ease;
 }
 
 .show {
@@ -530,6 +532,12 @@ header .time-line {
 
 /* ------------------------------------- Media Queries */
 
+@media screen and (max-width:920px) {
+    #hangman-title {
+        height: 40vh;
+    }
+}
+
 @media screen and (max-width:364px) {
     #media-footer {
         max-width: 290px;
@@ -537,9 +545,26 @@ header .time-line {
         margin-left: auto;
         display: block;
     }
+    .batman-button {
+        margin: 20px 20px 0px 20px;
+        padding: 4px 6px;
+        width: 130px;
+    }
     .game-button {
         margin: 0 5px 20px 5px;
         padding: 4px 6px;
         width: 130px;
+    }
+    .container-grow {
+        height: 80vh;
+    }
+
+    #gallows {
+        height: 200px;
+        width: auto;
+    }
+
+    #guessphrase {
+        font-size: 30px;
     }
 }

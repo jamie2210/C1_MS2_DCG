@@ -61,12 +61,12 @@ let questions = [
     {
         numb: 6,
         question: "How did Pamela Isley gain her powers to become Poison Ivy?",
-        answer: "Injected with plant-based poison",
+        answer: "Injected with plant poison",
         options: [
-            "Bit by a venus flytrap",
-            "Tricked into a human genome experiment",
-            "Injected with plant-based poison",
-            "Merged with plant DNA in a lab accident",
+            "Bitten by a plant",
+            "Human genome experiment",
+            "Injected with plant poison",
+            "A lab accident",
         ]
     },
     {

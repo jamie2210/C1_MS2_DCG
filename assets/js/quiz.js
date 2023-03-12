@@ -30,7 +30,7 @@ let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 
 /**
- * Starts quiz if Start Quix button is clicked
+ * Starts quiz if Start Quiz button is clicked
  */
 
 function start() {
@@ -155,11 +155,12 @@ function showResult() {
 
 /**
  * Start the quiz form the start.
- * Reset score and timer.
+ * Reset score, timer, questionCount and returns question number back to 1.
  * Hide the resultContainer.
  */
 function restart() {
     questionCount = 0;
+    questionNumber = 1;
     showQuestionAnswers(questionCount);
     start();
     resultContainer.classList.remove('activeresult');
