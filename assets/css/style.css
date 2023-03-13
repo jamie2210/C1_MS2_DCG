@@ -216,6 +216,22 @@ body {
     transform:scale(1);
 }
 
+.joker-button {
+    margin: 20px 20px 20px 20px;
+    padding: 4px 6px;
+    width: 130px;
+}
+
+.joker-button:hover {
+    transform:scale(1.15);
+}
+
+.joker-button:active {
+    background-color: #76c203;
+    border: 1px, solid;
+    transform:scale(1);
+}
+
 .button-keys {
     width: 40px;
     margin: 5px;
@@ -725,6 +741,124 @@ header .time-line {
 }
 
 .riddler-background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.7);
+    display: none;
+}
+
+/* -------------- Win */
+
+.win-modal {
+    max-width: 500px;
+    height: auto;
+    border: 3px solid #d8d8d8;;
+    background-color: #000000;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(249, 249, 105);
+    display: none;
+    animation:fadein 1s;
+}
+
+.win-modal .batman-button {
+    margin: 0 auto;
+}
+
+.win-modal.container-fluid {
+    padding: 0;
+}
+
+.modal-header {
+   text-align: center;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #d8d8d8;
+   display: block;
+   padding: 20px;
+   background-color: #000000;
+}
+
+.modal-body h1 {
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.win-background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.7);
+    display: none;
+}
+
+/* -------------- Lose */
+
+.lose-modal {
+    max-width: 500px;
+    height: auto;
+    border: 3px solid #872cb1;
+    background-color: #a27cb3;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation:fadein 1s;
+    color: #76c203;
+}
+
+#joker-head {
+    height: 150px;
+    width: auto;
+}
+
+.lose-modal .joker-button {
+    margin: 0 auto;
+}
+
+.lose-modal.container-fluid {
+    padding: 0;
+}
+
+.lose-modal .modal-header {
+   text-align: center;
+   padding-bottom: 10px;
+   display: block;
+   padding: 20px;
+   background-color: #a27cb3;
+}
+
+.modal-header h1 {
+    margin: 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.lose-modal .modal-footer {
+    padding: 20px;
+    background-color: #a27cb3;
+}
+
+.lose-background{
     position:fixed;
     top:0;
     left:0;

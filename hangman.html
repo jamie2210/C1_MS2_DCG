@@ -47,6 +47,47 @@
         <button class="batman-button" id="reset" onClick="reset()">Reset</button>
         </div>
     </div>
+    <!-- Modals -->
+    <!-- You Win Modal -->
+    <div class="win-background">
+        <div class="win-modal container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <header class="modal-header">
+                        <h1>
+                            Batman Hangman Rules
+                        </h1>
+                    </header>
+                    <section class="modal-body">
+                        <p>1. Guess the hidden Batman name / phrase</p>
+                        <p>2. You have 6 turns to guess</p>
+                        <p>3. For every wrong guess the hangman image increases</p>
+                        <p>4. You can use the mouse or keyboard to enter your letters</p>
+                        <p>5. The reset button will reset the guesses and phrase but not the score</p>
+                    </section>
+                    <footer class="modal-footer">
+                        <button class="batman-button" onClick="reset()">Close</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- You Lose Modal -->
+    <div class="lose-background">
+        <div class="lose-modal container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="modal-body text-center">
+                        <image id="joker-head" src="assets/images/hangman/joker-head.png"></image>
+                        <h1>You lose!!!</h1>
+                        <p>Better try again, loserrr</p>
+                        <p>heheheee haa ha hahaa haaha!!!</p>
+                        <button class="joker-button" onClick="reset()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
         <div class="row text-center" id="batman-footer">

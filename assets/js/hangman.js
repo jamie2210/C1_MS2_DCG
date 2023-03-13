@@ -21,6 +21,11 @@ let losses = 0;
 let wordStatus = '';
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
+let winModal = document.querySelector('.win-modal') ;
+let loseModal = document.querySelector('.lose-modal');
+let winBackground = document.querySelector('.win-background');
+let loseBackground = document.querySelector('.lose-background');
+
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 
 /**
@@ -172,7 +177,9 @@ function wrongGuessImage() {
  */
 function youLost() {
     if (wrongGuess === 6) {
-        document.getElementById('keys').innerHTML = `<h2>You Lost!</h2>`;
+        // document.getElementById('keys').innerHTML = `<h2>You Lost!</h2>`;
+        loseModal.style.display = "block";
+        loseBackground.style.display = "block";
         document.getElementById('guessphrase').innerHTML = '';
         document.getElementById('losses').innerHTML = losses += 1;
     }
@@ -185,7 +192,9 @@ function youLost() {
  */
 function youWon() {
     if (wordStatus === answer) {
-    document.getElementById('keys').innerHTML = `<h2>You Won!</h2>`;
+    // document.getElementById('keys').innerHTML = `<h2>You Won!</h2>`;
+    winModal.style.display = "block";
+    winBackground.style.display = "block";
     document.getElementById('guessphrase').innerHTML = '';
     document.getElementById('wins').innerHTML = wins += 1;
     }
@@ -201,6 +210,10 @@ function reset() {
     selectPhrase();
     setHiddenPhrase(answer);
     keyboardEventListeners();
+    winModal.style.display = "none";
+    winBackground.style.display = "none";
+    loseModal.style.display = "none";
+    loseBackground.style.display = "none";
 }
 
 
