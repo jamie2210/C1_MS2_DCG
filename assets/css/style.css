@@ -671,7 +671,7 @@ header .time-line {
     padding: 0;
 }
 
-.modal-header {
+.riddler-modal .modal-header {
    text-align: center;
    padding-bottom: 10px;
    border-bottom: 1px solid #76c203;
@@ -688,7 +688,7 @@ header .time-line {
     padding: 20px;
 }
 
-.modal-footer {
+.riddler-modal .modal-footer {
     padding: 20px;
     border-top: 1px solid #76c203;
     background-color: #93c04e;

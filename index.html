@@ -31,12 +31,12 @@
             <div id="batman" class="col-md-6 col-sm-12 text-center">
                 <img src="assets/images/index/batman2.png" class="dc_character" alt="Cartoon image of The Batman">
                 <a href="hangman.html" aria-label="Go to hangman page"><button class="button">Batman Hangman</button></a>
-                <p class="batman-rules modal-icon">?</p>
+                <p class="modal-icon" onClick="batmanRules()">?</p>
             </div>
             <div id="riddler" class="col-md-6 col-sm-12 text-center">
                 <img src="assets/images/index/riddler1.png" class="dc_character" alt="Cartoon image of The Riddler">
                 <a href="quiz.html" aria-label="Go to quiz page"><button class="button">Riddler's Quiz</button></a>
-                <p class="riddler-rules modal-icon">?</p>
+                <p class="modal-icon" onClick="riddlerRules()">?</p>
             </div>
         </div>
     </div>
@@ -72,7 +72,7 @@
                     <p>5. The reset button will reset the guesses and phrase but not the score</p>
                 </section>
                 <footer class="modal-footer">
-                    <button class="batman-button">Close</button>
+                    <button class="batman-button" onClick="batmanClose()">Close</button>
                 </footer>
             </div>
         </div>
@@ -94,7 +94,7 @@
                     <p>5. If you fial to answer within the 30 seconds the correct asnwer is diplayed.</p>
                 </section>
                 <footer class="modal-footer">
-                    <button class="riddler-button">Close</button>
+                    <button class="riddler-button" onClick="riddlerClose()">Close</button>
                 </footer>
             </div>
         </div>
