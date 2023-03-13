@@ -31,10 +31,12 @@
             <div id="batman" class="col-md-6 col-sm-12 text-center">
                 <img src="assets/images/index/batman2.png" class="dc_character" alt="Cartoon image of The Batman">
                 <a href="hangman.html" aria-label="Go to hangman page"><button class="button">Batman Hangman</button></a>
+                <p class="batman-rules modal-icon">?</p>
             </div>
             <div id="riddler" class="col-md-6 col-sm-12 text-center">
                 <img src="assets/images/index/riddler1.png" class="dc_character" alt="Cartoon image of The Riddler">
                 <a href="quiz.html" aria-label="Go to quiz page"><button class="button">Riddler's Quiz</button></a>
+                <p class="riddler-rules modal-icon">?</p>
             </div>
         </div>
     </div>
@@ -52,6 +54,28 @@
             </div>
         </div>
     </footer>
+    <!-- Modals -->
+    <div class="batman-modal container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <header class="modal-header">
+                    <h1>
+                        Batman Hangman Rules
+                    </h1>
+                </header>
+                <section class="modal-body">
+                    <p>1. Guess the hidden Batman name / phrase</p>
+                    <p>2. You have 6 turns to guess</p>
+                    <p>3. For every wrong guess the hangman image increases</p>
+                    <p>4. You can use the mouse or keyboard to enter your letters</p>
+                    <p>5. The reset button will reset the guesses and phrase but not the score</p>
+                </section>
+                <footer class="modal-footer">
+                    <button class="batman-button">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/177beb570f.js" crossorigin="anonymous"></script> 
     <!-- JavaScript Bundle with Popper -->
