@@ -125,8 +125,6 @@ function keyboardEventListeners() {
  * If the letter is not found, the number of wrong guesses is increased by 1 and wrongGuessImage functino is called.
  * If all guesses are used youLost function is called.
  * If phrase is guessed correctly youWon function is called.
- * 
- * 
  * @param {string} letter 
  */
 function checkLetter(letter) {
@@ -171,7 +169,7 @@ function wrongGuessImage() {
       }
 }
 /**
- * Removes the keyboard and displays 'You Lost!' when user has run out of guesses.
+ * Activates 'lose' modal.
  * Removes the hidden phrase.
  * Increases the Losses score by 1.
  */
@@ -186,7 +184,7 @@ function youLost() {
 }
 
 /**
- * Removes the keyboard and displays 'You Won!' when user has correctly guessed all letters of the phrase.
+ * Activates 'win' modal.
  * Removes the guessed phrase.
  * Increase the Wins score by 1.
  */
@@ -202,6 +200,7 @@ function youWon() {
 
 /**
  * Resets everything on the page apart from the Wins and Losses scores.
+ * Closes modal.
  */
 function reset() {
     document.getElementById('wrongguess').innerHTML = wrongGuess = 0;
