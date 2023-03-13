@@ -8,6 +8,7 @@ let batmanBackground = document.querySelector('.batman-background');
 
 let riddlerBackground = document.querySelector('.riddler-background');
 
+
 function batmanRules() {
     batmanModal.style.display = "block";
     batmanBackground.style.display = "block";

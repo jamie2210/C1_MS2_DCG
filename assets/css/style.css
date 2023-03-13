@@ -7,20 +7,7 @@ body {
 }
 #body_background {
     background-color: #f9f0c6;
-    margin: 10px;
 }
-
-.dim-background {
-    position: fixed; 
-    width: 100%; 
-    height: 100%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,1);
-    z-index: 1000; 
-    }
 
 /* -------------- Hangman */
 
@@ -100,6 +87,10 @@ body {
 #character-container{
     min-height: 70vh;
     max-width: 850px;
+}
+
+#character-container .button {
+    margin-bottom: 0;
 }
 
 .dc_character {
@@ -270,7 +261,7 @@ body {
 
 .start-button{
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     align-items: center;
@@ -613,6 +604,12 @@ header .time-line {
 }
 
 /* ------------------------------------- Modal */
+
+.modal-icon {
+    width: 30px;
+    height: auto;
+    margin: auto;
+}
 
 /* -------------- Batman */
 

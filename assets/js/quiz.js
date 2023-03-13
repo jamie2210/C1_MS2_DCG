@@ -36,6 +36,7 @@ let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 function start() {
     quizContainer.classList.add('activequiz');
     gameContainerSize();
+    startButton.style.display = "none";
 }
 
 startButton.addEventListener('click', function() {
