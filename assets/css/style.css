@@ -611,6 +611,15 @@ header .time-line {
     margin: auto;
 }
 
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
 /* -------------- Batman */
 
 .batman-modal {
@@ -625,6 +634,7 @@ header .time-line {
     transform: translate(-50%, -50%);
     color: rgb(249, 249, 105);
     display: none;
+    animation:fadein 1s;
 }
 
 .batman-modal .batman-button {
@@ -667,16 +677,6 @@ header .time-line {
     display: none;
 }
 
-.riddler-background{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background-color:rgba(0,0,0,0.7);
-    display: none;
-}
-
 /* -------------- Riddler */
 
 .riddler-modal {
@@ -690,6 +690,7 @@ header .time-line {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    animation:fadein 1s;
 }
 
 .riddler-modal .riddler-button {
@@ -721,6 +722,16 @@ header .time-line {
     padding: 20px;
     border-top: 1px solid #76c203;
     background-color: #93c04e;
+}
+
+.riddler-background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.7);
+    display: none;
 }
 
 /* ------------------------------------- 404 */

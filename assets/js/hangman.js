@@ -119,7 +119,7 @@ function keyboardEventListeners() {
  * The addLetter funtion is called if the letter is found wihin the phrase. The number of wrong guesses is not changed.
  * If the letter is not found, the number of wrong guesses is increased by 1 and wrongGuessImage functino is called.
  * If all guesses are used youLost function is called.
- * if phrase is guessed correctly youWon function is called.
+ * If phrase is guessed correctly youWon function is called.
  * 
  * 
  * @param {string} letter 
