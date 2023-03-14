@@ -1,108 +1,123 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# DC Games
+(Developer: Jamie Letts)
 
-Welcome jamie2210,
+![Mockup image](docs/.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage]( https://jamie2210.github.io/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This is the website for DC Games, it is designed to be responsive and accessible on all devices. It consists of 2 games, a hangman game, and a multiple-choice quiz. Both games are themed around the comic Batman.
 
-## Gitpod Reminders
+## Table of Content
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
+## Project Goals
 
-A blue button should appear to click: _Make Public_,
+Primary goal is to provide a user-friendly, fun, and good-looking interactive website which offers the game Hangman and a multiple-choice quiz.
 
-Another blue button should appear to click: _Open Browser_.
+### User Goals
+- Play both games that are fun and engaging.
+- Easily find the rules of each game.
+- Easily get in touch via a contact form.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Site Owner Goals
+- Create a website with entertaining games.
+- Create visually appealing designs throughout.
+- Easy navigation throughout.
+- Provide a fully responsive and accessible design. 
 
-A blue button should appear to click: _Make Public_,
+### Developer Goals
+- A clean design that stands out and catches the users attention.
+- A website that responds correctly on all devices where design and effectiveness is not hindered on any device.
+- An easy to navigate website with clear pathways to specific pages such as rules, each game, home, and contact.
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Target Audience
+- Ages 8 to 12.
+- It is specific to those who have an in interest in DC comics, particularly Batman.
 
-To log into the Heroku toolbelt CLI:
+### User Requirements and Expectations
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- A simple and intuitive navigation system.
+- Quickly and easily find relevant information.
+- Links and functions that work as expected.
+- Good presentation and a visually appealing design regardless of device used.
+- Easy to follow the games and rules.
+- Simple content that the user can follow and understand.
+- An easy way to contact the developer for feedback.
+- Accessibility.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### User Stories
 
-------
+#### Site User 
+1. I want to easily understand the rules of each game.
+2. I want to easily navigate to my chosen game.
+3. I want to know how I did at the end of the game.
+4. I want a means to contact the developer.
+5. I want a means to contact the developer and have confirmation the message has been sent.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##### Hangman
+1. I want to play the game both by clicking the mouse and using the keyboard.
+2. I want to know which letters I’ve used already.
+3. I want to know how many guesses I have left.
+4. I see to my score of wins vs losses.
+5. I want the word to be revealed if I don’t guess it.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+##### Quiz
+6. I want to see the timer.
+7. I want to know which answer is correct if answered incorrectly.
+8. I want to know the answer if I run out of time.
+9. I want to see my score at the end.
+10. I want to easily pay again or quit once I have finished.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### Site Owner 
+11. I want the user to get a genuine feel this is a DC Batman themed site. 
+12. I want the user to easily understand and pay the games.
+13. I want both games to be fully responsive.
+14. While some users may want the word revealed in Hangman, the words are limited so to increase the difficulty and longevity of the game, the word will not be revealed.
+15. I want to be able to contact me for any reason they feel fit.
+16. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Design
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Design Choices
+The design has been influenced by the comics like keeping the buttons square and grey to present comments in comic books. Each game has been designed around the colours and personality of the characters in the comics. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Colour
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+DC uses a specific blue which is used sparingly throughout the website.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Batman colours are predominantly black and yellow.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Both The Riddler and Joker are themed by purples and greens.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
