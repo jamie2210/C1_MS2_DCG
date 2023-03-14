@@ -135,7 +135,7 @@ Google fonts were used to import the ‘Anton’ font used with a sans-serif fal
 I chose this font as it stood out to me as a strong and bold font that represented Batman well. It is also easy to read which is good for the target audience.
 
 ### Structure
-The page is structure in a user friendly and visually appealing way. Upon arriving the user will see a simple display with clear instructions to what the site offers and where to find the rules of each game.
+The page is structured in a user friendly and visually appealing way. Upon arriving the user will see a simple display with clear instructions to what the site offers and where to find the rules of each game.
 
 The website consists of four separate pages and rules modals: 
 - A homepage with a with clear navigation to the games and rules.
@@ -148,26 +148,24 @@ The website consists of four separate pages and rules modals:
 ### Wireframes
 
 <details><summary>Home</summary>
-<img src="docs/wireframes/home-wireframe.png">
+<img src="docs/wireframes/home.png">
 </details>
 <details><summary>Batman Hangman</summary>
-<img src="docs/wireframes/hangman-wireframe.png">
+<img src="docs/wireframes/hangman.png">
 </details>
 <details><summary>The Riddler’s quiz</summary>
-<img src="docs/wireframes/quiz-wireframe.png">
+<img src="docs/wireframes/quiz.png">
 </details>
 <details><summary>The Rules</summary>
-<img src="docs/wireframes/rules-wireframe.png">
+<img src="docs/wireframes/rules.png">
 </details>
 <details><summary>Contact</summary>
-<img src="docs/wireframes/contact-wireframe.png">
-</details>
-<details><summary>Modals</summary>
-<img src="docs/wireframes/contact-wireframe.png">
+<img src="docs/wireframes/contact.png">
 </details>
 <details><summary>404</summary>
-<img src="docs/wireframes/404-wireframe.png">
+<img src="docs/wireframes/404.png">
 </details>
+
 
 ## Technologies Used
 
@@ -195,6 +193,8 @@ The website consists of four separate pages and rules modals:
 ## Features
 The page consists of four pages and thirteen features.
 
+### Home Page
+
 #### DC Logo and introduction
 
 - Introduces the user to what the website offers and how to navigate through it.
@@ -204,7 +204,7 @@ The page consists of four pages and thirteen features.
 <img src="docs/features/intro.png">
 </details>
 
-#### Navigation Buttons & Character Images
+#### Navigation Buttons & Character Images (Navigation buttons featured on all pages)
 - Navigation buttons are featured on all pages.
 - Link to each game and the home page.
 - It allows users to easily navigate through the website.
@@ -221,7 +221,7 @@ The page consists of four pages and thirteen features.
 <img src="docs/features/modal.png">
 </details>
 
-#### Footer
+#### Footer (displayed on all pages)
 - Featured on all pages.
 - Details who the developer is, a link to Github and contact page.
 - User stories covered: 
@@ -230,11 +230,11 @@ The page consists of four pages and thirteen features.
 <img src="docs/features/footer.png">
 </details>
 
-###Batman Hangman
+### Batman Hangman
 
 #### Game Screen
 - Consists of empty gallows, empty score, and wrong guesses.
-- Keyboard for entry guesses.
+- Letter tabs for entry guesses, allows user to use either mouse or keyboard for entries.
 - Navigation buttons.
 
 #### Win Modal
@@ -256,7 +256,7 @@ The page consists of four pages and thirteen features.
 </details>
 
 
-###The Riddler’s Quiz
+### The Riddler’s Quiz
 
 #### Game Screen
 - Start Button.
@@ -274,7 +274,28 @@ The page consists of four pages and thirteen features.
 <details><summary>Game Modal</summary>
 <img src="docs/features/game-modal.png">
 </details>
-
 <details><summary>Results Modal</summary>
 <img src="docs/features/results-modal.png">
 </details>
+
+### Contact Form Page
+
+- Allows user to directly contact the developer
+- Alert box pops up when message has been sent successfully.
+- User stories covered:
+
+<details><summary>Contact Form</summary>
+<img src="docs/features/contact-form.png">
+</details>
+
+### 404
+- Explains to the user they have landed on an unrecognised page.
+- It automatically returns the user back to the home page after 10 seconds, detailed by a count down.
+- There is also a home button should user wish to use it.
+- User stories covered: 4, 5, 15.
+
+<details><summary>404 Page</summary>
+<img src="docs/features/contact-form.png">
+</details>
+
+## Testing
