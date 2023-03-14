@@ -137,7 +137,7 @@ I chose this font as it stood out to me as a strong and bold font that represent
 ### Structure
 The page is structured in a user friendly and visually appealing way. Upon arriving the user will see a simple display with clear instructions to what the site offers and where to find the rules of each game.
 
-The website consists of four separate pages and rules modals: 
+The website consists of four separate pages with rules and result modals: 
 - A homepage with a with clear navigation to the games and rules.
 - The Batman Hangman game page
 - The Riddler’s Quiz game page.
@@ -191,7 +191,7 @@ The website consists of four separate pages and rules modals:
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 
 ## Features
-The page consists of four pages and thirteen features.
+The page consists of four pages and eleven features.
 
 ### Home Page
 
