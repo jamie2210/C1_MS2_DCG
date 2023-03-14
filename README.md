@@ -14,7 +14,7 @@ This is the website for DC Games, it is designed to be responsive and accessible
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    2. [User Requirements and Expectations](#user-requrements-and-expectations)
     3. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
@@ -87,26 +87,27 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 
 
 ##### Hangman
-1. I want to play the game both by clicking the mouse and using the keyboard.
-2. I want to know which letters I’ve used already.
-3. I want to know how many guesses I have left.
-4. I see to my score of wins vs losses.
-5. I want the word to be revealed if I don’t guess it.
+6. I want to play the game both by clicking the mouse and using the keyboard.
+7. I want to know which letters I’ve used already.
+8. I want to know how many guesses I have left.
+9. I want the gallows image to add on sections of the hangman each time a letter is guessed incorrectly.
+10. I see to my score of wins vs losses.
+11. I want the word to be revealed if I don’t guess it.
 
 ##### Quiz
-6. I want to see the timer.
-7. I want to know which answer is correct if answered incorrectly.
-8. I want to know the answer if I run out of time.
-9. I want to see my score at the end.
-10. I want to easily pay again or quit once I have finished.
+12. I want to see the timer.
+13. I want to know which answer is correct if answered incorrectly.
+14. I want to know the answer if I run out of time.
+15. I want to see my score at the end.
+16. I want to easily pay again or quit once I have finished.
 
 #### Site Owner 
-11. I want the user to get a genuine feel this is a DC Batman themed site. 
-12. I want the user to easily understand and pay the games.
-13. I want both games to be fully responsive.
-14. While some users may want the word revealed in Hangman, the words are limited so to increase the difficulty and longevity of the game, the word will not be revealed.
-15. I want to be able to contact me for any reason they feel fit.
-16. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url. 
+17. I want the user to get a genuine feel this is a DC Batman themed site. 
+18. I want the user to easily understand and pay the games.
+19. I want both games to be fully responsive.
+20. While some users may want the word revealed if it is not guessed in Hangman, the words are limited so to increase the difficulty and longevity of the game, the word will not be revealed.
+21. I want to be able to contact me for any reason they feel fit.
+22. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url. 
 
 ## Design
 
@@ -121,3 +122,159 @@ Batman colours are predominantly black and yellow.
 
 Both The Riddler and Joker are themed by purples and greens.
 
+<details><summary>Colours Used</summary>
+<img src="docs/colour-pallet.png">
+</details>
+
+### Fonts
+
+Google fonts were used to import the ‘Anton’ font used with a sans-serif fallback throughout the website:
+
+- [Anton]( https://fonts.google.com/specimen/Anton?query=anton)
+
+I chose this font as it stood out to me as a strong and bold font that represented Batman well. It is also easy to read which is good for the target audience.
+
+### Structure
+The page is structure in a user friendly and visually appealing way. Upon arriving the user will see a simple display with clear instructions to what the site offers and where to find the rules of each game.
+
+The website consists of four separate pages and rules modals: 
+- A homepage with a with clear navigation to the games and rules.
+- The Batman Hangman game page
+- The Riddler’s Quiz game page.
+- A contact page with a form that will directly send messages to the developer.
+- Modals with the rules of each game.
+- There is also a 404 page that directs the user back to the home.
+
+### Wireframes
+
+<details><summary>Home</summary>
+<img src="docs/wireframes/home-wireframe.png">
+</details>
+<details><summary>Batman Hangman</summary>
+<img src="docs/wireframes/hangman-wireframe.png">
+</details>
+<details><summary>The Riddler’s quiz</summary>
+<img src="docs/wireframes/quiz-wireframe.png">
+</details>
+<details><summary>The Rules</summary>
+<img src="docs/wireframes/rules-wireframe.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/contact-wireframe.png">
+</details>
+<details><summary>Modals</summary>
+<img src="docs/wireframes/contact-wireframe.png">
+</details>
+<details><summary>404</summary>
+<img src="docs/wireframes/404-wireframe.png">
+</details>
+
+## Technologies Used
+
+### Languages
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks and Tools
+- [Bootstrap v5.3](https://getbootstrap.com/)
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [GitPod](https://www.gitpod.io/)
+- [Tiny PNG](https://tinypng.com/)
+- [Balsamiq](https://balsamiq.com/wireframes/)
+- [Google Fonts](https://fonts.google.com/about)
+- [Adobe Suite (Illustrator, Photoshop & InDesign)](https://www.adobe.com/uk/)
+- [Font Awesome](https://fontawesome.com/search)
+- [Favicon](https://favicon.io/)
+- [Giphy](https://giphy.com/)
+- [W3C validator](https://validator.w3.org/)
+- [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+
+## Features
+The page consists of four pages and thirteen features.
+
+#### DC Logo and introduction
+
+- Introduces the user to what the website offers and how to navigate through it.
+- User stories covered:
+
+<details><summary>Intro</summary>
+<img src="docs/features/intro.png">
+</details>
+
+#### Navigation Buttons & Character Images
+- Navigation buttons are featured on all pages.
+- Link to each game and the home page.
+- It allows users to easily navigate through the website.
+- The buttons are animated depending on which page they are on, matching the theme.
+- User stories covered:
+
+<details><summary>Buttons & Characters</summary>
+<img src="docs/features/buttons.png">
+</details>
+
+#### Rules Modal
+-   Clicking the question mark under the selected character will bring up the rules for that game.
+<details><summary>Modal</summary>
+<img src="docs/features/modal.png">
+</details>
+
+#### Footer
+- Featured on all pages.
+- Details who the developer is, a link to Github and contact page.
+- User stories covered: 
+
+<details><summary>Footer</summary>
+<img src="docs/features/footer.png">
+</details>
+
+###Batman Hangman
+
+#### Game Screen
+- Consists of empty gallows, empty score, and wrong guesses.
+- Keyboard for entry guesses.
+- Navigation buttons.
+
+#### Win Modal
+- Displays current score, wins v losses.
+- Close Button that resets the game.
+
+#### Lose Modal
+- Displays current score, wins v losses.
+- Close Button that resets the game.
+
+<details><summary>Game Screen</summary>
+<img src="docs/features/hangman-screen.png">
+</details>
+<details><summary>Win Modal</summary>
+<img src="docs/features/win-modal.png">
+</details>
+<details><summary>Lose Modal</summary>
+<img src="docs/features/lose-modal.png">
+</details>
+
+
+###The Riddler’s Quiz
+
+#### Game Screen
+- Start Button.
+- Navigation buttons.
+- Game modal once start button is pressed.
+
+#### Results Modal
+- Displays score.
+- Replay button that resets the game.
+- Quit button that refreshes the page.
+
+<details><summary>Game Screen</summary>
+<img src="docs/features/quiz-screen.png">
+</details>
+<details><summary>Game Modal</summary>
+<img src="docs/features/game-modal.png">
+</details>
+
+<details><summary>Results Modal</summary>
+<img src="docs/features/results-modal.png">
+</details>
