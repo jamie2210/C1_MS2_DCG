@@ -472,7 +472,7 @@ body {
 
 .quiz-container.activequiz,
 .result-container.activeresult {
-    opacity: 1;
+    display: block;
     z-index: 4;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
@@ -485,7 +485,7 @@ body {
     background-color: #000000;
     border-radius: 5%;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
+    display: none;
     transition: all 0.3s ease;
     pointer-events: none;
 }
@@ -601,7 +601,7 @@ header .time-line {
     align-items: center;
     display: block;
     justify-content: center;
-    opacity: 0;
+    display: none;
     pointer-events: none;
     
 }
