@@ -14,3 +14,7 @@ function countDownTimer() {
 }
 
 countDownTimer();
+
+function indexButton(){
+    window.location.replace("index.html");
+}

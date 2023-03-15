@@ -310,15 +310,15 @@ The page consists of four pages and eleven features.
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-index.html [results](https://jamie2210.github.io/CI_MS2_DCG/)
+index.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2Findex.html)
 
-hangman.html [results]() 
+hangman.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2Fhangman.html) 
 
-quiz.html [results]() 
+quiz.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2Fquiz.html) 
 
-contact.html [results]() 
+contact.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2Fcontact.html) 
 
-404.html [results]()
+404.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2F404.html)
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
