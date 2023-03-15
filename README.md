@@ -322,7 +322,12 @@ contact.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+When pasting in my index url 16 Parse Errors are flagged, all linked to Bootstrap as well as 286 warnings.
 
+style.css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjamie2210.github.io%2FCI_MS2_DCG%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+<br>
+
+When validating just my own custom CSS file it passes with no errors and flagged three warnings using pointer-events twice used and 1 warning for the google fonts import used.
 <details><summary>style.css</summary>
 <img src="docs/validation/validation-css.png">
 </details>
