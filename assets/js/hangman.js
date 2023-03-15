@@ -26,7 +26,7 @@ let winPhrase = [
 let losePhrase = [
     "Better try again, loserrr",
     "hehe ha he, you dumb dumb, you lost!",
-    "Oh dear, i'd give up if I were you!",
+    "Oh dear, I'd give up if I were you!",
     "FAIL. FAIL. FAIIIILLLL!!",
     "Oh no, what would lil' old Battsy say, hmm."
 ];
