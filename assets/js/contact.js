@@ -23,4 +23,16 @@ function sendMail(contactForm) {
         return false; // Prevents form from submitting if there's an error.
 }
 
+/**
+ * Button functions
+ */
+ function hangmanButton(){
+    window.location.replace("hangman.html");
+}
+function quizButton(){
+    window.location.replace("quiz.html");
+}
+function indexButton(){
+    window.location.replace("index.html");
+}
 

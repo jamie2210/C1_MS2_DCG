@@ -10,6 +10,19 @@ let riddlerBackground = document.querySelector('.riddler-background');
 let intro = document.querySelector('.intro-text');
 
 /**
+ * Button functions
+ */
+function hangmanButton(){
+    window.location.replace("hangman.html");
+}
+function quizButton(){
+    window.location.replace("quiz.html");
+}
+function indexButton(){
+    window.location.replace("index.html");
+}
+
+/**
  * Funtions change display to block, displaying modal
  * Grey / darken background added
  */

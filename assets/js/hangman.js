@@ -51,9 +51,21 @@ let loseBackground = document.querySelector('.lose-background');
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 
 /**
+ * Button functions
+ */
+ function hangmanButton(){
+    window.location.replace("hangman.html");
+}
+function quizButton(){
+    window.location.replace("quiz.html");
+}
+function indexButton(){
+    window.location.replace("index.html");
+}
+
+/**
  * Select random word for game.
  */
-
 function selectPhrase() {
     answer = batmanPhrase[Math.floor(Math.random() * batmanPhrase.length)];
 }

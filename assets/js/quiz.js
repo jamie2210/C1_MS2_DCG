@@ -30,6 +30,19 @@ let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
 let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
 
 /**
+ * Button functions
+ */
+ function hangmanButton(){
+    window.location.replace("hangman.html");
+}
+function quizButton(){
+    window.location.replace("quiz.html");
+}
+function indexButton(){
+    window.location.replace("index.html");
+}
+
+/**
  * Starts quiz if Start Quiz button is clicked
  */
 
