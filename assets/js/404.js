@@ -8,7 +8,7 @@ function countDownTimer() {
     let count = timer.textContent * 1-1;
     timer.textContent = count;
     if (count <= 1) {
-        window.location.replace("index.html")
+        window.location.replace("index.html");
         }
     }, 1000);
 }

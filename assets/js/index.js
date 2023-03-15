@@ -65,4 +65,4 @@ window.onclick = function(event) {
         riddlerModal.style.display = "none";
         riddlerBackground.style.display = "none";
      }
- }
+ };

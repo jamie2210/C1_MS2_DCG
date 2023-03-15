@@ -29,11 +29,12 @@ This is the website for DC Games, it is designed to be responsive and accessible
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
+    3. [JavaScript Validation](#javascript-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatability)
+    8. [Testing user stories](#testing-user-stories)
 8. [Bugs](#bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -330,6 +331,29 @@ style.css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2
 When validating just my own custom CSS file it passes with no errors and flagged three warnings using pointer-events twice used and 1 warning for the google fonts import used.
 <details><summary>style.css</summary>
 <img src="docs/validation/validation-css.png">
+</details>
+
+### JavaScript Validation
+
+JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found.
+
+<details><summary>index.js</summary>
+<img src="docs/validation//jshint/">
+</details>
+<details><summary>hangman.js</summary>
+<img src="docs/validation/jshint/">
+</details>
+<details><summary>questions.js</summary>
+<img src="docs/validation/jshint/">
+</details>
+<details><summary>quiz.js</summary>
+<img src="docs/validation/jshint/">
+</details>
+<details><summary>contact.js</summary>
+<img src="docs/validation/jshint/">
+</details>
+<details><summary>404.js</summary>
+<img src="docs/validation/jshint/">
 </details>
 
 ### Accessibility
