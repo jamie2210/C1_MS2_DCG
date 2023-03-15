@@ -4,12 +4,12 @@
  * Select reuqired elements
  */
 
-let batmanModal = document.querySelector('.batman-modal') ;
-let riddlerModal = document.querySelector('.riddler-modal');
-let button = document.getElementsByClassName('close');
-let batmanBackground = document.querySelector('.batman-background');
-let riddlerBackground = document.querySelector('.riddler-background');
-let intro = document.querySelector('.intro-text');
+const batmanModal = document.querySelector('.batman-modal') ;
+const riddlerModal = document.querySelector('.riddler-modal');
+const button = document.getElementsByClassName('close');
+const batmanBackground = document.querySelector('.batman-background');
+const riddlerBackground = document.querySelector('.riddler-background');
+const intro = document.querySelector('.intro-text');
 
 /**
  * Button functions
@@ -23,6 +23,8 @@ function quizButton(){
 function indexButton(){
     window.location.replace("index.html");
 }
+
+/* exported hangmanButton, quizButton, indexButton */
 
 /**
  * Funtions change display to block, displaying modal
@@ -68,3 +70,5 @@ window.onclick = function(event) {
         riddlerBackground.style.display = "none";
      }
  };
+
+ /*exported button, batmanRules, riddlerRules, batmanClose, riddlerClose, introClose */

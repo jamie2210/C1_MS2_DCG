@@ -4,7 +4,7 @@
 * Create an array passing the number, questions, answers and different answer options for the multiple choice selection.
 */
 
-let questions = [
+const questions = [
     {
         numb: 1,
         question: "Who is The Joker's girlfriend?",
@@ -116,3 +116,5 @@ let questions = [
         ]
     },
 ];
+
+/* exported questions */

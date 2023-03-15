@@ -19,3 +19,5 @@ countDownTimer();
 function indexButton(){
     window.location.replace("index.html");
 }
+
+/* exported indexButton */

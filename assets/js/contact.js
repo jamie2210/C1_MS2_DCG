@@ -28,7 +28,7 @@ function sendMail(contactForm) {
 /**
  * Button functions
  */
- function hangmanButton(){
+function hangmanButton(){
     window.location.replace("hangman.html");
 }
 function quizButton(){
@@ -38,3 +38,4 @@ function indexButton(){
     window.location.replace("index.html");
 }
 
+/* exported hangmanButton, quizButton, indexButton */

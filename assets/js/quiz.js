@@ -10,26 +10,24 @@ document.addEventListener('DOMContentLoaded', function() {
 /**
  * Select reuqired elements
  */
-let startButton = document.querySelector('.start-button');
-let gameContainer = document.querySelector('.game-container');
-let quizContainer = document.querySelector('.quiz-container');
-let timeLine = document.querySelector('.time-line');
-let answers = document.querySelector('.answers');
-let resultContainer = document.querySelector('.result-container');
-let restartQuiz = document.querySelector('.restart');
-let quitQuiz = document.querySelector('.quit');
-let nextButton = document.querySelector('.next-button');
+const startButton = document.querySelector('.start-button');
+const gameContainer = document.querySelector('.game-container');
+const quizContainer = document.querySelector('.quiz-container');
+const timeLine = document.querySelector('.time-line');
+const answers = document.querySelector('.answers');
+const resultContainer = document.querySelector('.result-container');
+const restartQuiz = document.querySelector('.restart');
+const quitQuiz = document.querySelector('.quit');
+const nextButton = document.querySelector('.next-button');
 
 let questionCount = 0;
 let questionNumber = 1;
 let userScore = 0;
 let interval;
-let barSeconds = 1;
-let seconds = 30;
 let bar = 0;
 
-let tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>'
-let crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>'
+const tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>';
+const crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>';
 
 /**
  * Button functions
@@ -83,7 +81,7 @@ function showQuestionAnswers(index) {
 
     let answer = answers.querySelectorAll('.answer-text');
 
-    for(let i=0; i < answer.length; i++) {
+    for(let i = 0; i < answer.length; i++) {
         answer[i].addEventListener('click', function() {
             answerSelected(this);
         });
@@ -122,14 +120,14 @@ function answerSelected(answer){
         answer.classList.add('incorrect');
         answer.insertAdjacentHTML("beforeend", crossIcon);
 
-        for (i = 0; i < allAnswers.length; i++) {
+        for (let i = 0; i < allAnswers.length; i++) {
             if(allAnswers[i].textContent == correctAnswer) {
                 allAnswers[i].classList.add('correct');
                 allAnswers[i].insertAdjacentHTML("beforeend", tickIcon);
             }
         }
     }
-    for (i = 0; i < allAnswers.length; i++) {
+    for (let i = 0; i < allAnswers.length; i++) {
         allAnswers[i].classList.add('disabled');
     }
     nextButton.classList.add('show');
@@ -211,13 +209,13 @@ function startTimer() {
             clearInterval(interval);
             let allAnswers = answers.querySelectorAll('.answer-text');
             let correctAnswer = questions[questionCount].answer;
-            for (i = 0; i < allAnswers.length; i++) {
+            for (let i = 0; i < allAnswers.length; i++) {
                 if(allAnswers[i].textContent == correctAnswer) {
                     allAnswers[i].classList.add('correct');
                     allAnswers[i].insertAdjacentHTML("beforeend", tickIcon);
                     }
                 }
-                for (i = 0; i < allAnswers.length; i++) {
+                for (let i = 0; i < allAnswers.length; i++) {
                     allAnswers[i].classList.add('disabled');
             }
             nextButton.classList.add('show');
@@ -234,3 +232,5 @@ function restartTimer() {
     timer.textContent = 30;
     startTimer();
 }
+
+/* exported restartQuiz, quitQuiz, next, restart, quit, hangmanButton, quizButton, indexButton */

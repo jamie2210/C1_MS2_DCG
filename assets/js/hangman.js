@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
 * Create an array of lose quotes from The Joker.
 */
 
-let batmanPhrase = [
+const batmanPhrase = [
     'Joker', 'Catwoman', 'Robin', 'The Riddler', 'Bruce Wayne', 'Gotham City', 'Justice League', 'Batmobile', 'Talia Al Ghul', 'Alfred Pennyworth', 'James Gordon', 'Dick Grayson', 'Harley Quinn',
     'Nightwing', 'Damian Wayne', 'Wonder Woman', 'Wayne Manor', 'Harvey Two Face', 'Arkum Asylum', 'The Penguin', 'Wayne Tower', 'The Dark Knight', 'Poison Ivy', 'Dr Freeze', 'Scarecrow'];
 
-let winPhrase = [
+const winPhrase = [
     "Gotham City needs good brains like yours.",
     "Good job, nothing better than that winning feeling.",
     "Excellent work, that's how winners win!",
@@ -25,7 +25,7 @@ let winPhrase = [
     "Great Scott! You've won, love that!"
 ];
 
-let losePhrase = [
+const losePhrase = [
     "Better try again, loserrr",
     "hehe ha he, you dumb dumb, you lost!",
     "Oh dear, I'd give up if I were you!",
@@ -34,7 +34,7 @@ let losePhrase = [
 ];
 
 let answer = '';
-let maxGuesses = 6;
+const maxGuesses = 6;
 let wrongGuess = 0;
 let wins = 0;
 let losses = 0;
@@ -43,12 +43,12 @@ let jokerLosses = 0;
 let batmanWins = 0;
 let batmanLosses = 0; 
 let wordStatus = '';
-let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-let winModal = document.querySelector('.win-modal') ;
-let loseModal = document.querySelector('.lose-modal');
-let winBackground = document.querySelector('.win-background');
-let loseBackground = document.querySelector('.lose-background');
+const winModal = document.querySelector('.win-modal') ;
+const loseModal = document.querySelector('.lose-modal');
+const winBackground = document.querySelector('.win-background');
+const loseBackground = document.querySelector('.lose-background');
 
 document.getElementById('maxguesses').innerHTML = maxGuesses;
 
@@ -64,6 +64,8 @@ function quizButton(){
 function indexButton(){
     window.location.replace("index.html");
 }
+
+/* exported hangmanButton, quizButton, indexButton */
 
 /**
  * Select random word for game.
@@ -281,3 +283,5 @@ function enterKeyReset() {
 }
 
 enterKeyReset();
+
+/* exported reset */
