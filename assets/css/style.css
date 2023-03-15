@@ -497,7 +497,7 @@ header .time-line {
 
 /* -------------- Quiz Container Body */
 
-.quiz-container section {
+.disable  {
     padding: 20px;
     background-color: #b0c492;
     z-index: 2;
