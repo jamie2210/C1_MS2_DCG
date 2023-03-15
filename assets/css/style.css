@@ -191,7 +191,7 @@ body {
 .button:active {
     background-color: #3866ae;
     color: #ffffff;
-    border: 1px, solid;
+    border: 1px solid;
     border-color: #f9f0c6;
     transform:scale(1);
     text-decoration: none;
@@ -219,7 +219,7 @@ body {
 
 .batman-button:active {
     background-color: yellow;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
@@ -235,7 +235,7 @@ body {
 
 .joker-button:active {
     background-color: #76c203;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
@@ -246,13 +246,13 @@ body {
 
 .button-keys:active {
     background-color: yellow;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
 .button-keys.active {
     background-color: yellow;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
@@ -273,7 +273,7 @@ body {
 
 .riddler-button:active {
     background-color: #93c04e;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
     border-color: #76c203;
 }
@@ -301,7 +301,7 @@ body {
 
 .start-button:active {
     background-color: #93c04e;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
     border-color: #76c203;
 }
@@ -312,7 +312,7 @@ body {
 
 .next-button:active {
     background-color: #93c04e;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
     border-color: #76c203;
 }
@@ -344,7 +344,7 @@ body {
 
 .contact-button:active {
     background-color: #3866ae;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
@@ -364,7 +364,7 @@ body {
 
 .form-button:active {
     background-color: #3866ae;
-    border: 1px, solid;
+    border: 1px solid;
     transform:scale(1);
 }
 
@@ -430,7 +430,7 @@ body {
 }
 
 .start-btn-container {
-    margin: 30px, auto;
+    margin: 30px auto;
     padding: 20px;
     width: 250px;
     height: 125px;
