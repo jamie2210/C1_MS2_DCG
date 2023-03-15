@@ -1,9 +1,9 @@
 # DC Games
 (Developer: Jamie Letts)
 
-![Mockup image](docs/.png)
+![Mockup image](docs/device-display.jpg)
 
-[Live webpage]( https://jamie2210.github.io/)
+[Live webpage](https://jamie2210.github.io/CI_MS2_DCG/index.html)
 
 This is the website for DC Games, it is designed to be responsive and accessible on all devices. It consists of 2 games, a hangman game, and a multiple-choice quiz. Both games are themed around the comic Batman.
 
