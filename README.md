@@ -232,10 +232,14 @@ The page consists of four pages and eleven features.
 
 ### Batman Hangman
 
-#### Game Screen
+#### Game Function & Game Screen
 - Consists of empty gallows, empty score, and wrong guesses.
 - Letter tabs for entry guesses, allows user to use either mouse or keyboard for entries.
-- Navigation buttons.
+- If the letter is guessed correclty the letter is revealed in replace of the '_'
+- If the phrase is guessed correctly a modal is presented confirming the win with the total number of wins and losses.
+- If the letter is guessed incorreclty the hangman image increases as does the number of wrong guesses.
+- If the phrase is guessed incorreclty a modal is presented confirming the loss with the total number of wins and losses.
+- Reset button resets the game but keeps trakc the total wins and losses until page is refreshed.
 
 #### Win Modal
 - Displays current score, wins v losses.
@@ -258,10 +262,12 @@ The page consists of four pages and eleven features.
 
 ### The Riddler’s Quiz
 
-#### Game Screen
+#### Game Function & Game Screen
 - Start Button.
 - Navigation buttons.
-- Game modal once start button is pressed.
+- Game modal is presented once start button is pressed.
+- Game consists of a timer and multiple choice questions the user can click to select.
+- At the end fo the game the score is tallied and revealed in a modal.
 
 #### Results Modal
 - Displays score.
@@ -292,10 +298,65 @@ The page consists of four pages and eleven features.
 - Explains to the user they have landed on an unrecognised page.
 - It automatically returns the user back to the home page after 10 seconds, detailed by a count down.
 - There is also a home button should user wish to use it.
-- User stories covered: 4, 5, 15.
+- User Stories covered: 
 
 <details><summary>404 Page</summary>
 <img src="docs/features/contact-form.png">
 </details>
 
 ## Testing
+
+### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+
+index.html [results]()
+
+hangman.html [results]() 
+
+quiz.html [results]() 
+
+contact.html [results]() 
+
+404.html [results]()
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+
+<details><summary>style.css</summary>
+<img src="docs/validation/validation-css.png">
+</details>
+
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
+
+index.html [results]() 
+
+about.html [results]()
+
+team.html [results]()
+
+prices.html [results]()
+
+schedule.html [results]()
+
+contact.html [results]()
+
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All results scoring 90 or above.
+
+<details><summary>index.html</summary>
+<img src="docs/lighthouse/lighthouse-index.png">
+</details>
+<details><summary>hangman.html</summary>
+<img src="docs/lighthouse/lighthouse-hangman.png">
+</details>
+<details><summary>quiz.html</summary>
+<img src="docs/lighthouse/lighthouse-quiz.png">
+</details>
+<details><summary>contact.html</summary>
+<img src="docs/lighthouse/lighthouse-contact.png">
+</details>
+<details><summary>404.html</summary>
+<img src="docs/lighthouse/lighthouse-404.png">
+</details>
