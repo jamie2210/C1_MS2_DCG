@@ -335,25 +335,27 @@ When validating just my own custom CSS file it passes with no errors and flagged
 
 ### JavaScript Validation
 
-JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found.
+JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found. One undefined Variable found in quiz.js for the questions variable used as it's linked to a separate file.
+
+OnClick buttons were flagged as unused but /* exporte */ feature was used to remove the flags as they are called in the html files.
 
 <details><summary>index.js</summary>
-<img src="docs/validation//jshint/">
+<img src="docs/validation//jshint/index.png">
 </details>
 <details><summary>hangman.js</summary>
-<img src="docs/validation/jshint/">
+<img src="docs/validation/jshint/hangman.png">
 </details>
 <details><summary>questions.js</summary>
-<img src="docs/validation/jshint/">
+<img src="docs/validation/jshint/questions.png">
 </details>
 <details><summary>quiz.js</summary>
-<img src="docs/validation/jshint/">
+<img src="docs/validation/jshint/quiz.png">
 </details>
 <details><summary>contact.js</summary>
-<img src="docs/validation/jshint/">
+<img src="docs/validation/jshint/contact.png">
 </details>
 <details><summary>404.js</summary>
-<img src="docs/validation/jshint/">
+<img src="docs/validation/jshint/404.png">
 </details>
 
 ### Accessibility
