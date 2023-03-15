@@ -25,8 +25,8 @@
                     <h1 class="batman-title">Batman Hangman</h1>
                 </div>
                 <div class="col-12 text-center">
-                    <a href="index.html" aria-label="Go to home page"><button class="batman-button">Home</button></a>
-                    <a href="quiz.html" aria-label="Go to quiz page"><button class="batman-button">Riddler's Quiz</button></a>
+                    <button onClick="indexButton()" aria-label="Go to home page" class="batman-button">Home</button>
+                    <button onClick="quizButton()" aria-label="Go to quiz page" class="batman-button">Riddler's Quiz</button>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="modal-body text-center">
-                        <image id="batman-head" src="assets/images/hangman/batman-head.png"></image>
+                        <image id="batman-head" alt="image of a Batman in a proud stance" src="assets/images/hangman/batman-head.png">
                         <h1>You win!!!</h1>
                         <p id="win-phrase"></p>
                         <p>Batman approves!</p>
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="modal-body text-center">
-                        <image id="joker-head" src="assets/images/hangman/joker-head.png"></image>
+                        <image id="joker-head" alt="Image of The Joker's head, laughing" src="assets/images/hangman/joker-head.png">
                         <h1>You lose!!!</h1>
                         <p id="lose-phrase"></p>
                         <p>heheheee haa ha hahaa haaha!!!</p>

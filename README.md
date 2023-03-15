@@ -310,7 +310,7 @@ The page consists of four pages and eleven features.
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-index.html [results]()
+index.html [results](https://jamie2210.github.io/CI_MS2_DCG/)
 
 hangman.html [results]() 
 
