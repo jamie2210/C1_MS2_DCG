@@ -7,11 +7,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /**
 * Create an array of phrases for the game.
+* Create an arrray of win quotes from Batman.
+* Create an array of lose quotes from The Joker.
 */
 
 let batmanPhrase = [
     'Joker', 'Catwoman', 'Robin', 'The Riddler', 'Bruce Wayne', 'Gotham City', 'Justice League', 'Batmobile', 'Talia Al Ghul', 'Alfred Pennyworth', 'James Gordon', 'Dick Grayson', 'Harley Quinn',
-    'Nightwing', 'Damian Wayne', 'Wonder Woman', 'Wayne Manor', 'Harvey Two Face', 'Arkum Asylum', 'The Penguin', 'Wayne Tower', 'The Dark Knight', 'Poison Ivy', 'Dr Freeze', 'Scarecrow']
+    'Nightwing', 'Damian Wayne', 'Wonder Woman', 'Wayne Manor', 'Harvey Two Face', 'Arkum Asylum', 'The Penguin', 'Wayne Tower', 'The Dark Knight', 'Poison Ivy', 'Dr Freeze', 'Scarecrow'];
+
+let winPhrase = [
+    "Gotham City needs good brains like yours.",
+    "Good job, nothing better than that winning feeling.",
+    "Excellent work, that's how winners win!",
+    "Look at you! A win in the bank, oh yes!",
+    "Great Scott! You've won, love that!"
+];
+
+let losePhrase = [
+    "Better try again, loserrr",
+    "hehe ha he, you dumb dumb, you lost!",
+    "Oh dear, i'd give up if I were you!",
+    "FAIL. FAIL. FAIIIILLLL!!",
+    "Oh no, what would lil' old Battsy say, hmm."
+];
 
 let answer = '';
 let maxGuesses = 6;
@@ -21,7 +39,7 @@ let losses = 0;
 let jokerWins = 0;
 let jokerLosses = 0;
 let batmanWins = 0;
-let batmanLosses = 0;
+let batmanLosses = 0; 
 let wordStatus = '';
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -36,7 +54,7 @@ document.getElementById('maxguesses').innerHTML = maxGuesses;
  * Select random word for game.
  */
 
-function selectPhrase () {
+function selectPhrase() {
     answer = batmanPhrase[Math.floor(Math.random() * batmanPhrase.length)];
 }
 
@@ -183,6 +201,7 @@ function youLost() {
         loseModal.style.display = "block";
         loseBackground.style.display = "block";
         document.getElementById('guessphrase').innerHTML = '';
+        document.getElementById('lose-phrase').innerHTML = losePhrase[Math.floor(Math.random() * losePhrase.length)];
         document.querySelector('.losses').innerHTML = losses += 1;
         document.querySelector('.joker-losses').innerHTML = jokerLosses += 1;
         document.querySelector('.batman-losses').innerHTML = batmanLosses += 1;
@@ -200,6 +219,7 @@ function youWon() {
     winModal.style.display = "block";
     winBackground.style.display = "block";
     document.getElementById('guessphrase').innerHTML = '';
+    document.getElementById('win-phrase').innerHTML = winPhrase[Math.floor(Math.random() * winPhrase.length)];
     document.querySelector('.wins').innerHTML = wins += 1;
     document.querySelector('.joker-wins').innerHTML = jokerWins += 1;
     document.querySelector('.batman-wins').innerHTML = batmanWins += 1;
