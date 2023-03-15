@@ -926,7 +926,8 @@ header .time-line {
     .intro-text,
     .result-container,
     .lose-modal,
-    .win-modal {
+    .win-modal,
+    .form-container {
         width: 90%;
     }
 }
