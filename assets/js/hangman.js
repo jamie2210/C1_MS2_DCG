@@ -18,6 +18,10 @@ let maxGuesses = 6;
 let wrongGuess = 0;
 let wins = 0;
 let losses = 0;
+let jokerWins = 0;
+let jokerLosses = 0;
+let batmanWins = 0;
+let batmanLosses = 0;
 let wordStatus = '';
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -179,7 +183,9 @@ function youLost() {
         loseModal.style.display = "block";
         loseBackground.style.display = "block";
         document.getElementById('guessphrase').innerHTML = '';
-        document.getElementById('losses').innerHTML = losses += 1;
+        document.querySelector('.losses').innerHTML = losses += 1;
+        document.querySelector('.joker-losses').innerHTML = jokerLosses += 1;
+        document.querySelector('.batman-losses').innerHTML = batmanLosses += 1;
     }
 }
 
@@ -194,7 +200,9 @@ function youWon() {
     winModal.style.display = "block";
     winBackground.style.display = "block";
     document.getElementById('guessphrase').innerHTML = '';
-    document.getElementById('wins').innerHTML = wins += 1;
+    document.querySelector('.wins').innerHTML = wins += 1;
+    document.querySelector('.joker-wins').innerHTML = jokerWins += 1;
+    document.querySelector('.batman-wins').innerHTML = batmanWins += 1;
     }
 }
 

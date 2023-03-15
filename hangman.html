@@ -34,8 +34,8 @@
     <div class="container">
         <p class="batman-title text-center">Guess the Batman related phrase</p>
         <div class="guesses white-text">Wrong Guesses: <span id="wrongguess"> 0 </span> of <span id="maxguesses"> </span></div>
-        <div class="white-text" >Wins: <span id="wins">0</span></div>
-        <div class="white-text" >Losses: <span id="losses">0</span></div>
+        <div class="white-text" >Wins: <span class="wins">0</span></div>
+        <div class="white-text" >Losses: <span class="losses">0</span></div>
         <div class="text-center">
             <img src="assets/images/hangman/joker1.png" alt="Image of galllows" id="gallows">
         </div>
@@ -58,6 +58,7 @@
                         <h1>You win!!!</h1>
                         <p>Gotham City needs good brains like yours.</p>
                         <p>Batman approves!</p>
+                        <p>Wins: <span class="batman-wins">0</span> Losses: <span class="batman-losses">0</span></p>
                         <button class="batman-button" onClick="reset()">Close</button>
                     </div>
                 </div>
@@ -74,6 +75,7 @@
                         <h1>You lose!!!</h1>
                         <p>Better try again, loserrr</p>
                         <p>heheheee haa ha hahaa haaha!!!</p>
+                        <p>Wins: <span class="joker-wins">0</span> Losses: <span class="joker-losses">0</span></p>
                         <button class="joker-button" onClick="reset()">Close</button>
                     </div>
                 </div>

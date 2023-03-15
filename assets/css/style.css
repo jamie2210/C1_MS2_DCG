@@ -876,21 +876,8 @@ header .time-line {
     padding: 0;
 }
 
-.lose-modal .modal-header {
-   text-align: center;
-   padding-bottom: 10px;
-   display: block;
-   padding: 20px;
-   background-color: #a27cb3;
-}
-
 .modal-body {
     padding: 20px;
-}
-
-.lose-modal .modal-footer {
-    padding: 20px;
-    background-color: #a27cb3;
 }
 
 .lose-background{
