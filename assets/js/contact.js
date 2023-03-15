@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /**
  * Add email.js to contact form to send email directly to gmail account.
  * @param {sendEmail} contactForm 

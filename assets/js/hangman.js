@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /**
  * Add an event listener to ensure Javascript will not run until HTML is fully loaded.
  */

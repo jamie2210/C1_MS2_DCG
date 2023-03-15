@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /**
  * Add an event listener to ensure Javascript will not run until HTML is fully loaded.
  */
@@ -190,7 +192,7 @@ function quit() {
 }
 
 /**
- * Runs a timer counting down in seconds from 30
+ * Runs a timer counting down in seconds from 30.
  * Once time is up and user has not selected an answer for loop is initiated to determine correct answer.
  * Next button displayed.
  */
@@ -200,8 +202,10 @@ function startTimer() {
         let count = timer.textContent * 1-1;
         timer.textContent = count;
 
-        // bar++;
-        // timeLine.style.width = bar + "%"
+        let maxTime = 30;
+        let progress = (maxTime - count) / 30 * 100;
+        bar = Math.min(progress, 100);
+        timeLine.style.width = bar + "%";
 
         if(count === 0){
             clearInterval(interval);
