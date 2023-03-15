@@ -93,6 +93,11 @@ body {
     border: 2px solid #000000;
     background-color: #ecebeb;
     padding: 20px;
+    animation:fadein 2s;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
 }
 
 .intro-text h1 {
@@ -104,6 +109,14 @@ body {
     padding-top: 10px;
     margin-bottom: 0;
 }
+
+.intro-text .button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
 #character-container{
     min-height: 70vh;
     max-width: 850px;
@@ -704,7 +717,7 @@ header .time-line {
 }
 
 .batman-background{
-    position:fixed;
+    position: fixed;
     top:0;
     left:0;
     width:100vw;
@@ -917,9 +930,17 @@ header .time-line {
     #hangman-title {
         height: 40vh;
     }
+    .riddler-modal,
+    .batman-modal,
+    .intro-text,
+    .result-container,
+    .lose-modal,
+    .win-modal {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width:364px) {
+@media screen and (max-width:375px) {
     #media-footer {
         max-width: 290px;
         margin-right: auto;

@@ -7,6 +7,7 @@ let riddlerModal = document.querySelector('.riddler-modal');
 let button = document.getElementsByClassName('close');
 let batmanBackground = document.querySelector('.batman-background');
 let riddlerBackground = document.querySelector('.riddler-background');
+let intro = document.querySelector('.intro-text');
 
 /**
  * Funtions change display to block, displaying modal
@@ -35,6 +36,11 @@ function riddlerClose() {
     riddlerModal.style.display = "none";
     riddlerBackground.style.display = "none";
 }
+
+function introClose() {
+    intro.style.display = "none";
+ }
+
 
 window.onclick = function(event) {
     if (event.target == batmanModal) {
