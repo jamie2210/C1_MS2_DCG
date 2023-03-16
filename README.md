@@ -99,7 +99,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 13. I want to know which answer is correct if answered incorrectly.
 14. I want to know the answer if I run out of time.
 15. I want to see my score at the end.
-16. I want to easily pay again or quit once I have finished.
+16. I want to easily play again or quit once I have finished.
 
 #### Site Owner 
 17. I want the user to get a genuine feel this is a DC Batman themed site. 
