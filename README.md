@@ -95,7 +95,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 11. I want the word to be revealed if I don’t guess it.
 
 ##### Quiz
-12. I want to see the timer.
+12. I want to know how time is left to answer the question.
 13. I want to know which answer is correct if answered incorrectly.
 14. I want to know the answer if I run out of time.
 15. I want to see my score at the end.
@@ -249,6 +249,7 @@ The page consists of four pages and eleven features.
 - On pressing a letter it is highlighted yellow and then greyed out once used, cannot be used again.
 - Reset button resets the game but keeps track the total wins and losses until page is refreshed.
 - The theme of the game is Batman and The Joker and all colours, wording and design are based on the animated series.
+- A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
 - User stories covered: 6, 7, 8, 9 10, 17, 19 & 20.
 - User story not covered: 11. This is puprosely done to incresse the longevity and diffuclty of the game.
 
@@ -278,14 +279,20 @@ The page consists of four pages and eleven features.
 #### Game Function & Game Screen
 - Start Button.
 - Navigation buttons.
+- The game is themed in the colours of The Riddler, green and purple.
 - Game modal is presented once start button is pressed.
-- Game consists of a timer and multiple choice questions the user can click to select.
+- Game consists of a timer, time bar and multiple choice questions the user can click to select.
+- When a question is answered correctly it is highlighted in green with a tick icon.
+- When a question is answered incoorectly it is highlighted in black with a cross icon.
 - At the end fo the game the score is tallied and revealed in a modal.
+- A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
+- User stories covered: 3, 12, 13 & 14.
 
 #### Results Modal
 - Displays score.
 - Replay button that resets the game.
 - Quit button that refreshes the page.
+- User Stories covered: 4, 15 & 16.
 
 <details><summary>Game Screen</summary>
 <img src="docs/features/quiz-screen.png">
