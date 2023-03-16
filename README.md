@@ -530,7 +530,73 @@ The website was tested on the following browsers:
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Main screen | Win or lose game | Score is updated | Works as expected |
+| Result Modal | Win or lose game | Score is displayed | Works as expected |
 
 <details><summary>Find Score</summary>
 <img src="docs/user-story-testing/user-story-score.gif">
 </details>
+
+<details><summary>Find Resuklt Modal</summary>
+<img src="docs/user-story-testing/user-story-result-modal.gif">
+</details>
+
+##### Quiz
+
+11. I want to know how time is left to answer the question.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Countdown Timer & Bar | Start game | Countdown timer and time bar are displayed | Works as expected |
+
+<details><summary>Find Timer / Bar</summary>
+<img src="docs/user-story-testing/user-story-timer.gif">
+</details>
+
+12. I want to know which answer is correct if answered incorrectly.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Highlight correct answer | Select incorrect option | Correct answer is displayed | Works as expected |
+
+<details><summary>Find Correct Answer</summary>
+<img src="docs/user-story-testing/user-story-correct-answer.gif">
+</details>
+
+13. I want to know the answer if I run out of time.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Highlight correct answer | Let time run out | Correct answer is displayed | Works as expected |
+
+<details><summary>Find Out Of Time</summary>
+<img src="docs/user-story-testing/user-story-correct-out-of-time.gif">
+</details>
+
+14. I want to see my score at the end.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Finish Modal | Finish Quiz | Score is tallied | Works as expected |
+
+<details><summary>Find Finish Modal</summary>
+<img src="docs/user-story-testing/user-story-correct-finish-modal.gif">
+</details>
+
+15. I want to easily play again or quit once I have finished.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Finish Modal | Finish Quiz | Restart and Quit buttons displayed | Works as expected |
+
+<details><summary>Find Restart / Quit</summary>
+<img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
+</details>
+
+#### Site Owner 
+16. I want the user to get a genuine feel this is a DC Batman themed site. 
+17. I want the user to easily understand and play the games.
+18. I want both games to be fully responsive.
+19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the word will not be revealed if guessed incorrectly.
+20. I want the user to be able to contact me for any reason they feel fit.
+21. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
+22. I want the user to have a link to my work via my Github respositories. 
