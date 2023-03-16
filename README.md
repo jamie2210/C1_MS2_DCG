@@ -372,7 +372,7 @@ contact.html [results](https://wave.webaim.org/report#/https://jamie2210.github.
 404.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS2_DCG/404.html)
 
 ### Performance 
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All results scoring 90 or above.
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All results scoring 95 or above.
 
 <details><summary>index.html</summary>
 <img src="docs/validation/lighthouse/index.png">
@@ -389,3 +389,17 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <details><summary>404.html</summary>
 <img src="docs/validation/lighthouse/404.png">
 </details>
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- MacBook Pro
+- Ipad Tablet
+- Google Pixel 5
+
+In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
+
+### Browser compatibility
+The website was tested on the following browsers:
+- Google Chrome
+- Apple Safari
+- Mozilla Firefox
