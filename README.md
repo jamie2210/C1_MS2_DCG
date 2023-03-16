@@ -359,7 +359,7 @@ OnClick buttons were flagged as unused but /* exporte */ feature was used to rem
 </details>
 
 ### Accessibility
-The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors apart from quiz.html that has 3. They are all contrasting errors to which I disagree with, the white on purple to me is perfectly visible and matches the colour scheme so have chosen to leave it as is.
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors apart from quiz.html that has 3. They are all contrasting errors to which I disagree with, the white on purple to me is perfectly visible and matches the colour scheme so have chosen to leave it as it is.
 
 index.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS2_DCG/index.html) 
 
@@ -375,17 +375,17 @@ contact.html [results](https://wave.webaim.org/report#/https://jamie2210.github.
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All results scoring 90 or above.
 
 <details><summary>index.html</summary>
-<img src="docs/lighthouse/lighthouse-index.png">
+<img src="docs/validation/lighthouse/index.png">
 </details>
 <details><summary>hangman.html</summary>
-<img src="docs/lighthouse/lighthouse-hangman.png">
+<img src="docs/validation/lighthouse/hangman.png">
 </details>
 <details><summary>quiz.html</summary>
-<img src="docs/lighthouse/lighthouse-quiz.png">
+<img src="docs/validation/lighthouse/quiz.png">
 </details>
 <details><summary>contact.html</summary>
-<img src="docs/lighthouse/lighthouse-contact.png">
+<img src="docs/validation/lighthouse/contact.png">
 </details>
 <details><summary>404.html</summary>
-<img src="docs/lighthouse/lighthouse-404.png">
+<img src="docs/validation/lighthouse/404.png">
 </details>
