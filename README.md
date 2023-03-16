@@ -92,23 +92,22 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 8. I want to know how many guesses I have left.
 9. I want the gallows image to add on sections of the hangman each time a letter is guessed incorrectly.
 10. I see to my score of wins vs losses.
-11. I want the word to be revealed if I don’t guess it.
 
 ##### Quiz
-12. I want to know how time is left to answer the question.
-13. I want to know which answer is correct if answered incorrectly.
-14. I want to know the answer if I run out of time.
-15. I want to see my score at the end.
-16. I want to easily play again or quit once I have finished.
+11. I want to know how time is left to answer the question.
+12. I want to know which answer is correct if answered incorrectly.
+13. I want to know the answer if I run out of time.
+14. I want to see my score at the end.
+15. I want to easily play again or quit once I have finished.
 
 #### Site Owner 
-17. I want the user to get a genuine feel this is a DC Batman themed site. 
-18. I want the user to easily understand and play the games.
-19. I want both games to be fully responsive.
-20. While some users may want the word revealed if it is not guessed in Hangman, the words are limited so to increase the difficulty and longevity of the game, the word will not be revealed.
-21. I want the user to be able to contact me for any reason they feel fit.
-22. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
-23. I want the user to have a link to my work via my Github respositories. 
+16. I want the user to get a genuine feel this is a DC Batman themed site. 
+17. I want the user to easily understand and play the games.
+18. I want both games to be fully responsive.
+19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the word will not be revealed if guessed incorrectly.
+20. I want the user to be able to contact me for any reason they feel fit.
+21. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
+22. I want the user to have a link to my work via my Github respositories. 
 
 ## Design
 
@@ -202,7 +201,7 @@ The page consists of four pages and eleven features.
 - It details where to find the games, the rules and contact informaton.
 - The rules are modals accessed by clicking the '?' symbols.
 - The logo is DC's official logo.
-- User stories covered:  1, 2, 3, 5, 17 & 18.
+- User stories covered:  1, 2, 3, 5, 16 & 17.
 
 <details><summary>Intro</summary>
 <img src="docs/features/intro.png">
@@ -215,7 +214,7 @@ The page consists of four pages and eleven features.
 - Link to each game and the home page.
 - It allows users to easily navigate through the website.
 - The buttons are animated depending on which page they are on, matching the themes .
-- User stories covered: 2, 5, & 17.
+- User stories covered: 2, 5, & 16.
 
 <details><summary>Buttons & Characters</summary>
 <img src="docs/features/buttons.png">
@@ -232,7 +231,7 @@ The page consists of four pages and eleven features.
 #### Footer (displayed on all pages)
 - Featured on all pages.
 - Details who the developer is, a link to Github and contact page.
-- User stories covered: 5, 21 & 23.
+- User stories covered: 5, 20 & 22.
 
 <details><summary>Footer</summary>
 <img src="docs/features/footer.png">
@@ -251,18 +250,18 @@ The page consists of four pages and eleven features.
 - Reset button resets the game but keeps track the total wins and losses until page is refreshed.
 - The theme of the game is Batman and The Joker and all colours, wording and design are based on the animated series.
 - A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
-- User stories covered: 6, 7, 8, 9 10, 17, 19 & 20.
+- User stories covered: 6, 7, 8, 9 10, 16, 18 & 19.
 - User story not covered: 11. This is puprosely done to incresse the longevity and diffuclty of the game.
 
 #### Win Modal
 - Displays current score, wins v losses.
 - Close Button that resets the game.
-- User stories covered: 4, 10 & 20.
+- User stories covered: 4, 10 & 19.
 
 #### Lose Modal
 - Displays current score, wins v losses.
 - Close Button that resets the game.
-- User stories covered: 4, 10 & 20.
+- User stories covered: 4, 10 & 19.
 
 <details><summary>Game Screen</summary>
 <img src="docs/features/hangman-screen.png">
@@ -287,13 +286,13 @@ The page consists of four pages and eleven features.
 - When a question is answered incoorectly it is highlighted in black with a cross icon.
 - At the end fo the game the score is tallied and revealed in a modal.
 - A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
-- User stories covered: 3, 12, 13 & 14.
+- User stories covered: 3, 11, 12 & 13.
 
 #### Results Modal
 - Displays score.
 - Replay button that resets the game.
 - Quit button that refreshes the page.
-- User Stories covered: 4, 15 & 16.
+- User Stories covered: 4, 14 & 15.
 
 <details><summary>Game Screen</summary>
 <img src="docs/features/quiz-screen.png">
@@ -309,7 +308,7 @@ The page consists of four pages and eleven features.
 
 - Allows user to directly contact the developer
 - Alert box pops up when message has been sent successfully.
-- User stories covered: 5 & 21.
+- User stories covered: 5 & 20.
 
 <details><summary>Contact Form</summary>
 <img src="docs/features/contact-form.png">
@@ -319,7 +318,7 @@ The page consists of four pages and eleven features.
 - Explains to the user they have landed on an unrecognised page.
 - It automatically returns the user back to the home page after 10 seconds, detailed by a count down.
 - There is also a home button should user wish to use it.
-- User Stories covered: 22.
+- User Stories covered: 21.
 
 <details><summary>404 Page</summary>
 <img src="docs/features/contact-form.png">
@@ -482,4 +481,56 @@ The website was tested on the following browsers:
 
 <details><summary>Find Contact Form</summary>
 <img src="docs/user-story-testing/user-story-contact-form.gif">
+</details>
+
+##### Hangman
+
+6. I want to play the game both by clicking the mouse and using the keyboard.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Keyboard Test | Use mouse & keyboard | Key should highlight when pressed / clicked down then disable after | Works as expected |
+
+<details><summary>Find Keyboard</summary>
+<img src="docs/user-story-testing/user-story-keyboard.gif">
+</details>
+
+7. I want to know which letters I’ve used already.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Keyboard Test | Use mouse & keyboard | Key should highlight when pressed / clicked down then disable after | Works as expected |
+
+<details><summary>Find Keyboard</summary>
+<img src="docs/user-story-testing/user-story-keyboard.gif">
+</details>
+
+8. I want to know how many guesses I have left.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Guesses left | Select incorrect key | Guess left display increases by one | Works as expected |
+
+<details><summary>Find Guesses Left</summary>
+<img src="docs/user-story-testing/user-story-guesses.gif">
+</details>
+
+9. I want the gallows image to add on sections of the hangman each time a letter is guessed incorrectly.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Gallows Image | Select incorrect key | Gallows image adds body part | Works as expected |
+
+<details><summary>Find Gallows</summary>
+<img src="docs/user-story-testing/user-story-gallows.gif">
+</details>
+
+10. I see to my score of wins vs losses.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Main screen | Win or lose game | Score is updated | Works as expected |
+
+<details><summary>Find Score</summary>
+<img src="docs/user-story-testing/user-story-score.gif">
 </details>
