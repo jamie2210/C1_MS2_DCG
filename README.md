@@ -79,13 +79,12 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 
 ### User Stories
 
-#### Site User 
+#### Site User (General)
 1. I want to easily understand the rules of each game.
 2. I want to easily navigate to my chosen game.
-3. I want to know how I did at the end of the game.
-4. I want a means to contact the developer.
+3. I want the games to be fun, enjoyable and easy to understand.
+4. I want to know how I did at the end of each game.
 5. I want a means to contact the developer and have confirmation the message has been sent.
-
 
 ##### Hangman
 6. I want to play the game both by clicking the mouse and using the keyboard.
@@ -204,6 +203,11 @@ The page consists of four pages and eleven features.
 <details><summary>Intro</summary>
 <img src="docs/features/intro.png">
 </details>
+
+#### Modal Pop up
+- Upon arriving to the site a welcome modal pops up
+- It details where to find the games, the rules and contact informaton
+- 
 
 #### Navigation Buttons & Character Images (Navigation buttons featured on all pages)
 - Navigation buttons are featured on all pages.
@@ -395,6 +399,7 @@ The website was tested on the following devices:
 - MacBook Pro
 - Ipad Tablet
 - Google Pixel 5
+- Iphone 12
 
 In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
 
