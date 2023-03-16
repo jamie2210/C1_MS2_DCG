@@ -425,3 +425,61 @@ The website was tested on the following browsers:
 - Apple Safari
 - Mozilla Firefox
 
+### Testing user stories
+
+#### Site User (General)
+
+1. I want to easily understand the rules of each game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| '?' Icon | Click either '?' icon | Modal pops up explaining rules of choses game | Works as expected |
+
+
+<details><summary>Find Rules</summary>
+<img src="docs/user-story-testing/user-story-rules.gif">
+</details>
+
+2. I want to easily navigate to my chosen game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Button | Click button | Takes user to chosen game | Works as expected |
+
+
+<details><summary>Find Buttons</summary>
+<img src="docs/user-story-testing/user-story-buttons.gif">
+</details>
+
+3. I want the games to be fun, enjoyable and easy to understand.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| '?' Icon | Click either '?' icon | Modal pops up explaining rules of choses game | Works as expected |
+| Button | Click button | Takes user to chosen game | Works as expected |
+| Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
+
+<details><summary>Find Games</summary>
+<img src="docs/user-story-testing/user-story-ingame-fun.gif">
+</details>
+
+4. I want to know how I did at the end of each game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
+
+<details><summary>Find Score Modal</summary>
+<img src="docs/user-story-testing/user-story-score-modal.gif">
+</details>
+
+
+5. I want a means to contact the developer and have confirmation the message has been sent.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Email Icon | Click Icon | Takes user to contact page | Works as expected |
+
+<details><summary>Find Contact Form</summary>
+<img src="docs/user-story-testing/user-story-contact-form.gif">
+</details>
