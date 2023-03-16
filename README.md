@@ -415,6 +415,7 @@ The website was tested on the following devices:
 - MacBook Pro
 - Ipad Tablet
 - Google Pixel 5
+- Iphone 12
 
 In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
 
