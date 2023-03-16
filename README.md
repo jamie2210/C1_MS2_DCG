@@ -103,11 +103,12 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 
 #### Site Owner 
 17. I want the user to get a genuine feel this is a DC Batman themed site. 
-18. I want the user to easily understand and pay the games.
+18. I want the user to easily understand and play the games.
 19. I want both games to be fully responsive.
 20. While some users may want the word revealed if it is not guessed in Hangman, the words are limited so to increase the difficulty and longevity of the game, the word will not be revealed.
-21. I want to be able to contact me for any reason they feel fit.
-22. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url. 
+21. I want the user to be able to contact me for any reason they feel fit.
+22. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
+23. I want the user to have a link to my work via my Github respositories. 
 
 ## Design
 
@@ -197,31 +198,32 @@ The page consists of four pages and eleven features.
 
 #### DC Logo and introduction
 
-- Introduces the user to what the website offers and how to navigate through it.
-- User stories covered:
+- Upon arriving to the site a welcome modal pops up.
+- It details where to find the games, the rules and contact informaton.
+- The logo is DC's official logo.
+- User stories covered:  1, 2, 3, 5, 17 & 18.
 
 <details><summary>Intro</summary>
 <img src="docs/features/intro.png">
 </details>
 
-#### Modal Pop up
-- Upon arriving to the site a welcome modal pops up
-- It details where to find the games, the rules and contact informaton
-- 
 
 #### Navigation Buttons & Character Images (Navigation buttons featured on all pages)
-- Navigation buttons are featured on all pages.
+- Both the Batman and Riddler characters are that of The Batman animated series, which the games are based on.
+- Navigation buttons are featured on all pages, they all have squared edges to represent sections and comments of a comic.
 - Link to each game and the home page.
 - It allows users to easily navigate through the website.
-- The buttons are animated depending on which page they are on, matching the theme.
-- User stories covered:
+- The buttons are animated depending on which page they are on, matching the themes .
+- User stories covered: 2, 5, & 17.
 
 <details><summary>Buttons & Characters</summary>
 <img src="docs/features/buttons.png">
 </details>
 
 #### Rules Modal
--   Clicking the question mark under the selected character will bring up the rules for that game.
+- Clicking the question mark under the selected character will bring up the rules for that game.
+- User stories covered: 1.
+
 <details><summary>Modal</summary>
 <img src="docs/features/modal.png">
 </details>
@@ -229,7 +231,7 @@ The page consists of four pages and eleven features.
 #### Footer (displayed on all pages)
 - Featured on all pages.
 - Details who the developer is, a link to Github and contact page.
-- User stories covered: 
+- User stories covered: 5, 21 & 23.
 
 <details><summary>Footer</summary>
 <img src="docs/features/footer.png">
@@ -238,21 +240,27 @@ The page consists of four pages and eleven features.
 ### Batman Hangman
 
 #### Game Function & Game Screen
-- Consists of empty gallows, empty score, and wrong guesses.
+- Consists of empty gallows, empty score, and number of wrong guesses left.
 - Letter tabs for entry guesses, allows user to use either mouse or keyboard for entries.
 - If the letter is guessed correclty the letter is revealed in replace of the '_'
 - If the phrase is guessed correctly a modal is presented confirming the win with the total number of wins and losses.
 - If the letter is guessed incorreclty the hangman image increases as does the number of wrong guesses.
 - If the phrase is guessed incorreclty a modal is presented confirming the loss with the total number of wins and losses.
-- Reset button resets the game but keeps trakc the total wins and losses until page is refreshed.
+- On pressing a letter it is highlighted yellow and then greyed out once used, cannot be used again.
+- Reset button resets the game but keeps track the total wins and losses until page is refreshed.
+- The theme of the game is Batman and The Joker and all colours, wording and design are based on the animated series.
+- User stories covered: 6, 7, 8, 9 10, 17, 19 & 20.
+- User story not covered: 11. This is puprosely done to incresse the longevity and diffuclty of the game.
 
 #### Win Modal
 - Displays current score, wins v losses.
 - Close Button that resets the game.
+- User stories covered: 4, 10 & 20.
 
 #### Lose Modal
 - Displays current score, wins v losses.
 - Close Button that resets the game.
+- User stories covered: 4, 10 & 20.
 
 <details><summary>Game Screen</summary>
 <img src="docs/features/hangman-screen.png">
@@ -399,7 +407,6 @@ The website was tested on the following devices:
 - MacBook Pro
 - Ipad Tablet
 - Google Pixel 5
-- Iphone 12
 
 In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
 
@@ -408,3 +415,4 @@ The website was tested on the following browsers:
 - Google Chrome
 - Apple Safari
 - Mozilla Firefox
+
