@@ -200,6 +200,7 @@ The page consists of four pages and eleven features.
 
 - Upon arriving to the site a welcome modal pops up.
 - It details where to find the games, the rules and contact informaton.
+- The rules are modals accessed by clicking the '?' symbols.
 - The logo is DC's official logo.
 - User stories covered:  1, 2, 3, 5, 17 & 18.
 
@@ -308,7 +309,7 @@ The page consists of four pages and eleven features.
 
 - Allows user to directly contact the developer
 - Alert box pops up when message has been sent successfully.
-- User stories covered:
+- User stories covered: 5 & 21.
 
 <details><summary>Contact Form</summary>
 <img src="docs/features/contact-form.png">
@@ -318,7 +319,7 @@ The page consists of four pages and eleven features.
 - Explains to the user they have landed on an unrecognised page.
 - It automatically returns the user back to the home page after 10 seconds, detailed by a count down.
 - There is also a home button should user wish to use it.
-- User Stories covered: 
+- User Stories covered: 22.
 
 <details><summary>404 Page</summary>
 <img src="docs/features/contact-form.png">
