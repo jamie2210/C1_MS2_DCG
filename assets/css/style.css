@@ -259,6 +259,10 @@ body {
     transform:scale(1);
 }
 
+#keys {
+    color: #000000;
+}
+
 .button-keys {
     background-color: #ecebeb;
     border-radius: 0;
@@ -288,7 +292,7 @@ body {
     margin: 0 20px 20px 20px;
     padding: 4px 6px;
     width: 130px;
-    border-color: #872cb1;
+    border: 2px solid #872cb1;
 }
 
 .riddler-button:hover {
@@ -317,7 +321,7 @@ body {
     color: #ffffff;
     padding: 4px 6px;
     width: 130px;
-    border-color: #872cb1;
+    border: 2px solid #872cb1;
 }
 
 .start-button:hover {
@@ -343,6 +347,8 @@ body {
 }
 
 .next-button {
+    border-radius: 0;
+    border: 2px solid #872cb1;
     margin: 0;
     opacity: 0;
     pointer-events: none;
