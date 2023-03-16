@@ -259,11 +259,8 @@ body {
     transform:scale(1);
 }
 
-#keys {
-    color: #000000;
-}
-
 .button-keys {
+    color: #000000;
     background-color: #ecebeb;
     border-radius: 0;
     border: 2px solid #515050; 
@@ -282,6 +279,10 @@ body {
     border: 1px solid;
     transform:scale(1);
 }
+
+.button-keys:disabled {
+    opacity: 0.5;
+  }
 
 /* -------------- Quiz */
 
