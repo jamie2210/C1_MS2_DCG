@@ -175,6 +175,7 @@ function showResult() {
 function restart() {
     questionCount = 0;
     questionNumber = 1;
+    userScore = 0;
     showQuestionAnswers(questionCount);
     start();
     resultContainer.classList.remove('activeresult');
