@@ -442,11 +442,10 @@ The website was tested on the following browsers:
 |-------------|------------|---------------------|-------------------|
 | '?' Icon | Click either '?' icon | Modal pops up explaining rules of choses game | Works as expected |
 
-
 <details><summary>Find Rules</summary>
 <img src="docs/user-story-testing/user-story-rules.gif">
 </details>
-
+<br>
 
 2. I want to easily navigate to my chosen game.
 
@@ -457,7 +456,7 @@ The website was tested on the following browsers:
 <details><summary>Find Buttons</summary>
 <img src="docs/user-story-testing/user-story-buttons.gif">
 </details>
-
+<br>
 
 3. I want the games to be fun, enjoyable and easy to understand.
 
@@ -479,7 +478,7 @@ The website was tested on the following browsers:
 <details><summary>Play Quiz</summary>
 <img src="docs/user-story-testing/user-story-play-quiz.gif">
 </details>
-
+<br>
 
 4. I want to know how I did at the end of each game, and easily play again.
 
@@ -494,7 +493,7 @@ The website was tested on the following browsers:
 <details><summary>Quiz Score Modal</summary>
 <img src="docs/user-story-testing/user-story-score-modal.gif">
 </details>
-
+<br>
 
 5. I want a means to contact the developer and have confirmation the message has been sent.
 
@@ -505,6 +504,7 @@ The website was tested on the following browsers:
 <details><summary>Find Contact Form</summary>
 <img src="docs/user-story-testing/user-story-contact-form.gif">
 </details>
+<br>
 
 ### Hangman
 
@@ -518,7 +518,7 @@ The website was tested on the following browsers:
 <details><summary>Find Keyboard</summary>
 <img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
-
+<br>
 
 7. I want to know which letters I’ve used already.
 
@@ -529,7 +529,7 @@ The website was tested on the following browsers:
 <details><summary>Find Keyboard</summary>
 <img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
-
+<br>
 
 8. I want to know how many guesses I have left.
 
@@ -540,7 +540,7 @@ The website was tested on the following browsers:
 <details><summary>Find Guesses Left</summary>
 <img src="docs/user-story-testing/user-story-play-hangman.gif">
 </details>
-
+<br>
 
 9. I want the gallows image to add on sections of the hangman each time a letter is guessed incorrectly.
 
@@ -551,7 +551,7 @@ The website was tested on the following browsers:
 <details><summary>Find Gallows</summary>
 <img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
-
+<br>
 
 10. I want see to my score of wins vs losses.
 
@@ -563,7 +563,7 @@ The website was tested on the following browsers:
 <details><summary>Find Score</summary>
 <img src="docs/user-story-testing/user-story-play-hangman.gif">
 </details>
-
+<br>
 
 ### Quiz
 
@@ -575,9 +575,9 @@ The website was tested on the following browsers:
 | Countdown Timer & Bar | Start game | Countdown timer and time bar are displayed | Works as expected |
 
 <details><summary>Find Timer / Bar</summary>
-<img src="docs/user-story-testing/user-story-timer.gif">
+<img src="docs/user-story-testing/user-story-play-quiz.gif">
 </details>
-
+<br>
 
 12. I want to know which answer is correct if answered incorrectly.
 
@@ -586,9 +586,9 @@ The website was tested on the following browsers:
 | Highlight correct answer | Select incorrect option | Correct answer is displayed | Works as expected |
 
 <details><summary>Find Correct Answer</summary>
-<img src="docs/user-story-testing/user-story-correct-answer.gif">
+<img src="docs/user-story-testing/user-story-play-quiz.gif">
 </details>
-
+<br>
 
 13. I want to know the answer if I run out of time.
 
@@ -599,7 +599,7 @@ The website was tested on the following browsers:
 <details><summary>Find Out Of Time</summary>
 <img src="docs/user-story-testing/user-story-correct-out-of-time.gif">
 </details>
-
+<br>
 
 14. I want to see my score at the end.
 
@@ -608,9 +608,9 @@ The website was tested on the following browsers:
 | Quiz Finish Modal | Finish Quiz | Score is tallied | Works as expected |
 
 <details><summary>Find Finish Modal</summary>
-<img src="docs/user-story-testing/user-story-correct-finish-modal.gif">
+<img src="docs/user-story-testing/user-story-finish-modal.gif">
 </details>
-
+<br>
 
 15. I want to easily play again or quit once I have finished.
 
@@ -619,9 +619,9 @@ The website was tested on the following browsers:
 | Quiz Finish Modal | Finish Quiz | Restart and Quit buttons displayed | Works as expected |
 
 <details><summary>Find Restart / Quit</summary>
-<img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
+<img src="docs/user-story-testing/user-story-finish-modal.gif">
 </details>
-
+<br>
 
 #### Site Owner 
 16. I want the user to get a genuine feel this is a DC Batman themed site. 
@@ -631,9 +631,9 @@ The website was tested on the following browsers:
 | Batman Theme | Display pages | All colours and imagery are that of DC's Batman animated series | Works as expected |
 
 <details><summary>Find Theme</summary>
-<img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
+<img src="docs/user-story-testing/user-story-dc-theme.gif">
 </details>
-
+<br>
 
 17. I want the user to easily understand how to play the games.
 
@@ -644,7 +644,7 @@ The website was tested on the following browsers:
 <details><summary>Find Rules</summary>
 <img src="docs/user-story-testing/user-story-rules.gif">
 </details>
-
+<br>
 
 18. I want both games to be fully responsive.
 
@@ -652,10 +652,16 @@ The website was tested on the following browsers:
 |-------------|------------|---------------------|-------------------|
 | Responsiveness | Test in google developer | Adjusts to each device correctly | Works as expected |
 
-<details><summary>Find Responsiveness</summary>
-<img src="docs/user-story-testing/user-story-rules.gif">
+<details><summary>Find Responsive Home Page</summary>
+<img src="docs/user-story-testing/user-story-responsive-index.gif">
 </details>
-
+<details><summary>Find Responsive Hangman</summary>
+<img src="docs/user-story-testing/user-story-responsive-hangman.gif">
+</details>
+<details><summary>Find Responsive Quiz</summary>
+<img src="docs/user-story-testing/user-story-responsive-quiz.gif">
+</details>
+<br>
 
 19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the phrase will not be revealed if guessed incorrectly.
 
@@ -664,9 +670,9 @@ The website was tested on the following browsers:
 | Score Modal | Finish each game | Score diplayed but he hidden phrase is not | Works as expected |
 
 <details><summary>Find Score Modal</summary>
-<img src="docs/user-story-testing/user-story-score-modal.gif">
+<img src="docs/user-story-testing/user-story-incorrect-score-modal.gif">
 </details>
-
+<br>
 
 20. I want the user to be able to contact me for any reason they feel fit.
 
@@ -677,7 +683,7 @@ The website was tested on the following browsers:
 <details><summary>Find Contact Form</summary>
 <img src="docs/user-story-testing/user-story-contact-form.gif">
 </details>
-
+<br>
 
 21. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
 
@@ -688,7 +694,7 @@ The website was tested on the following browsers:
 <details><summary>Find 404</summary>
 <img src="docs/user-story-testing/user-story-404.gif">
 </details>
-
+<br>
 
 22. I want the user to have a link to my work via my Github respositories. 
 
@@ -699,4 +705,4 @@ The website was tested on the following browsers:
 <details><summary>Find Github</summary>
 <img src="docs/user-story-testing/user-story-github.gif">
 </details>
-
+<br>
