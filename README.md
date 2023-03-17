@@ -82,7 +82,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 #### Site User (General)
 1. I want to easily understand the rules of each game.
 2. I want to easily navigate to my chosen game.
-3. I want the games to be fun, enjoyable and easy to understand.
+3. I want the games to be fun, enjoyable, and easy to understand.
 4. I want to know how I did at the end of each game.
 5. I want a means to contact the developer and have confirmation the message has been sent.
 
@@ -107,7 +107,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the word will not be revealed if guessed incorrectly.
 20. I want the user to be able to contact me for any reason they feel fit.
 21. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
-22. I want the user to have a link to my work via my Github respositories. 
+22. I want the user to have a link to my work via my Github repositories. 
 
 ## Design
 
@@ -213,10 +213,10 @@ The page consists of four pages and eleven features.
 
 #### Navigation Buttons & Character Images (Navigation buttons featured on all pages)
 - Both the Batman and Riddler characters are that of The Batman animated series, which the games are based on.
-- Navigation buttons are featured on all pages, they all have squared edges to represent sections and comments of a comic.
+- Navigation buttons are featured on all pages; they all have squared edges to represent sections and comments of a comic.
 - Link to each game and the home page.
 - It allows users to easily navigate through the website.
-- The buttons are animated depending on which page they are on, matching the themes .
+- The buttons are animated depending on which page they are on, matching the themes.
 - User stories covered: 2, 5, & 16.
 
 <details><summary>Buttons & Characters</summary>
@@ -248,16 +248,16 @@ The page consists of four pages and eleven features.
 #### Game Function & Game Screen
 - Consists of empty gallows, empty score, and number of wrong guesses left.
 - Letter tabs for entry guesses, allows user to use either mouse or keyboard for entries.
-- If the letter is guessed correclty the letter is revealed in replace of the '_'
+- If the letter is guessed correctly the letter is revealed in replace of the '_'
 - If the phrase is guessed correctly a modal is presented confirming the win with the total number of wins and losses.
-- If the letter is guessed incorreclty the hangman image increases as does the number of wrong guesses.
-- If the phrase is guessed incorreclty a modal is presented confirming the loss with the total number of wins and losses.
-- On pressing a letter it is highlighted yellow and then greyed out once used, cannot be used again.
+- If the letter is guessed incorrectly the hangman image increases as does the number of wrong guesses.
+- If the phrase is guessed incorrectly a modal is presented confirming the loss with the total number of wins and losses.
+- On pressing a letter, it is highlighted yellow and then greyed out once used, cannot be used again.
 - Reset button resets the game but keeps track the total wins and losses until page is refreshed.
-- The theme of the game is Batman and The Joker and all colours, wording and design are based on the animated series.
-- A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
+- The theme of the game is Batman and The Joker, and all colours, wording and design are based on the animated series.
+- A comical element has been added to the results modal which is light-hearted fun and plays on the characters in the game.
 - User stories covered: 6, 7, 8, 9 10, 16, 18 & 19.
-- User story not covered: 11. This is puprosely done to incresse the longevity and diffuclty of the game.
+- User story not covered: 11. This is purposely done to increase the longevity and difficulty of the game.
 
 #### Win Modal
 - Displays current score, wins v losses.
@@ -289,9 +289,9 @@ The page consists of four pages and eleven features.
 - Game modal is presented once start button is pressed.
 - Game consists of a timer, time bar and multiple choice questions the user can click to select.
 - When a question is answered correctly it is highlighted in green with a tick icon.
-- When a question is answered incoorectly it is highlighted in black with a cross icon.
-- At the end fo the game the score is tallied and revealed in a modal.
-- A comical element has been added to the results modal which is light hearted fun and plays on the characters in the game.
+- When a question is answered incorrectly it is highlighted in black with a cross icon.
+- At the end of the game the score is tallied and revealed in a modal.
+- A comical element has been added to the results modal which is light-hearted fun and plays on the characters in the game.
 - User stories covered: 3, 11, 12 & 13.
 
 #### Results Modal
@@ -362,7 +362,7 @@ When validating just my own custom CSS file it passes with no errors and flagged
 
 JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found. One undefined Variable found in quiz.js for the questions variable used as it's linked to a separate file.
 
-OnClick buttons were flagged as unused but /* exporte */ feature was used to remove the flags as they are called in the html files.
+OnClick buttons were flagged as unused, but /* exported */ feature was used to remove the flags as they are called in the html files.
 
 <details><summary>index.js</summary>
 <img src="docs/validation//jshint/index.png">
@@ -418,9 +418,9 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 ### Performing tests on various devices 
 The website was tested on the following devices:
 - MacBook Pro
-- Ipad Tablet
+- iPad Tablet
 - Google Pixel 5
-- Iphone 12
+- iPhone 12
 
 In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
 
@@ -485,7 +485,7 @@ The website was tested on the following browsers:
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
-| PLay Again | Finish game | Close modal, game resets, score is tallied. | Works as expected |
+| Play Again | Finish game | Close modal, game resets, score is tallied. | Works as expected |
 
 <details><summary>Hangman Score</summary>
 <img src="docs/user-story-testing/user-story-play-hangman.gif">
@@ -553,7 +553,7 @@ The website was tested on the following browsers:
 </details>
 <br>
 
-10. I want see to my score of wins vs losses.
+10. I want to see to my score of wins vs losses.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -667,7 +667,7 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Score Modal | Finish each game | Score diplayed but he hidden phrase is not | Works as expected |
+| Score Modal | Finish each game | Score displayed but he hidden phrase is not | Works as expected |
 
 <details><summary>Find Score Modal</summary>
 <img src="docs/user-story-testing/user-story-incorrect-score-modal.gif">
@@ -689,14 +689,14 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| 404 Page | Enter invalid url | 404 page is displayed, countdown timer returns usere to home page | Works as expected |
+| 404 Page | Enter invalid url | 404 page is displayed, countdown timer returns user to home page | Works as expected |
 
 <details><summary>Find 404</summary>
 <img src="docs/user-story-testing/user-story-404.gif">
 </details>
 <br>
 
-22. I want the user to have a link to my work via my Github respositories. 
+22. I want the user to have a link to my work via my Github repositories. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -714,14 +714,14 @@ The website was tested on the following browsers:
 1. Each time a key on the board selected an incorrect word 2 mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners so removing it one fixed the issue.
 
 2. 
-- During testing when using some iphones all the button stlying was off. This is down to using default button stlying. To fix I added my own stylgin to match that of the chrome default.
-<details><summary>Iphone Default</summary>
+- During testing when using some iPhones all the button styling was off. This is down to using default button stlying. To fix I added my own styling to match that of the chrome default.
+<details><summary>iPhone Default</summary>
 <img src="docs/bugs/iphone-bug.png">
 </details>
-<details><summary>Iphone Fix</summary>
+<details><summary>iPhone Fix</summary>
 <img src="docs/bugs/iphone-fix.png">
 </details>
-- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default it stopped the default disabled display from working. TO work aroudn the the issue I added a 0.5 opacity to the disabled class which fixed the issue.
+- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default it stopped the default disabled display from working. To work around the issue, I added a 0.5 opacity to the disabled class which fixed the issue as it then clearly indicated which buttons were now disabled.
 
 ```css
         .button-keys:disabled {
@@ -733,9 +733,9 @@ The website was tested on the following browsers:
 
 3. When the user selected answer the timer continued to tick down if it then reached 0 the function was called to display the right wrong answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
 
-4. When user clicks restart the question number is not reset on so displays 10 out 10 questions instead of 1. To fix I reset the question number to 1 in the restart function.
+4. When the user clicked restart the question number was not reset, so the game displayed 10 out 10 questions instead of 1 out 10. To fix this I reset the question number to 1 in the restart function.
 
-5. Issue with display not covering full screen on certain screen dimensions, particularly ipads. Fixed adding a vh height to the title in media queries.
+5. Issue with the display not covering the full screen on certain screen dimensions, particularly long iPads in google developer tools. Fixed by adding a specific vh height to the title in media queries.
 
 ##### Media Query commands
 ```css
@@ -854,12 +854,7 @@ Images taken from [freepik](https://www.freepik.com/);
 
 ### Code 
 
-In order of appearance;
-- The HTML for the responsive [Navbar with toggler](https://getbootstrap.com/docs/5.1/components/navbar/) was taken from Boostrap v5.1 documentation snippet.
-- The HTML for adding [WhatsApp](https://support.messagebird.com/hc/en-us/articles/360018616838-Add-an-embeddable-WhatsApp-Button-to-your-website) was taken from Message Bird Snippet.
-- The HTML for the Nav Bar [Sign In Modal](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works) was taken from Boostrap v5.3 documentation snippet.
-- The HTML for the [Carousel](https://getbootstrap.com/docs/5.0/components/carousel/#with-indicators) on index page was taken from Bootrap v5.1 documentation code snippet.
-- The HTMl for the [Class Modal](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works) was taken from Boostrap v5.3 documentation snippet.
+- The Javascript for [Sweet Alert](https://sweetalert.js.org/guides/) email submit response was taken from the Sweet Alet guide.
 
 ### Acknowledgements
 
