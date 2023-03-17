@@ -178,6 +178,7 @@ function checkLetter(letter) {
 
 /**
  * Replace the underscores with the guessed letter.
+ * logs '_' for letter and ' ' for a space, iterates through array to return guessed letter if it matches. 
  * @param {string} guessedLetter
  */
 function addLetter(guessedLetter) {
@@ -187,7 +188,7 @@ function addLetter(guessedLetter) {
 }
 
 /**
- * Updates hangman image each time a letter is guessed incorrectly.
+ * Update hangman image each time a letter is guessed incorrectly.
  */
 function wrongGuessImage() {
     if (wrongGuess === 0) {
@@ -259,7 +260,11 @@ function reset() {
     loseBackground.style.display = "none";
 }
 
-
+/** 
+* Allows use of enter key in replace of clicking reset button with mouse.
+* Keydown styling matches that of a mouse click turning the button yellow while held down.
+* Using keydown and keyup funtions prevents multiple resets whiles key is held down, one reset per press, like the mouse.
+*/
 function enterKeyReset() {
     let keyDownButton = document.getElementById('reset');
     document.addEventListener('keydown', function(event) {
