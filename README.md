@@ -430,9 +430,11 @@ The website was tested on the following browsers:
 - Apple Safari
 - Mozilla Firefox
 
-### Testing user stories
+## Testing user stories
 
-#### Site User (General)
+
+### Site User (General)
+
 
 1. I want to easily understand the rules of each game.
 
@@ -445,16 +447,17 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-rules.gif">
 </details>
 
+
 2. I want to easily navigate to my chosen game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Button | Click button | Takes user to chosen game | Works as expected |
 
-
 <details><summary>Find Buttons</summary>
 <img src="docs/user-story-testing/user-story-buttons.gif">
 </details>
+
 
 3. I want the games to be fun, enjoyable and easy to understand.
 
@@ -464,9 +467,19 @@ The website was tested on the following browsers:
 | Button | Click button | Takes user to chosen game | Works as expected |
 | Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
 
-<details><summary>Find Games</summary>
-<img src="docs/user-story-testing/user-story-ingame-fun.gif">
+<details><summary>Find Rules</summary>
+<img src="docs/user-story-testing/user-story-rules.gif">
 </details>
+<details><summary>Find Buttons</summary>
+<img src="docs/user-story-testing/user-story-buttons.gif">
+</details>
+<details><summary>Play Hangman</summary>
+<img src="docs/user-story-testing/user-story-play-hangman.gif">
+</details>
+<details><summary>Play Quiz</summary>
+<img src="docs/user-story-testing/user-story-play-quiz.gif">
+</details>
+
 
 4. I want to know how I did at the end of each game, and easily play again.
 
@@ -475,7 +488,10 @@ The website was tested on the following browsers:
 | Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
 | PLay Again | Finish game | Close modal, game resets, score is tallied. | Works as expected |
 
-<details><summary>Find Score Modal</summary>
+<details><summary>Hangman Score</summary>
+<img src="docs/user-story-testing/user-story-play-hangman.gif">
+</details>
+<details><summary>Quiz Score Modal</summary>
 <img src="docs/user-story-testing/user-story-score-modal.gif">
 </details>
 
@@ -490,7 +506,8 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-contact-form.gif">
 </details>
 
-##### Hangman
+### Hangman
+
 
 6. I want to play the game both by clicking the mouse and using the keyboard.
 
@@ -502,6 +519,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
 
+
 7. I want to know which letters I’ve used already.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -512,15 +530,17 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
 
+
 8. I want to know how many guesses I have left.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Guesses left | Select incorrect key | Guess left display increases by one | Works as expected |
+| Guesses Left | Select incorrect key | Guess left display increases by one | Works as expected |
 
 <details><summary>Find Guesses Left</summary>
-<img src="docs/user-story-testing/user-story-guesses.gif">
+<img src="docs/user-story-testing/user-story-play-hangman.gif">
 </details>
+
 
 9. I want the gallows image to add on sections of the hangman each time a letter is guessed incorrectly.
 
@@ -529,10 +549,11 @@ The website was tested on the following browsers:
 | Gallows Image | Select incorrect key | Gallows image adds body part | Works as expected |
 
 <details><summary>Find Gallows</summary>
-<img src="docs/user-story-testing/user-story-gallows.gif">
+<img src="docs/user-story-testing/user-story-keyboard.gif">
 </details>
 
-10. I see to my score of wins vs losses.
+
+10. I want see to my score of wins vs losses.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -540,14 +561,12 @@ The website was tested on the following browsers:
 | Result Modal | Win or lose game | Score is displayed | Works as expected |
 
 <details><summary>Find Score</summary>
-<img src="docs/user-story-testing/user-story-score.gif">
+<img src="docs/user-story-testing/user-story-play-hangman.gif">
 </details>
 
-<details><summary>Find Result Modal</summary>
-<img src="docs/user-story-testing/user-story-result-modal.gif">
-</details>
 
-##### Quiz
+### Quiz
+
 
 11. I want to know how much time is left to answer the question.
 
@@ -559,6 +578,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-timer.gif">
 </details>
 
+
 12. I want to know which answer is correct if answered incorrectly.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -568,6 +588,7 @@ The website was tested on the following browsers:
 <details><summary>Find Correct Answer</summary>
 <img src="docs/user-story-testing/user-story-correct-answer.gif">
 </details>
+
 
 13. I want to know the answer if I run out of time.
 
@@ -579,6 +600,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-correct-out-of-time.gif">
 </details>
 
+
 14. I want to see my score at the end.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -589,6 +611,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-correct-finish-modal.gif">
 </details>
 
+
 15. I want to easily play again or quit once I have finished.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -598,6 +621,7 @@ The website was tested on the following browsers:
 <details><summary>Find Restart / Quit</summary>
 <img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
 </details>
+
 
 #### Site Owner 
 16. I want the user to get a genuine feel this is a DC Batman themed site. 
@@ -610,6 +634,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
 </details>
 
+
 17. I want the user to easily understand how to play the games.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -619,6 +644,7 @@ The website was tested on the following browsers:
 <details><summary>Find Rules</summary>
 <img src="docs/user-story-testing/user-story-rules.gif">
 </details>
+
 
 18. I want both games to be fully responsive.
 
@@ -630,6 +656,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-rules.gif">
 </details>
 
+
 19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the phrase will not be revealed if guessed incorrectly.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -639,6 +666,7 @@ The website was tested on the following browsers:
 <details><summary>Find Score Modal</summary>
 <img src="docs/user-story-testing/user-story-score-modal.gif">
 </details>
+
 
 20. I want the user to be able to contact me for any reason they feel fit.
 
@@ -661,6 +689,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-404.gif">
 </details>
 
+
 22. I want the user to have a link to my work via my Github respositories. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -670,3 +699,4 @@ The website was tested on the following browsers:
 <details><summary>Find Github</summary>
 <img src="docs/user-story-testing/user-story-github.gif">
 </details>
+
