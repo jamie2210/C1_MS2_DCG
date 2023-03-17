@@ -770,7 +770,9 @@ You can clone the repository by following these steps:
 
 https://sweetalert.js.org/guides/
 
-Images and logos not referenced below are owned or created by the developer.
+Images and logos not referenced below are owned or created by the developer. 
+
+All images used have a free licence for personal use.
 
 ### Media
 
