@@ -206,6 +206,9 @@ The page consists of four pages and eleven features.
 <details><summary>Intro</summary>
 <img src="docs/features/intro.png">
 </details>
+<details><summary>Home Page</summary>
+<img src="docs/features/home.png">
+</details>
 
 
 #### Navigation Buttons & Character Images (Navigation buttons featured on all pages)
@@ -217,15 +220,18 @@ The page consists of four pages and eleven features.
 - User stories covered: 2, 5, & 16.
 
 <details><summary>Buttons & Characters</summary>
-<img src="docs/features/buttons.png">
+<img src="docs/features/buttons-batman.png">
+</details>
+<details><summary>Buttons & Characters</summary>
+<img src="docs/features/buttons-riddler.png">
 </details>
 
 #### Rules Modal
 - Clicking the question mark under the selected character will bring up the rules for that game.
 - User stories covered: 1.
 
-<details><summary>Modal</summary>
-<img src="docs/features/modal.png">
+<details><summary>Rules Modal</summary>
+<img src="docs/features/rules-modal.png">
 </details>
 
 #### Footer (displayed on all pages)
