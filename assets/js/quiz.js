@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /**
- * Select reuqired elements
+ * Select reuqired elements.
  */
 const startButton = document.querySelector('.start-button');
 const gameContainer = document.querySelector('.game-container');
@@ -30,7 +30,7 @@ const tickIcon = '<div class="icon"><i class="fa-solid fa-check"></i></div>';
 const crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>';
 
 /**
- * Button functions
+ * Button functions.
  */
  function hangmanButton(){
     window.location.replace("hangman.html");
@@ -43,7 +43,7 @@ function indexButton(){
 }
 
 /**
- * Starts quiz if Start Quiz button is clicked
+ * Starts quiz if Start Quiz button is clicked.
  */
 
 function start() {
@@ -89,7 +89,7 @@ function showQuestionAnswers(index) {
 }
 
 /**
- * As the game is absolue this function is needed to manipulate the size of the container that contains the quiz
+ * As the game is absolute this function is needed to manipulate the size of the container that contains the quiz.
  */
 function gameContainerSize() {
     gameContainer.classList.add('container-grow');
@@ -97,7 +97,7 @@ function gameContainerSize() {
 }
 
 /**
- * Stops the timer once answer selected
+ * Stops the timer once answer selected.
  * If answer is correct score is increased, 'correct' class is called, highlihgting selection in green with a tick icon.
  * If answer is incorrect, 'incorrect' class is called, highlighting selection in black with a cross icon.
  * Loop is then activated to find the correct answer and displays it to the user.
@@ -168,7 +168,7 @@ function showResult() {
 }
 
 /**
- * Start the quiz form the start.
+ * Start the quiz from the start.
  * Reset score, timer, questionCount and returns question number back to 1.
  * Hide the resultContainer.
  */
@@ -183,7 +183,7 @@ function restart() {
 }
 
 /**
- * Relaods window which resets whole page and game.
+ * Reloads window which resets whole page and game.
  */
 function quit() {
     window.location.reload();
@@ -191,6 +191,7 @@ function quit() {
 
 /**
  * Runs a timer counting down in seconds from 30.
+ * A progress bar similtaneously grows reaching end of the container once 30 seconds is up.
  * Once time is up and user has not selected an answer for loop is initiated to determine correct answer.
  * Next button displayed.
  */
@@ -200,6 +201,7 @@ function startTimer() {
         let count = timer.textContent * 1-1;
         timer.textContent = count;
 
+        //progress bar
         let maxTime = 30;
         let progress = (maxTime - count) / 30 * 100;
         bar = Math.min(progress, 100);
