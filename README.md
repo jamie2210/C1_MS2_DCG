@@ -706,3 +706,44 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-github.gif">
 </details>
 <br>
+
+## Bugs
+
+### Hangman
+
+1. Each time a key on the board selected an incorrect word 2 mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners so removing it one fixed the issue.
+
+2. 
+- During testing when using some iphones all the button stlying was off. This is down to using default button stlying. To fix I added my own stylgin to match that of the chrome default.
+<details><summary>Iphone Default</summary>
+<img src="docs/bugs/iphone-bug.png">
+</details>
+<details><summary>Iphone Fix</summary>
+<img src="docs/bugs/iphone-fix.png">
+</details>
+- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default it stopped the default disabled display from working. TO work aroudn the the issue I added a 0.5 opacity to the disabled class which fixed the issue.
+
+```css
+        .button-keys:disabled {
+            opacity: 0.5;
+        }
+```
+
+### Quiz
+
+3. When the user selected answer the timer continued to tick down if it then reached 0 the function was called to display the right wrong answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
+
+4. When user clicks restart the question number is not reset on so displays 10 out 10 questions instead of 1. To fix I reset the question number to 1 in the restart function.
+
+5. Issue with display not covering full screen on certain screen dimensions, particularly ipads. Fixed adding a vh height to the title in media queries.
+
+##### Media Query commands
+```css
+        @media screen and (max-width:920px) {
+            #hangman-title {
+            height: 40vh;
+            }
+        }
+```
+
+
