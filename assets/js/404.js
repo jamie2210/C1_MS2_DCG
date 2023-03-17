@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
 /**
- * Count down timer set to 5 seconds before page is re-directed to index.html
+ * Count down timer set to 5 seconds before page is re-directed to index.html.
  */
 function countDownTimer() {
     setInterval(function() {
@@ -16,6 +16,9 @@ function countDownTimer() {
 
 countDownTimer();
 
+/**
+ * Function called to reset back to home page.
+ */
 function indexButton(){
     window.location.replace("index.html");
 }
