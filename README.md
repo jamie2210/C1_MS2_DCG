@@ -766,5 +766,107 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone.
 
+## Credits
+
+https://sweetalert.js.org/guides/
+
+Images and logos not referenced below are owned or created by the developer.
+
+### Media
+
+Images taken from [Clipartmax](https://www.clipartmax.com/);
+
+- [DC Logo](https://www.clipartmax.com/max/m2i8H7b1m2A0m2Z5/)
+    <details><summary>DC Logo</summary>
+    <img src="docs/credits/dc-logo.png">
+    </details>
+<br>
+
+- [Batman](https://www.clipartmax.com/middle/m2i8N4i8Z5i8Z5i8_batman-from-batman-the-animated-series-by-alexbadass-batman-the-animated-series/)
+    <details><summary>Batman</summary>
+    <img src="docs/credits/batman2.png">
+    </details>
+<br>
+
+- [The Riddler](https://www.clipartmax.com/middle/m2H7i8K9H7d3K9K9_riddler-design-batman-the-animated-series/)
+    <details><summary>The Riddler</summary>
+    <img src="docs/credits/riddler1.png">
+    </details>
+<br>
+
+- [The Riddler Logo](www.clipartmax.com/middle/m2H7K9i8m2i8i8N4_logo-clipart-riddler-villian-riddler/)
+    <details><summary>The Riddler Logo</summary>
+    <img src="docs/credits/riddler_logo.png">
+    </details>
+<br>
+
+- [The Joker](https://www.clipartmax.com/middle/m2i8d3d3m2d3N4d3_the-joker-by-dawidarte-batman-the-animated-series-joker/)
+    <details><summary>The Joker</summary>
+    <img src="docs/credits/joker.png">
+    </details>
+<br>
+
+
+Images taken from [pngimg](https://pngimg.com/);
+
+- [Batman Logo](https://pngimg.com/image/29078)
+    <details><summary>Batman Logo</summary>
+    <img src="docs/credits/batman_logo.png">
+    </details>
+<br>
+
+- [Batman](https://pngimg.com/image/29060)
+    <details><summary>Batman</summary>
+    <img src="docs/credits/batman-head.png">
+    </details>
+<br>
+
+Images taken from [Free Vector](https://www.freevector.com/);
+
+- [Batman Background](https://www.freevector.com/free-batman-illustration-29232)
+    <details><summary>Batman Background</summary>
+    <img src="docs/credits/batman-background.png">
+    </details>
+<br>
+
+Images taken from [Vecteezy](https://www.vecteezy.com/);
+
+- [Gallows - yoosillyone](https://www.vecteezy.com/vector-art/169206-gallows-vector-icons)
+    <details><summary>Gallows</summary>
+    <img src="docs/credits/gallows-vector-icons.jpg">
+    </details>
+<br>
+
+- [Grass](https://www.vecteezy.com/vector-art/6960062-green-grass-illustration-isolated-white-background)
+    <details><summary>Grass</summary>
+    <img src="docs/credits/grass.jpg">
+    </details>
+<br>
+
+Images taken from [freepik](https://www.freepik.com/);
+
+- [Robin](https://www.freepik.com/free-vector/hand-drawn-robin-collection_18895184.htm#query=robin%20bird%20free&position=38&from_view=search&track=ais)
+    <details><summary>Robin</summary>
+    <img src="docs/credits/robin2.png">
+    </details>
+
+### Code 
+
+In order of appearance;
+- The HTML for the responsive [Navbar with toggler](https://getbootstrap.com/docs/5.1/components/navbar/) was taken from Boostrap v5.1 documentation snippet.
+- The HTML for adding [WhatsApp](https://support.messagebird.com/hc/en-us/articles/360018616838-Add-an-embeddable-WhatsApp-Button-to-your-website) was taken from Message Bird Snippet.
+- The HTML for the Nav Bar [Sign In Modal](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works) was taken from Boostrap v5.3 documentation snippet.
+- The HTML for the [Carousel](https://getbootstrap.com/docs/5.0/components/carousel/#with-indicators) on index page was taken from Bootrap v5.1 documentation code snippet.
+- The HTMl for the [Class Modal](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works) was taken from Boostrap v5.3 documentation snippet.
+
+### Acknowledgements
+
+I would like to take the opportunity to thank;
+
+- My mentor, Mo Shami, for his excellent feedback, advice support and guidance throughout.
+- Tutor support from Code Institute for their swift response.
+- The slack community of coders for immediate and helpful response.
+- WAES College and my Tutor Michael for their support and help throughout.
+
 
 
