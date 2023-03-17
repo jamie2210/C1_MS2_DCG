@@ -321,7 +321,7 @@ The page consists of four pages and eleven features.
 - User Stories covered: 21.
 
 <details><summary>404 Page</summary>
-<img src="docs/features/contact-form.png">
+<img src="docs/features/404.png">
 </details>
 
 ## Testing
@@ -462,11 +462,12 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-ingame-fun.gif">
 </details>
 
-4. I want to know how I did at the end of each game.
+4. I want to know how I did at the end of each game, and easily play again.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
+| PLay Again | Finish game | Close modal, game resets, score is tallied. | Works as expected |
 
 <details><summary>Find Score Modal</summary>
 <img src="docs/user-story-testing/user-story-score-modal.gif">
@@ -536,13 +537,13 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-score.gif">
 </details>
 
-<details><summary>Find Resuklt Modal</summary>
+<details><summary>Find Result Modal</summary>
 <img src="docs/user-story-testing/user-story-result-modal.gif">
 </details>
 
 ##### Quiz
 
-11. I want to know how time is left to answer the question.
+11. I want to know how much time is left to answer the question.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -594,9 +595,72 @@ The website was tested on the following browsers:
 
 #### Site Owner 
 16. I want the user to get a genuine feel this is a DC Batman themed site. 
-17. I want the user to easily understand and play the games.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Batman Theme | Display pages | All colours and imagery are that of DC's Batman animated series | Works as expected |
+
+<details><summary>Find Theme</summary>
+<img src="docs/user-story-testing/user-story-correct-finish-modal-buttons.gif">
+</details>
+
+17. I want the user to easily understand how to play the games.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| '?' Icon | Click either '?' icon | Modal pops up explaining rules of choses game | Works as expected |
+
+<details><summary>Find Rules</summary>
+<img src="docs/user-story-testing/user-story-rules.gif">
+</details>
+
 18. I want both games to be fully responsive.
-19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the word will not be revealed if guessed incorrectly.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Responsiveness | Test in google developer | Adjusts to each device correctly | Works as expected |
+
+<details><summary>Find Responsiveness</summary>
+<img src="docs/user-story-testing/user-story-rules.gif">
+</details>
+
+19. In hangman, the phrases / words are limited, so to increase the difficulty and longevity of the game, the phrase will not be revealed if guessed incorrectly.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Score Modal | Finish each game | Score diplayed but he hidden phrase is not | Works as expected |
+
+<details><summary>Find Score Modal</summary>
+<img src="docs/user-story-testing/user-story-score-modal.gif">
+</details>
+
 20. I want the user to be able to contact me for any reason they feel fit.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Email Icon | Click Icon | Takes user to contact page | Works as expected |
+
+<details><summary>Find Contact Form</summary>
+<img src="docs/user-story-testing/user-story-contact-form.gif">
+</details>
+
+
 21. I want the user to come to a 404 page and be automatically re-directed to the home page should they enter an invalid url.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 Page | Enter invalid url | 404 page is displayed, countdown timer returns usere to home page | Works as expected |
+
+<details><summary>Find 404</summary>
+<img src="docs/user-story-testing/user-story-404.gif">
+</details>
+
 22. I want the user to have a link to my work via my Github respositories. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Github Icon | Click Icon | Takes user to repository page for the game | Works as expected |
+
+<details><summary>Find Github</summary>
+<img src="docs/user-story-testing/user-story-github.gif">
+</details>
