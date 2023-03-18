@@ -189,6 +189,7 @@ The website consists of four separate pages with rules and result modals:
 - [W3C validator](https://validator.w3.org/)
 - [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+- [jshint](https://jshint.com/)
 
 ## Features
 The page consists of four pages and eleven features.
@@ -767,8 +768,6 @@ You can clone the repository by following these steps:
 
 ## Credits
 
-https://sweetalert.js.org/guides/
-
 Images and logos not referenced below are owned or created by the developer. 
 
 All images used have a free licence for personal use.
@@ -854,6 +853,8 @@ Images taken from [freepik](https://www.freepik.com/);
 ### Code 
 
 - The Javascript for [Sweet Alert](https://sweetalert.js.org/guides/) email submit response was taken from the Sweet Alet guide.
+
+- Guidance was taken from this tutorial [Useful Prgrammer](https://www.youtube.com/watch?v=7XbsQlwyHYw) to add tab answer function to quiz answer selection.
 
 ### Acknowledgements
 
