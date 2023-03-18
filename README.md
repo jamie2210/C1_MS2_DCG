@@ -720,7 +720,7 @@ The website was tested on the following browsers:
 <details><summary>iPhone Fix</summary>
 <img src="docs/bugs/iphone-fix.png">
 </details>
-- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default it stopped the default disabled display from working. To work around the issue, I added a 0.5 opacity to the disabled class which fixed the issue as it then clearly indicated which buttons were now disabled.
+- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default as it stopped the default disabled display from working. To work around the issue, I added a 0.5 opacity to the disabled class which fixed the issue as it then clearly indicated which buttons were now disabled.
 
 ```css
         .button-keys:disabled {
@@ -730,11 +730,11 @@ The website was tested on the following browsers:
 
 ### Quiz
 
-3. When the user selected answer the timer continued to tick down if it then reached 0 the function was called to display the right wrong answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
+3. When the user selected an answer the timer continued to tick down and if it then reached 0 the function was called to display the right wrong answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
 
 4. When the user clicked restart the question number was not reset, so the game displayed 10 out 10 questions instead of 1 out 10. To fix this I reset the question number to 1 in the restart function.
 
-5. Issue with the display not covering the full screen on certain screen dimensions, particularly long iPads in google developer tools. Fixed by adding a specific vh height to the title in media queries.
+5. Issue with the display not covering the full screen on certain screen dimensions, particularly long / tall iPads in google developer tools. Fixed by adding a specific vh height to the title in media queries.
 
 ##### Media Query commands
 ```css
