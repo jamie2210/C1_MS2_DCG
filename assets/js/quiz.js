@@ -68,11 +68,13 @@ startButton.addEventListener('click', function() {
 function showQuestionAnswers(index) {
     let questionText = document.querySelector('.question');
 
-    let questionContent = '<span class="question">'+ questions[index].numb + ". " + questions[index].question +'</span>';
-    let answersContent = '<div class="answer-text"><span>' + questions[index].options[0] +'</span></div>'
-    + '<div class="answer-text"><span>' + questions[index].options[1] +'</span></div>'
-    + '<div class="answer-text"><span>' + questions[index].options[2] +'</span></div>'
-    + '<div class="answer-text"><span>' + questions[index].options[3] +'</span></div>';
+    let questionContent = `<span class="question">${questions[index].numb}. ${questions[index].question}</span>`;
+    let answersContent = `
+    <div class="answer-text"><span>${questions[index].options[0]}</span></div>
+    <div class="answer-text"><span>${questions[index].options[1]}</span></div>
+    <div class="answer-text"><span>${questions[index].options[2]}</span></div>
+    <div class="answer-text"><span>${questions[index].options[3]}</span></div>
+    `;
     questionText.innerHTML = questionContent;
     answers.innerHTML = answersContent;
 
