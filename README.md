@@ -711,10 +711,9 @@ The website was tested on the following browsers:
 
 ### Hangman
 
-1. Each time a key on the board selected an incorrect word 2 mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners so removing it one fixed the issue.
+1. Each time a key on the board selected an incorrect word 2 mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners. By removing it in one fixed the issue.
 
-2. 
-- During testing when using some iPhones all the button styling was off. This is down to using default button stlying. To fix I added my own styling to match that of the chrome default.
+2. During testing when using some iPhones all the button styling was off. This is down to using default button stlying. To fix I added my own styling to match that of the chrome default.
 <details><summary>iPhone Default</summary>
 <img src="docs/bugs/iphone-bug.png">
 </details>
