@@ -81,7 +81,7 @@ function showQuestionAnswers(index) {
     document.getElementById('question-on').innerHTML = questionNumber;
     document.getElementById('question-total').innerHTML = questions.length;
 
-    let indexAnswer = answers.querySelectorAll('.answer-text span');
+    const indexAnswer = answers.querySelectorAll('.answer-text');
 
     for(let i = 0; i < indexAnswer.length; i++) {
         indexAnswer[i].addEventListener('keydown', function(event) {
@@ -91,7 +91,7 @@ function showQuestionAnswers(index) {
         });
     }
 
-    let answer = answers.querySelectorAll('.answer-text');
+    const answer = answers.querySelectorAll('.answer-text');
 
     for(let i = 0; i < answer.length; i++) {
         answer[i].addEventListener('click', function() {
