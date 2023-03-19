@@ -200,7 +200,7 @@ The page consists of four pages and eleven features.
 #### DC Logo and introduction
 
 - Upon arriving to the site a welcome modal pops up.
-- It details where to find the games, the rules and contact informaton.
+- It details where to find the games, the rules and contact information.
 - The rules are modals accessed by clicking the '?' symbols.
 - The logo is DC's official logo.
 - User stories covered:  1, 2, 3, 5, 16 & 17.
