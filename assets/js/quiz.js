@@ -70,10 +70,10 @@ function showQuestionAnswers(index) {
 
     let questionContent = `<span class="question">${questions[index].numb}. ${questions[index].question}</span>`;
     let answersContent = `
-    <div class="answer-text"><span tabindex="0">${questions[index].options[0]}</span></div>
-    <div class="answer-text"><span tabindex="0">${questions[index].options[1]}</span></div>
-    <div class="answer-text"><span tabindex="0">${questions[index].options[2]}</span></div>
-    <div class="answer-text"><span tabindex="0">${questions[index].options[3]}</span></div>
+    <div class="answer-text" tabindex="0"><span>${questions[index].options[0]}</span></div>
+    <div class="answer-text" tabindex="0"><span >${questions[index].options[1]}</span></div>
+    <div class="answer-text" tabindex="0"><span>${questions[index].options[2]}</span></div>
+    <div class="answer-text" tabindex="0"><span>${questions[index].options[3]}</span></div>
     `;
     questionText.innerHTML = questionContent;
     answers.innerHTML = answersContent;
