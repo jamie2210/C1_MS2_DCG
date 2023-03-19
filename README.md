@@ -5,7 +5,7 @@
 
 [Live webpage](https://jamie2210.github.io/CI_MS2_DCG/index.html)
 
-This is the website for DC Games, it is designed to be responsive and accessible on all devices. It consists of 2 games, a hangman game, and a multiple-choice quiz. Both games are themed around the comic Batman.
+This is the website for DC Games, it is designed to be responsive and accessible on all devices. It consists of 2 games, a hangman game, and a multiple-choice quiz. Both games are themed around the animated comic of Batman.
 
 ## Table of Content
 
@@ -94,7 +94,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 10. I see to my score of wins vs losses.
 
 ##### Quiz
-11. I want to know how time is left to answer the question.
+11. I want to know how much time is left to answer the question.
 12. I want to know which answer is correct if answered incorrectly.
 13. I want to know the answer if I run out of time.
 14. I want to see my score at the end.
@@ -175,6 +175,7 @@ The website consists of four separate pages with rules and result modals:
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks and Tools
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Bootstrap v5.3](https://getbootstrap.com/)
 - [Git](https://git-scm.com/)
 - [Github](https://github.com/)
