@@ -856,6 +856,10 @@ Images taken from [freepik](https://www.freepik.com/);
 
 - Guidance was taken from this tutorial [Useful Prgrammer](https://www.youtube.com/watch?v=7XbsQlwyHYw) to add tab answer function to quiz answer selection.
 
+- [Stack Overflow](https://stackoverflow.com/questions) was used throughout for hints, tips and tricks.
+
+- [w3schools](https://www.w3schools.com/jsref/met_win_setinterval.asp) was used for a better undertstanding of set intervals and timers.
+
 ### Acknowledgements
 
 I would like to take the opportunity to thank;
