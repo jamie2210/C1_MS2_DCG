@@ -141,6 +141,7 @@ function answerSelected(answer){
     }
     for (let i = 0; i < allAnswers.length; i++) {
         allAnswers[i].classList.add('disabled');
+        allAnswers[i].removeAttribute('tabindex');
     }
     nextButton.classList.add('show');
 }
