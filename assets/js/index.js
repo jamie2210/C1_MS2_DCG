@@ -9,6 +9,8 @@ const button = document.getElementsByClassName('close');
 const batmanBackground = document.querySelector('.batman-background');
 const riddlerBackground = document.querySelector('.riddler-background');
 const intro = document.querySelector('.intro-text');
+const batmanIcon = document.getElementById('batmanicon');
+const riddlerIcon = document.getElementById('riddlericon');
 
 /**
  * Button functions
@@ -52,24 +54,27 @@ function riddlerClose() {
     riddlerBackground.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == batmanModal) {
-        batmanModal.style.display = "none";
-        batmanBackground.style.display = "none";
-     }
- 
-     if (event.target == riddlerModal) {
-        riddlerModal.style.display = "none";
-        riddlerBackground.style.display = "none";
-     }
- };
-
  /**
   * Close intro auto pop up modal
   */
  function introClose() {
     intro.style.display = "none";
  }
+
+  /**
+  * Event listeners used to open rules when enter key is used via tabindex selection
+  */
+ batmanIcon.addEventListener('keydown', function(event) {
+    if(event.key === 'Enter') {
+        batmanRules();
+    }
+});
+
+riddlerIcon.addEventListener('keydown', function(event) {
+    if(event.key === 'Enter') {
+        riddlerRules();
+    }
+});
 
 /* exported hangmanButton, quizButton, indexButton */
  /*exported button, batmanRules, riddlerRules, batmanClose, riddlerClose, introClose */
