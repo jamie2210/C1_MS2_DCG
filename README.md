@@ -864,7 +864,7 @@ Images taken from [freepik](https://www.freepik.com/);
 
 - [w3schools](https://www.w3schools.com/jsref/met_win_setinterval.asp) was used for a better undertstanding of set intervals and timers.
 
-- Inspiration and guidance for hangman was taken from [Simon Suh](9https://www.youtube.com/watch?v=dgvyE1sJS3Y) hangman Game tutorial on youtube.
+- Inspiration and guidance for hangman was taken from [Simon Suh](https://www.youtube.com/watch?v=dgvyE1sJS3Y) hangman Game tutorial on youtube.
 
 - Inspiration and guidance for a quiz with a timer was taken from [Ali Aslan](https://www.youtube.com/watch?v=xZXW5SnCiWI&t=224s) quiz tutorial on youtube.
 
