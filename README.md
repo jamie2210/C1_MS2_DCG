@@ -249,17 +249,16 @@ The page consists of four pages and eleven features.
 
 #### Game Function & Game Screen
 - Consists of empty gallows, empty score, and number of wrong guesses left.
-- Letter tabs for entry guesses, allows user to use either mouse or keyboard for entries.
+- Letter keys for entry guesses, allows user to use either mouse or keyboard for entries.
 - If the letter is guessed correctly the letter is revealed in replace of the '_'
 - If the phrase is guessed correctly a modal is presented confirming the win with the total number of wins and losses.
 - If the letter is guessed incorrectly the hangman image increases as does the number of wrong guesses.
 - If the phrase is guessed incorrectly a modal is presented confirming the loss with the total number of wins and losses.
-- On pressing a letter, it is highlighted yellow and then greyed out once used, cannot be used again.
+- On pressing a letter, it is highlighted yellow and then greyed out once used, it cannot be used again.
 - Reset button resets the game but keeps track the total wins and losses until page is refreshed.
 - The theme of the game is Batman and The Joker, and all colours, wording and design are based on the animated series.
-- A comical element has been added to the results modal which is light-hearted fun and plays on the characters in the game.
+- A comical element has been added to the results modal which is light-hearted fun. For each win and loss both characters have 5 different phrases which are randomly selected each time and play on the characters personality.
 - User stories covered: 6, 7, 8, 9 10, 16, 18 & 19.
-- User story not covered: 11. This is purposely done to increase the longevity and difficulty of the game.
 
 #### Win Modal
 - Displays current score, wins v losses.
@@ -289,11 +288,11 @@ The page consists of four pages and eleven features.
 - Navigation buttons.
 - The game is themed in the colours of The Riddler, green and purple.
 - Game modal is presented once start button is pressed.
-- Game consists of a timer, time bar and multiple choice questions the user can click to select.
+- Game consists of a timer, time bar and multiple choice questions the user can click or tab to and press enter to select.
 - When a question is answered correctly it is highlighted in green with a tick icon.
-- When a question is answered incorrectly it is highlighted in black with a cross icon.
+- When a question is answered incorrectly it is highlighted in black with a cross icon and the correct answer is displayed.
 - At the end of the game the score is tallied and revealed in a modal.
-- A comical element has been added to the results modal which is light-hearted fun and plays on the characters in the game.
+- A comical element has been added to the results modal which is light-hearted fun. Dependning the score The riddler's phrase will change.
 - User stories covered: 3, 11, 12 & 13.
 
 #### Results Modal
@@ -325,7 +324,7 @@ The page consists of four pages and eleven features.
 ### 404
 - Explains to the user they have landed on an unrecognised page.
 - It automatically returns the user back to the home page after 10 seconds, detailed by a count down.
-- There is also a home button should user wish to use it.
+- There is also a home button should the user wish to use it.
 - User Stories covered: 21.
 
 <details><summary>404 Page</summary>
@@ -466,6 +465,7 @@ The website was tested on the following browsers:
 |-------------|------------|---------------------|-------------------|
 | '?' Icon | Click either '?' icon | Modal pops up explaining rules of choses game | Works as expected |
 | Button | Click button | Takes user to chosen game | Works as expected |
+| In-game Play | Games are easy to follow, pleasing on the eye and fun | In-game play | Work as expected |
 | Score Modal | Finish each game | Humorous modal pops up displaying score. | Works as expected |
 
 <details><summary>Find Rules</summary>
@@ -540,7 +540,7 @@ The website was tested on the following browsers:
 | Guesses Left | Select incorrect key | Guess left display increases by one | Works as expected |
 
 <details><summary>Find Guesses Left</summary>
-<img src="docs/user-story-testing/user-story-play-hangman.gif">
+<img src="docs/user-story-testing/hangman-screen.png">
 </details>
 <br>
 
@@ -563,7 +563,10 @@ The website was tested on the following browsers:
 | Result Modal | Win or lose game | Score is displayed | Works as expected |
 
 <details><summary>Find Score</summary>
-<img src="docs/user-story-testing/user-story-play-hangman.gif">
+<img src="docs/user-story-testing/hangman-screen.png">
+</details>
+<details><summary>Find Results Modal</summary>
+<img src="docs/user-story-testing/win-modal.png">
 </details>
 <br>
 
@@ -577,7 +580,7 @@ The website was tested on the following browsers:
 | Countdown Timer & Bar | Start game | Countdown timer and time bar are displayed | Works as expected |
 
 <details><summary>Find Timer / Bar</summary>
-<img src="docs/user-story-testing/user-story-play-quiz.gif">
+<img src="docs/user-story-testing/game-modal.png">
 </details>
 <br>
 
@@ -713,7 +716,7 @@ The website was tested on the following browsers:
 
 ### Hangman
 
-1. Each time a key on the board selected an incorrect word 2 mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners. By removing it in one fixed the issue.
+1. Each time a key on the board selected an incorrect word two mistakes were added instead of one. The checkLetter function was called in both the keydown and keyup event listeners. By removing it in one fixed the issue.
 
 2. During testing when using some iPhones all the button styling was off. This is down to using default button stlying. To fix I added my own styling to match that of the chrome default.
 <details><summary>iPhone Default</summary>
@@ -722,7 +725,7 @@ The website was tested on the following browsers:
 <details><summary>iPhone Fix</summary>
 <img src="docs/bugs/iphone-fix.png">
 </details>
-- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default as it stopped the default disabled display from working. To work around the issue, I added a 0.5 opacity to the disabled class which fixed the issue as it then clearly indicated which buttons were now disabled.
+- This caused more errors, when I added a #000000 color class to the buttons to prevent the blue default as it stopped the default disabled display from working. To work around the issue, I added a 0.5 opacity to the disabled class which fixed the issue as it then clearly indicates which buttons were are disabled.
 
 ```css
         .button-keys:disabled {
@@ -732,7 +735,7 @@ The website was tested on the following browsers:
 
 ### Quiz
 
-3. When the user selected an answer the timer continued to tick down and if it then reached 0 the function was called to display the right wrong answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
+3. When the user selected an answer the timer continued to tick down and if it then reached 0 the function was called to display the right wrong or answer, which were already on display as an answer was already clicked. This caused the game to display icons twice and looked messy. It was fixed by adding the clearInterval function to the answerSelected function once one had been clicked, resulting in the timer freezing until the next question button is clicked.
 
 4. When the user clicked restart the question number was not reset, so the game displayed 10 out 10 questions instead of 1 out 10. To fix this I reset the question number to 1 in the restart function.
 
@@ -749,22 +752,22 @@ The website was tested on the following browsers:
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
-1. In the GitHub repository navigate to the Settings tab
-2. On the left-hand menu select Pages
-3. For the source select Branch: main
-4. After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at https://jamie2210.github.io/CI_MS2_DCG/index.html
+1. In the GitHub repository navigate to the Settings tab.
+2. On the left-hand menu select Pages.
+3. For the source select Branch: main.
+4. After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at https://jamie2210.github.io/CI_MS2_DCG/index.html.
 
 You can for fork the repository by following these steps:
-1. Go to the GitHub repository
-2. Click on Fork button in upper right-hand corner
+1. Go to the GitHub repository.
+2. Click on Fork button in upper right-hand corner.
 
 You can clone the repository by following these steps:
-1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash
-5. Change the current working directory to the one where you want the cloned directory
-6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+1. Go to the GitHub repository .
+2. Locate the Code button above the list of files and click it.
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY).
 7. Press Enter to create your local clone.
 
 ## Credits
@@ -853,9 +856,9 @@ Images taken from [freepik](https://www.freepik.com/);
 
 ### Code 
 
-- The Javascript for [Sweet Alert](https://sweetalert.js.org/guides/) email submit response was taken from the Sweet Alet guide.
+- The Javascript for [Sweet Alert](https://sweetalert.js.org/guides/) email submit response was taken from the Sweet Alert guide.
 
-- Guidance was taken from this tutorial [Useful Prgrammer](https://www.youtube.com/watch?v=7XbsQlwyHYw) to add tab answer function to quiz answer selection.
+- Guidance was taken from this tutorial [Useful Prgrammer](https://www.youtube.com/watch?v=7XbsQlwyHYw) to add tab answer function to quiz answer selection and question icons.
 
 - [Stack Overflow](https://stackoverflow.com/questions) was used throughout for hints, tips and tricks.
 
