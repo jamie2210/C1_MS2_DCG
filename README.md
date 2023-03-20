@@ -14,26 +14,26 @@ This is the website for DC Games, it is designed to be responsive and accessible
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requirements and Expectations](#user-requrements-and-expectations)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
-    2. [Colour](#colours)
+    2. [Colours](#colours)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
-    2. [Frameworks & Tools](#frameworks-&-tools)
+    2. [Frameworks and Tools](#frameworks-and-tools)
 5. [Features](#features)
-6. [Testing](#validation)
+6. [Testing](#testing)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
     3. [JavaScript Validation](#javascript-validation)
     4. [Accessibility](#accessibility)
     5. [Performance](#performance)
     6. [Device testing](#performing-tests-on-various-devices)
-    7. [Browser compatibility](#browser-compatability)
+    7. [Browser compatibility](#browser-compatibility)
     8. [Testing user stories](#testing-user-stories)
 8. [Bugs](#bugs)
 9. [Deployment](#deployment)
@@ -114,7 +114,7 @@ Primary goal is to provide a user-friendly, fun, and good-looking interactive we
 ### Design Choices
 The design has been influenced by the comics like keeping the buttons square and grey to present comments in comic books. Each game has been designed around the colours and personality of the characters in the comics. 
 
-### Colour
+### Colours
 
 DC uses a specific blue which is used sparingly throughout the website.
 
