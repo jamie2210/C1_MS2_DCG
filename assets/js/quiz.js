@@ -62,6 +62,7 @@ startButton.addEventListener('click', function() {
  * Display question number and text.
  * Create HTML content for the question and answers based on the data in the `questions` array.
  * Update text diplaying current question and total number of questions.
+ * Add event listner to each of the answser elements to respond to tab and enter key entry from user.
  * Add event listner to each of the answser elements to respond to clicks from user.
  * @param {number} index 
  */
