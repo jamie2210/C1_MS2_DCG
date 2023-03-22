@@ -6,7 +6,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 });
 
-
 /**
  * Select reuqired elements.
  */
@@ -34,9 +33,6 @@ const crossIcon = '<div class="icon"><i class="fa-solid fa-xmark"></i></div>';
  */
  function hangmanButton(){
     window.location.replace("hangman.html");
-}
-function quizButton(){
-    window.location.replace("quiz.html");
 }
 function indexButton(){
     window.location.replace("index.html");
