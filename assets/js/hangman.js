@@ -45,6 +45,9 @@ let batmanLosses = 0;
 let wordStatus = '';
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
+/**
+ * Select reuqired elements
+ */
 const winModal = document.querySelector('.win-modal') ;
 const loseModal = document.querySelector('.lose-modal');
 const winBackground = document.querySelector('.win-background');
@@ -288,5 +291,42 @@ function enterKeyReset() {
 }
 
 enterKeyReset();
+
+/**
+ * Select reuqired elements
+ * Add event listners for buttons and links to ensure enter key works when links and buttons other than 'Reset' button are targeted.
+ */
+const homeBtn = document.getElementById('bat_home');
+const quizBtn = document.getElementById('bat_quiz');
+const contactBtn = document.getElementById('bat_contact');
+const gitBtn = document.getElementById('bat_git');
+
+homeBtn.addEventListener('keydown', function(event){
+    if (event.key === 'Enter') {
+        window.location.replace("index.html");
+    }
+});   
+
+quizBtn.addEventListener('keydown', function(event){
+    if (event.key === 'Enter') {
+        window.location.replace("quiz.html");
+    }
+});  
+
+contactBtn.addEventListener('keydown', function(event){
+    if (event.key === 'Enter') {
+        window.location.replace("contact.html");
+    }
+});  
+
+gitBtn.addEventListener('keydown', function(event){
+    if (event.key === 'Enter') {
+        window.open("https://github.com/jamie2210/CI_MS2_DCG","_blank"); // opens link in new tab.
+        window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
+    }
+});
+
+
+
 
 /* exported reset */

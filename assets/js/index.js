@@ -65,9 +65,6 @@ function riddlerClose() {
 * Event listeners used to open rules when enter key is used via tabindex selection
 */
 
-console.log('batmanIcon:', batmanIcon);
-console.log('riddlerIcon:', riddlerIcon);
-
 batmanIcon.addEventListener('keydown', function(event) {
     if(event.key === 'Enter') {
         batmanRules();
