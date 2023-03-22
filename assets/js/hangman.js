@@ -58,9 +58,6 @@ document.getElementById('maxguesses').innerHTML = maxGuesses;
 /**
  * Button functions
  */
-function hangmanButton(){
-    window.location.replace("hangman.html");
-}
 function quizButton(){
     window.location.replace("quiz.html");
 }
@@ -262,7 +259,7 @@ function reset() {
 }
 
 /** 
-* KeyDown styling matches that of a mouse click turning the button yellow on key down.
+* KeyDown styling matches that of a mouse click turning the button yellow on key down if targeted with tab.
 * KeyUp function removes the class.
 * removeEventListeners function removes the event listenrs so the button isn't triggered if enter is pressed again while not on focus of the reset button.
 */
@@ -289,13 +286,12 @@ function enterKeyReset() {
     }
 }
 
-
 /**
- * Functinon calling reset() and event to add colour class on targetted button enter key.
+ * Functinon calling reset() and enterKeyReset() to add colour class on targeted button enter key and reset the game.
  */
 function enterReset() {
     enterKeyReset();
     reset();
 }
 
-/* exported reset hangmanButton, quizButton, indexButton */
+/* exported enterReset, quizButton, indexButton */
