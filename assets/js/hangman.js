@@ -272,7 +272,7 @@ function enterKeyReset() {
     let keyDownButton = document.getElementById('reset');
     document.addEventListener('keydown', function(event) {
             if(event.key === 'Enter') {
-                event.preventDefault();
+                // event.preventDefault();
                 keyDownButton.classList.add('active');
             }
         });
@@ -280,14 +280,14 @@ function enterKeyReset() {
     let resetButton = document.getElementById('reset');
     document.addEventListener('keyup', function(event) {   
     if (event.key === 'Enter') {
-        event.preventDefault();
-        resetButton.click();
+        // event.preventDefault();
+        // resetButton.click();
         resetButton.classList.remove('active');
     }
 });
-    resetButton.addEventListener('click', function() {
+    // resetButton.addEventListener('click', function() {
 
-    });
+    // });
 }
 
 /**
@@ -301,56 +301,12 @@ const gitBtn = document.getElementById('bat_git');
 const resetBtn = document.getElementById('reset');
 const letterKeys = document.querySelector('.button-keys');
 
-// homeBtn.addEventListener('keydown', function(event){
-//     if (event.key === 'Enter') {
-//         window.location.replace("index.html");
-//     }
-// });   
-
-// quizBtn.addEventListener('keydown', function(event){
-//     if (event.key === 'Enter') {
-//         window.location.replace("quiz.html");
-//     }
-// });  
-
-// contactBtn.addEventListener('keydown', function(event){
-//     if (event.key === 'Enter') {
-//         window.location.replace("contact.html");
-//     }
-// });  
-
 gitBtn.addEventListener('keydown', function(event){
     if (event.key === 'Enter') {
         window.open("https://github.com/jamie2210/CI_MS2_DCG","_blank"); // opens link in new tab.
-        window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
+        // window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
     }
 });
 
-// resetBtn.addEventListener('keydown', function(event){
-//     if (event.key === 'Enter') {
-//         // resetBtn.classList.add('active');
-//         enterKeyReset();
-//     }
-// });
-
-// resetBtn.addEventListener('keyup', function(event){
-//     if (event.key === 'Enter') {
-//         resetBtn.classList.remove('active');
-//     }
-// });
-
-// letterKeys.addEventListener('keydown', function(event){
-//     if (event.key === 'Enter') {
-//         letterKeys.classList.add('active');
-        
-//     }
-// });
-
-// letterKeys.addEventListener('keyup', function(event){
-//     if (event.key === 'Enter') {
-//         letterKeys.classList.remove('active');
-        
-//     }
-// });
 
 /* exported reset */
