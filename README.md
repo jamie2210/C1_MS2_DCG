@@ -732,6 +732,17 @@ The website was tested on the following browsers:
             opacity: 0.5;
         }
 ```
+4. I really wanted my 'Reset' button to change yellow on 'keydown' like it does with a mouse click, my first attempt isolated the enter to key to only work on the reset button. This has a negative effect on the other buttons and affected accessibility as enter no longer worked on any other buttons. I ran into issue with the event listeners being constantly active once called on which caused the 'Reset' button to constantly flash yellow is enter was pressed. This was eventually fixed by adding removeEventListener functions if enter is pressed when the reset button was not targeted.
+
+```javascript
+                function removeEventListeners() {
+                    document.removeEventListener('keydown', keyDown);
+                    document.removeEventListener('keyup', keyUp);
+                }
+                if(!keyDownButton || !keyUpButton) {
+                    removeEventListeners();
+                 }
+```
 
 ### Quiz
 
@@ -863,6 +874,8 @@ Images taken from [freepik](https://www.freepik.com/);
 - [Stack Overflow](https://stackoverflow.com/questions) was used throughout for hints, tips and tricks.
 
 - [w3schools](https://www.w3schools.com/jsref/met_win_setinterval.asp) was used for a better undertstanding of set intervals and timers.
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) helped me understand removeEventListeners further.
 
 - Inspiration and guidance for hangman was taken from [Simon Suh](https://www.youtube.com/watch?v=dgvyE1sJS3Y) hangman Game tutorial on youtube.
 

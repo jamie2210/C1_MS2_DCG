@@ -261,7 +261,7 @@ function reset() {
 /** 
 * KeyDown styling matches that of a mouse click turning the button yellow on key down if targeted with tab.
 * KeyUp function removes the class.
-* removeEventListeners function removes the event listenrs so the button isn't triggered if enter is pressed again while not on focus of the reset button.
+* RemoveEventListeners function removes the event listenrs so the button isn't triggered if enter is pressed again while not on focus of the reset button.
 */
 function enterKeyReset() {
     let keyDownButton = document.getElementById('reset');
