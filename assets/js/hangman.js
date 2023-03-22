@@ -33,6 +33,9 @@ const losePhrase = [
     "Oh no, what would lil' old Battsy say, hmm."
 ];
 
+/**
+ * Declare variables.
+ */
 let answer = '';
 const maxGuesses = 6;
 let wrongGuess = 0;
@@ -44,6 +47,8 @@ let batmanWins = 0;
 let batmanLosses = 0; 
 let wordStatus = '';
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let keyDown = null;
+let keyUp = null;
 
 /**
  * Select reuqired elements
@@ -263,6 +268,7 @@ function reset() {
 * KeyUp function removes the class.
 * RemoveEventListeners function removes the event listenrs so the button isn't triggered if enter is pressed again while not on focus of the reset button.
 */
+
 function enterKeyReset() {
     let keyDownButton = document.getElementById('reset');
     document.addEventListener('keydown', function keyDown(event) {

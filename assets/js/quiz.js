@@ -19,6 +19,10 @@ const restartQuiz = document.querySelector('.restart');
 const quitQuiz = document.querySelector('.quit');
 const nextButton = document.querySelector('.next-button');
 
+
+/**
+ * Declare variables.
+ */
 let questionCount = 0;
 let questionNumber = 1;
 let userScore = 0;
