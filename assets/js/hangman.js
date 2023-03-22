@@ -58,7 +58,7 @@ document.getElementById('maxguesses').innerHTML = maxGuesses;
 /**
  * Button functions
  */
- function hangmanButton(){
+function hangmanButton(){
     window.location.replace("hangman.html");
 }
 function quizButton(){
@@ -67,8 +67,6 @@ function quizButton(){
 function indexButton(){
     window.location.replace("index.html");
 }
-
-/* exported hangmanButton, quizButton, indexButton */
 
 /**
  * Select random word for game.
@@ -277,36 +275,38 @@ function enterKeyReset() {
             }
         });
 
-    let resetButton = document.getElementById('reset');
+    let keyUpButton = document.getElementById('reset');
     document.addEventListener('keyup', function(event) {   
     if (event.key === 'Enter') {
         // event.preventDefault();
-        // resetButton.click();
-        resetButton.classList.remove('active');
+        // keyDownButton.click();
+        keyUpButton.classList.remove('active');
     }
 });
-    // resetButton.addEventListener('click', function() {
-
+    // keyDownButton.addEventListener('click', function() {
     // });
+}
+
+/**
+ * Functinon calling reset() and event to add colour class on targetted button enter key.
+ */
+function enterReset() {
+    enterKeyReset();
+    reset();
 }
 
 /**
  * Select reuqired elements
  * Add event listners for buttons and links to ensure enter key works when links and buttons other than 'Reset' button are targeted.
  */
-const homeBtn = document.getElementById('bat_home');
-const quizBtn = document.getElementById('bat_quiz');
-const contactBtn = document.getElementById('bat_contact');
-const gitBtn = document.getElementById('bat_git');
-const resetBtn = document.getElementById('reset');
-const letterKeys = document.querySelector('.button-keys');
 
+
+const gitBtn = document.getElementById('bat_git');
 gitBtn.addEventListener('keydown', function(event){
     if (event.key === 'Enter') {
-        window.open("https://github.com/jamie2210/CI_MS2_DCG","_blank"); // opens link in new tab.
-        // window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
+        window.open("https://github.com/jamie2210/CI_MS2_DCG","_blank"); // opens link in new tab when using tab and neter key.
+        window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
     }
 });
 
-
-/* exported reset */
+/* exported reset hangmanButton, quizButton, indexButton */
