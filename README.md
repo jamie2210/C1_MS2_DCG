@@ -735,13 +735,13 @@ The website was tested on the following browsers:
 4. I really wanted my 'Reset' button to change yellow on 'keydown' like it does with a mouse click, my first attempt isolated the enter to key to only work on the reset button. This had a negative effect on the other buttons and affected accessibility as enter no longer worked on any other buttons. I then ran into issues with the event listeners being constantly active once called on which caused the 'Reset' button to constantly flash yellow if enter was pressed. This was eventually fixed by adding removeEventListener functions if enter is pressed when the reset button was not targeted.
 
 ```javascript
-                function removeEventListeners() {
-                    document.removeEventListener('keydown', keyDown);
-                    document.removeEventListener('keyup', keyUp);
-                }
-                if(!keyDownButton || !keyUpButton) {
-                    removeEventListeners();
-                 }
+        function removeEventListeners() {
+            document.removeEventListener('keydown', keyDown);
+            document.removeEventListener('keyup', keyUp);
+        }
+        if(!keyDownButton || !keyUpButton) {
+            removeEventListeners();
+            }
 ```
 
 ### Quiz
