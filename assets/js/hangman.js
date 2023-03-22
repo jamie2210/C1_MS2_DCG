@@ -262,30 +262,33 @@ function reset() {
 }
 
 /** 
-* Allows use of enter key in replace of clicking reset button with mouse.
-* Keydown styling matches that of a mouse click turning the button yellow while held down.
-* Using keydown and keyup funtions prevents multiple resets whiles key is held down, one reset per press, like the mouse.
+* KeyDown styling matches that of a mouse click turning the button yellow on key down.
+* KeyUp function removes the class.
+* removeEventListeners function removes the event listenrs so the button isn't triggered if enter is pressed again while not on focus of the reset button.
 */
 function enterKeyReset() {
     let keyDownButton = document.getElementById('reset');
-    document.addEventListener('keydown', function(event) {
-            if(event.key === 'Enter') {
-                // event.preventDefault();
+    document.addEventListener('keydown', function keyDown(event) {
+            if(event.key === 'Enter' && event.target === keyDownButton) {
                 keyDownButton.classList.add('active');
             }
         });
 
     let keyUpButton = document.getElementById('reset');
-    document.addEventListener('keyup', function(event) {   
-    if (event.key === 'Enter') {
-        // event.preventDefault();
-        // keyDownButton.click();
+    document.addEventListener('keyup', function keyUp(event) {   
+    if(event.key === 'Enter' && event.target === keyUpButton) {
         keyUpButton.classList.remove('active');
     }
 });
-    // keyDownButton.addEventListener('click', function() {
-    // });
+    function removeEventListeners() {
+        document.removeEventListener('keydown', keyDown);
+        document.removeEventListener('keyup', keyUp);
+    }
+    if(!keyDownButton || !keyUpButton) {
+        removeEventListeners();
+    }
 }
+
 
 /**
  * Functinon calling reset() and event to add colour class on targetted button enter key.
@@ -294,19 +297,5 @@ function enterReset() {
     enterKeyReset();
     reset();
 }
-
-/**
- * Select reuqired elements
- * Add event listners for buttons and links to ensure enter key works when links and buttons other than 'Reset' button are targeted.
- */
-
-
-const gitBtn = document.getElementById('bat_git');
-gitBtn.addEventListener('keydown', function(event){
-    if (event.key === 'Enter') {
-        window.open("https://github.com/jamie2210/CI_MS2_DCG","_blank"); // opens link in new tab when using tab and neter key.
-        window.location.replace("hangman.html"); // refreshes page to reset the class that is added on keydown in enterKeyReset function.
-    }
-});
 
 /* exported reset hangmanButton, quizButton, indexButton */
