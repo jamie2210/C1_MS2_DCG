@@ -290,8 +290,6 @@ function enterKeyReset() {
     });
 }
 
-enterKeyReset();
-
 /**
  * Select reuqired elements
  * Add event listners for buttons and links to ensure enter key works when links and buttons other than 'Reset' button are targeted.
@@ -300,24 +298,26 @@ const homeBtn = document.getElementById('bat_home');
 const quizBtn = document.getElementById('bat_quiz');
 const contactBtn = document.getElementById('bat_contact');
 const gitBtn = document.getElementById('bat_git');
+const resetBtn = document.getElementById('reset');
+const letterKeys = document.querySelector('.button-keys');
 
-homeBtn.addEventListener('keydown', function(event){
-    if (event.key === 'Enter') {
-        window.location.replace("index.html");
-    }
-});   
+// homeBtn.addEventListener('keydown', function(event){
+//     if (event.key === 'Enter') {
+//         window.location.replace("index.html");
+//     }
+// });   
 
-quizBtn.addEventListener('keydown', function(event){
-    if (event.key === 'Enter') {
-        window.location.replace("quiz.html");
-    }
-});  
+// quizBtn.addEventListener('keydown', function(event){
+//     if (event.key === 'Enter') {
+//         window.location.replace("quiz.html");
+//     }
+// });  
 
-contactBtn.addEventListener('keydown', function(event){
-    if (event.key === 'Enter') {
-        window.location.replace("contact.html");
-    }
-});  
+// contactBtn.addEventListener('keydown', function(event){
+//     if (event.key === 'Enter') {
+//         window.location.replace("contact.html");
+//     }
+// });  
 
 gitBtn.addEventListener('keydown', function(event){
     if (event.key === 'Enter') {
@@ -326,7 +326,31 @@ gitBtn.addEventListener('keydown', function(event){
     }
 });
 
+// resetBtn.addEventListener('keydown', function(event){
+//     if (event.key === 'Enter') {
+//         // resetBtn.classList.add('active');
+//         enterKeyReset();
+//     }
+// });
 
+// resetBtn.addEventListener('keyup', function(event){
+//     if (event.key === 'Enter') {
+//         resetBtn.classList.remove('active');
+//     }
+// });
 
+// letterKeys.addEventListener('keydown', function(event){
+//     if (event.key === 'Enter') {
+//         letterKeys.classList.add('active');
+        
+//     }
+// });
+
+// letterKeys.addEventListener('keyup', function(event){
+//     if (event.key === 'Enter') {
+//         letterKeys.classList.remove('active');
+        
+//     }
+// });
 
 /* exported reset */
