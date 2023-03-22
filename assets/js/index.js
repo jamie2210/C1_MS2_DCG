@@ -61,10 +61,14 @@ function riddlerClose() {
     intro.style.display = "none";
  }
 
-  /**
-  * Event listeners used to open rules when enter key is used via tabindex selection
-  */
- batmanIcon.addEventListener('keydown', function(event) {
+/**
+* Event listeners used to open rules when enter key is used via tabindex selection
+*/
+
+console.log('batmanIcon:', batmanIcon);
+console.log('riddlerIcon:', riddlerIcon);
+
+batmanIcon.addEventListener('keydown', function(event) {
     if(event.key === 'Enter') {
         batmanRules();
     }
@@ -75,6 +79,7 @@ riddlerIcon.addEventListener('keydown', function(event) {
         riddlerRules();
     }
 });
+
 
 /* exported hangmanButton, quizButton, indexButton */
  /*exported button, batmanRules, riddlerRules, batmanClose, riddlerClose, introClose */
