@@ -1,6 +1,12 @@
 /*jshint esversion: 6 */
 
 /**
+ * Add an event listener to ensure Javascript will not run until HTML is fully loaded.
+ */
+ document.addEventListener('DOMContentLoaded', function() {
+});
+
+/**
  * Select reuqired elements
  */
 const batmanModal = document.querySelector('.batman-modal') ;
@@ -20,9 +26,6 @@ function hangmanButton(){
 }
 function quizButton(){
     window.location.replace("quiz.html");
-}
-function indexButton(){
-    window.location.replace("index.html");
 }
 
 /**
@@ -78,5 +81,5 @@ riddlerIcon.addEventListener('keydown', function(event) {
 });
 
 
-/* exported hangmanButton, quizButton, indexButton */
+/* exported hangmanButton, quizButton */
  /*exported button, batmanRules, riddlerRules, batmanClose, riddlerClose, introClose */
